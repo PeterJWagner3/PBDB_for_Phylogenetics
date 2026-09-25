@@ -1,0 +1,29 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=21 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Squalodon                 000000000000000000000
+Ziphiodelphis             000000000000000000000
+Squaloziphius             0000000000000000011??
+Tasmacetus                100011001000010111100
+Berardius                 100011001000010111111
+Indopacetus               130001002000010111112
+Mesoplodon                130(01)01112000010111112
+Hyperoodon                13010-112-00010111112
+Ziphius                   122202002211110111112
+Ziphirostrum              111001002100211??1???
+Beneziphius_brevirostris  11100100?100211??????
+Choneziphius              12100200?211011??????
+Tusciziphius              12220200221????1?11??
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+ END;
+

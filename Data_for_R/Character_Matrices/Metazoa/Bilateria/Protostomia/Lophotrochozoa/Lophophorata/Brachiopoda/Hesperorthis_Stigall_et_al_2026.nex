@@ -1,0 +1,98 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=18 NCHAR=40;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Ptychopleurella_globularis	0000100300110212000200202200?0000002000?
+	Hesperorthis_antelopensis  2121031200?2?1102??2??1?2????111012?????
+	Hesperorthis_australis     11?101111122?2100????????????0110122?000
+	Hesperorthis_biconvexa     1222031110001111011101102211011211122121
+	Hesperorthis_colei         11?112110012211?0??101?1?????021012?????
+	Hesperorthis_concava       12?202131021?0100?????2??????121212?????
+	Hesperorthis_crinerensis   21121101202220113002110121???12101211000
+	Hesperorthis_dubia         11111213110221120??211232222102201222121
+	Hesperorthis_ignicula      12220111102021011??1012222?000110222101?
+	Hesperorthis_interplicata  11?1011110?21?11???1??2?2??2101??12?????
+	Hesperorthis_laurentina    1????21311?110122??111022????01?022?????
+	Hesperorthis_longirostris  12120211000???112110012120???0210122212?
+	Hesperorthis_matutina      11?112011010??111002012?2????11111221012
+	Hesperorthis_multicostata  1112030100212?100??212?212???121011?????
+	Hesperorthis_sulcata       211201110011110131011212221110220122212?
+	Hesperorthis_tenuisostata  01?1021110112?11?00012022?1??0110121101?
+	Hesperorthis_tricenaria    121202110012?101???112222222001101222112
+	Hesperorthis_virginiensis  12?2021110112?111??001?1?????012022?????
+
+;
+END;
+
+begin mrbayes;
+	charset all = 1 - 40;
+	[exclude 2 11 12 18 19 26 29 36 39 40; ]
+
+[TOPOLOGY CONSTRAINT ON INGROUP]
+
+constraint ingroup = antelopensis australis biconvexa colei concava crinerensis dubia ignicula interplicata laurentina longirostris matutina multicostata sulcata tenuisostata tricenaria virginiensis;
+prset topologypr = constraints(ingroup);
+
+
+[CHARACTER EVOLUTION AND RATE HETEROGENEITY AMONG CHARACTERS]
+
+[morphology model settings]
+	[set coding and rates]
+		lset nbetacat=5 rates=lnorm Coding=informative; [lognormal rate variation among characters]
+		prset symdirihyperpr=fixed(infinity);
+		[prset symdirihyperpr=uniform(1,10);]
+
+[TIP AGE CALIBRATIONS]
+
+calibrate globularis = uniform(456.6, 462.5);
+calibrate antelopensis = uniform (456.6, 467.3);
+calibrate australis = uniform (450.3, 458.4);
+calibrate biconvexa = uniform (456.6, 458.4);
+calibrate colei = uniform (453, 456.6);
+calibrate concava = uniform (450.3, 456.6);
+calibrate crinerensis = uniform(453, 458.4);
+calibrate dubia = uniform(453, 456.6);
+calibrate ignicula = uniform(453, 458.4);
+calibrate interplicata = uniform(456.6, 458.4);
+calibrate laurentina = fixed(443.8);
+calibrate longirostris = uniform(456.6, 462.5);
+calibrate matutina = uniform(458.4, 562.5);
+calibrate multicostata = uniform(453, 458.4);
+calibrate sulcata = uniform (456.6, 458.4);
+calibrate tenuisostata = uniform (456.6, 462.5);
+calibrate tricenaria = uniform(450.3, 458.4);
+calibrate virginiensis = uniform(450.3, 458.4);
+
+[These taxa had fixed tip ages: laurentina ]
+
+
+[SKYLINE FOSSILIZED BIRTH DEATH MODEL & TREE PRIOR]
+	prset treeagepr = uniform(468.5, 477.7);	[Divergence constrained by oldest known Hesperorthis fossils]
+    prset brlenspr=clock:fossilization;			[FBD prior with sampled ancestors]
+   	prset speciationpr = uniform(0.01,10); 		[uninformative, vague prior spanning orders of magnitude]
+	prset extinctionpr = beta(1,1);				[flat (i.e, uniform) prior]
+	prset fossilizationpr = beta(2,2);		    ['hump-shaped' distribution centered on 0.5, vague but optimistic preservation rate prior, these are brachiopods after all]
+
+	[4 time bins = pre-Darriwilian (i.e., Dapingian), Darriwilian, Sandbian, Katian (1 fixed taxon crosses K/H)]
+	prset samplestrat = random 3: 467.3 0, 458.4 0, 453.0 0;
+	prset sampleprob = 1;
+
+[RELAXED CLOCK MODEL PRIORS]
+	prset clockratepr = normal(0.001,0.1);
+   	prset clockvarpr=igr; [uncorrelated branch rates]
+    prset igrvarpr = uniform(0.001, 10); [broad prior spanning several orders of magnitude]
+	prset nodeagepr = calibrated;
+
+
+[MCMC SETTINGS]
+	mcmcp ngen=10000000 relburnin=yes burninfrac=0.25 printfreq=1000 samplefreq=10000 nchains=2 nruns=2 temp=0.05 savebrlens=yes;
+
+[RUN ANALYSIS]
+	mcmc;
+	sumt burnin=250;
+	sump burnin=250;
+
+
+END;

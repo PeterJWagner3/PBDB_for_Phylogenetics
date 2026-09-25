@@ -1,0 +1,617 @@
+#NEXUS
+[written Sun Jul 12 16:39:27 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.73.95.75]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=21;
+	TAXLABELS
+		Chiromyoides_campanicus Chiromyoides_caesor Chiromyoides_gigas Chiromyoides_gingerichi Chiromyoides_mauberti Chiromyoides_major Chiromyoides_minor Chiromyoides_kesiwah Plesiadapis_anceps Plesiadapis_rex Plesiadapis_walbeckensis Plesiadapis_churchilli Plesiadapis_cookei Plesiadapis_tricuspidens Nannodectes_gazini Pronothodectes_gaoi Platychoerops_boyeri Platychoerops_antiquus Chronolestes_simul Pandemonium_dis Saxonella_naylori 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=74;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 'I1 - Shape of anterocone: relatively conical (0) mesiodistally expanded (1) mesiodistally expanded with flattened lingual surface (2) ordered',
+		2 'Shelf from mediocone to laterocone: absent (0) partial (1) complete (2)',
+		3 'Postition of mediocone: mediocone absent (0) lingual and basal to anterocone, similar in apical position to laterocone (1) lingual and basal to anterocone, more apical than laterocone (2) mesial to anterocone, more apical than laterocone (3) unordered',
+		4 'Volume of mediocone: absent (0) significantly less than laterocone (1) subequal to laterocone (2)',
+		5 'Nature of laterocone: laterocone absent (0) laterocone conical, projects somewhat distally with respect to anterocone (1) laterocone projects more lingually with respect to anterocone (2) [ordered]',
+		6 'Orientation of posterocone: lingually projecting, mesiodistally compressed (0) obliquely oriented, labiolingually compressed (1)',
+		7 'Presence of neomorphic cusps near posterocone: absent (0) present (1)',
+		8 'Size of posterocone: small (0) large (1)',
+		9 'Crown labiolingual proportions: narrow, gracile (0) broad, robust (1)',
+		10 'i1 - Margoconid: reduced (0) prominent (1)',
+		11 'Apical surface: not spatulate (0) semi-spatulate (1) spatulate (2) ordered',
+		12 'Mesial cingulid (especially near base of crown): present (0) absent/nearly absent (1)',
+		13 'Apex of crown recurved dorsally with respect to root: absent (0) present (1)',
+		14 'Dorsoventral depth of root immediately behind margoconid: shallow (0) intermediate (1) deep (2) ordered',
+		15 'Crown height in relation to dorsoventral depth: elongated (0) compacted (1)',
+		16 'P4 - Trigon basin anteroposterior length: narrow (0) wide (1)',
+		17 'Nature of metacone: metacone absent (0) metacone present, relatively cuspate and/or similar in height to paracone (1) metacone present, weakly cuspate and/or lower than paracone (2)',
+		18 'Mesial cingulum on anterior buccal margin: reduced (0) pronounced (1)',
+		19 'Parastyle on anterior buccal margin: reduced (0) pronounced (1) cuspate (2)',
+		20 'Ridge to the anterior of protocone (preprotocrista): reduced (0) pronounced (1)',
+		21 'Paraconule: present (0) reduced (1) absent (2) ordered',
+		22 'Posterior margin of protocone: cliff-like (0) inflated (1)',
+		23 'Buccal margin of P4: vertical furrow between paracone and metacone and/or buccal margin not evenly rounded (0) reduced or absent furrow between paracone and metacone, margin evenly rounded (1)',
+		24 'P3 - Size relative to P4: smaller (0) nearly equal (1)',
+		25 'Paraconule: absent (0) distinct (1) fused with paracone (2) ordered',
+		26 'Paracone and metacone: metacone absent (0) present, unfused (1) present, vestigial, fused (2)',
+		27 'Parastyle on anterior buccal margin: reduced or absent (0) pronounced (1)',
+		28 'M1 - Mesostyle: absent (0) present, isolated (1) present, connected to centrocrista by crest (2) ordered',
+		29 'Stylar shelf: narrow (0) wide (1)',
+		30 'M2 - Mesostyle: absent (0) present, isolated (1) present, connected to centrocrista by crest (2) ordered',
+		31 'Paraconule: absent or weakly cuspate (0) present, distinctly cuspate (1)',
+		32 'Metaconule: absent or weakly cuspate (0) present, distinctly cuspate (1)',
+		33 'Postprotocingulum: absent or indistinct (0) distinct, not elevated with respect to protocone  (1) distinct, elevated with respect to protocone (2) distinct, elevated, diverges markedly from postprotocrista yielding relatively expansive talon (3) ordered',
+		34 'Stylar shelf: narrow (0) wide (1)',
+		35 'M3 - Mesostyle: absent (0) present, isolated (1) present, connected to centrocrista by crest (2) ordered',
+		36 'Paraconule: absent or weakly cuspate (0) present, distinctly cuspate (1)',
+		37 'Postprotocingulum: absent or indistinct (0) distinct, not elevated with respect to protocone  (1) distinct, elevated with respect to protocone (2) distinct, elevated, diverges markedly from postprotocrista yielding relatively expansive talon (3) ordered',
+		38 'Stylar shelf: narrow (0) wide (1)',
+		39 'p3 - Size: not reduced (0) reduced (1)',
+		40 'Roots: double rooted (0) single rooted (1)',
+		41 'p4 - Crown proportions: mesiodistally longer than buccolingual breadth (0) mesiodistal length similar to buccolingual breadth (1) buccolingual breadth greater than mesiodistal length (2)',
+		42 'Talonid length: normal proportions (0) mesiodistally abbreviated (1)',
+		43 'Roots: double rooted (0) single rooted (1)',
+		44 'Size relative to m1: smaller (0) equal (1) larger (2) [ordered]',
+		45 'Vertical crest at back of trigonid: present (0) weak/absent (1)',
+		46 'm1 - Centroconid on cristid obliqua: present (0) absent (1)',
+		47 'Hypoconulid: present (0) absent (1)',
+		48 'Postcristid: angled (0) straight (1)',
+		49 'Trigonid: narrower than talonid (0) expanded buccally, similar in width to talonid (1)',
+		50 'Paracristid present between protoconid and paraconid (0) paracristid absent (1) paracristid absent, expanded shelf on trigonid between paraconid and protoconid (2) [ordered]',
+		51 'm2 - Buccal inflation of crown: none (0) talonid inflation > trigonid (1) both talonid and trigonid inflated, hypoflexid shallow (2)',
+		52 'Shelf below trigonid on buccal side: absent or very weak (0) present, relatively complete (1)',
+		53 'Shelf below hypoconid on buccal side: absent or very weak (0) present, relatively complete (1)',
+		54 'Paracristid present between protoconid and paraconid (0) paracristid absent (1) paracristid absent, expanded shelf on trigonid between paraconid and protoconid (2) [ordered]',
+		55 'Cristid obliqua: buccally positioned (0) more sharply mesially oriented (1)',
+		56 'Centrodonid on cristid obliqua: present (0) absent (1)',
+		57 'Paraconid: distinct (0) fused with metaconid (1)',
+		58 'Trigonid: narrower than talonid (0) expanded buccally, similar in width to talonid (1)',
+		59 'm3 - Transverse valley between cristid obliqua and trigonid: absent (0) present (1)',
+		60 'Paraconid and metaconid: clearly distinct, at least apically (0) fused, indistinct apically (1)',
+		61 'Hypoconulid lobe: narrow (0) broad (1)',
+		62 'Entoconid: distinct (0) reduced (1)',
+		63 'Buccal cinulid at base of protoconid: absent (0) present (1)',
+		64 'Talonid proportions: relatively long and narrow (0) relatively short and wide (1)',
+		65 'Other - Cheek teeth small relative to incisors: absent (0) present (1)',
+		66 'Deep mandible: absent (0) present (1)',
+		67 'Lower canine: present (0) absent (1)',
+		68 'i2: present (0) absent (1)',
+		69 'Mandibular symphysis: procumbent(0) vertical (1)',
+		70 'Boss on underside of zygomatic arch: absent (0) present (1)',
+		71 'p2: retained (0) lost (1)',
+		72 'Absolute size of molars: small (0) large (1)',
+		73 'Diastema between p3 and i1: absent (0), present (1)',
+		74 'Development of bony crest on dorsal side of dentary between p3 and i1: absent (0) present' ; 
+	MATRIX
+	Chiromyoides_campanicus   2221211011111200?1???1?1???21211312?20002100111002(1 2)10210100(0 1)1(0 1)1(0 1)1111111100
+	Chiromyoides_caesor       102120011????????????????????20030??????10(0 1)100111211?200001101111??????0??
+	Chiromyoides_gigas        102220011111011011?01110???1010020??????????????????????????????1??????0??
+	Chiromyoides_gingerichi   212120111021020111211111110???????????00?????????????????????????1111?1011
+	Chiromyoides_mauberti     222121101110120??????????????21031????012110111102201201110110111111??1000
+	Chiromyoides_major        212120011021020???????????????????????00??01????????????????????11111?10??
+	Chiromyoides_minor        202120(0 1)11??????????????????11?????????????01??1???200100111100011?11???00?
+	Chiromyoides_kesiwah      2021200111110110111011001010110131????10??01?11111200111111111011111?11011
+	Plesiadapis_anceps        1011200001?000?02010000022100011110001001000110001010(0 1)10100010100001001101
+	Plesiadapis_rex           101110000100000020111001(0 2)2100010111000001000101001010010100010100001001100
+	Plesiadapis_walbeckensis  1011200101010000201100002110121121????001100110010010010100011100011001111
+	Plesiadapis_churchilli    1011101001000000202100002112021(0 1)20200000(0 1)000101010010010100010100011001110
+	Plesiadapis_cookei        10?0100000000001201110000002021020211000000001111101001010001(0 1)100011001111
+	Plesiadapis_tricuspidens  101110010010000010110000110202102021000010000(0 1)01(0 1)101101(0 1)10001(0 1)100011001111
+	Nannodectes_gazini        00112000010000002011000012100011100100000000001100010010(0 1)00001100000001000
+	Pronothodectes_gaoi       00112000010000?0201100002200001110011000000000?000010010000010100000000100
+	Platychoerops_boyeri      00??10000????????????????????20021????00100011011001001110??????00110?1111
+	Platychoerops_antiquus    ??????????????????????????????????????00100001011001001101001010??????????
+	Chronolestes_simul        00000000000000?00000000000000011100110110002010000010011000000110000000000
+	Pandemonium_dis           000000000??????0000020010000101001????0000001101000000110000001000?????0??
+	Saxonella_naylori         ?????????00100?0200000012210101101110000000110000000001100??????001100101?
+
+;
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  ingroup :  1- 18, outgroup :  19- 21;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  3 5- 10 12- 13 15- 16 18 20 22- 24 27 29 31- 32 34- 36 38- 40 42- 43 45- 49 52- 53 55- 74, ord:  1- 2 4 11-17\3 19 21 25- 26 28 30-33\3 37 41-44\3 50- 51 54;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 74;
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL ingroup COLOR = (RGB 1.0 1.0 1.0) ;
+	TAXAGROUPLABEL outgroup COLOR = (RGB 1.0 1.0 1.0) ;
+
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1783892367480;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5943914220197951541;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1572472387911384204;
+			tell It;
+				setDefaultOrder  0 2 3 4 5 6 7 8 9 11 12 13 16 17 14 17 18 19 20 21 24 25 22 25 26 27 28 29 31 32 34 35 36 37 40 42 43 44 45 46 48 49 50 51 52 53 57 60 62 55 62 65 66 67 68 69 70 71 75 76 77 78 79 63 79 80 81 82 84 85 87 88 72 73;
+				attachments ;
+			endTell;
+			mqVersion 381;
+			checksumv 0 3 2045951488 null  getNumChars 74 numChars 74 getNumTaxa 21 numTaxa 21   short true   bits 15   states 15   sumSquaresStatesOnly 4315.0 sumSquares 4315.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1916 749;
+			setLocation -1875 -176;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #5943914220197951541 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #5943914220197951541;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1816 677;
+					setLocation -1875 -176;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #5943914220197951541  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSourceEditMode #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					laxMode;
+					setTreeBlock -2147483647;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1203.1783892178672.1723294489845804486;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1816 677;
+					setLocation -1875 -176;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '((((1,2),(3,(4,5))),((6,7),(8,(9,10)))),(((11,12),(13,(14,15))),((16,(17,18)),(19,(20,21)))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				setEditMode DEFAULT_TREE_SHOWN_BECAUSE_TREE_SOURCE_NOT_SUPPLYING_TREE;
+				desuppressEPCResponseNORESET;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+			makeTreeWindow #5943914220197951541  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSourceEditMode #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					laxMode;
+					setTreeBlock -2147483647;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1235.1783892234678.530858820736961026;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1816 677;
+					setLocation -1875 -176;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.collapse;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(21,((19,20),(15,16,(10,(9,(11,((17,18),(12,(13,(14,((3,(7,8)),(2,((1,5),(4,6))))))))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				setEditMode 'Edited, based on Default Symmetrical Tree+';
+				desuppressEPCResponseNORESET;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #1572472387911384204;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1572472387911384204 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 134;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1816 677;
+					setLocation -1875 -176;
+					setFont Franklin_Gothic_Medium;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #1572472387911384204 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1816 677;
+					setLocation -1875 -176;
+					setFont Franklin_Gothic_Medium;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.arrow;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

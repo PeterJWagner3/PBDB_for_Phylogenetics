@@ -1,0 +1,191 @@
+#NEXUS
+[written Wed May 06 15:17:31 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.73.236.232]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=14;
+	TAXLABELS
+		Compsocrinus Canistrocrinus Xenocrinus Glyptocrinus Periglyptocrinus Abludoglyptocrinus Pachycephalocrinus Pycnocrinus Astakocrinus Alisocrinus Macrostylocrinus Eopatelliocrinus Celtocrinus Gaurocrinus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=108;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Compsocrinus        1210161200001-110211100-1110200110131111111021202111100300--210001-??????????????????0??1?????3??0??0?0?0???
+	Canistrocrinus      1210100-00101-010211101011-3310111111111111031021101-0110101311001-??????????????????00?11?00000?00?110100??
+	Xenocrinus          12111(0 1)10021011010211201021-3210111212111111031021101-01100--110001-01011011021200110000?11?10033?00?22?100??
+	Glyptocrinus        1210161200000-100000100-1020200110231111111021212101100300--210001-11101011021210110000?11?10000?00?110?00??
+	Periglyptocrinus    1210161200000-101000100-1010101110131111111021212101000300--21001-2??????????????????00?11?10000?00?11??00??
+	Abludoglyptocrinus  1211(0 1)012020000100000000-101020011013?111111021201111-01100--110001-??????????????????00?11?10000?00???0?00??
+	Pachycephalocrinus  1211161200100-000000000-10(1 2)0100010111101000-01202(0 1)11(0 1)(0 2)(0 1)(1 3)0??????????0001102100020020--?????????0?????1???????
+	Pycnocrinus         1211161200100-000000100-1010200110131111111021201111-0110100210001-??????????????????00?11?10000?00?00?000??
+	Astakocrinus        1210121211100-000001000-2010100110031111111011201101-01110--11001-0?????????????????????1?????0??0??????????
+	Alisocrinus         12101(0 1)0-00100-111200100-001(0 1)210110230111111021202101100300--210001-??????????????????00?11?00000?00???0?00??
+	Macrostylocrinus    1300100-00100-120200100-0010110110030111111011201100-01110--11001-2?????????2????????000111000000000????0001
+	Eopatelliocrinus    1210161200100-020200000-2010100110032111111021201101-01110--110002-??????????????????00?11?10000?00?110100??
+	Celtocrinus         ?21016100010?-1?10??100-20101101?????????????121210??0030112410000-??????????????????00?11?10000?00?????00??
+	Gaurocrinus         12101(0 1)1001100-101012101021-3310111212111111031021111-0110100211001-01111021021200110000?11?00021?00?000100??
+
+;
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  ingroup :  1- 13, outgroup :  14;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 108;
+
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL ingroup COLOR = (RGB 1.0 1.0 1.0) ;
+	TAXAGROUPLABEL outgroup COLOR = (RGB 1.0 1.0 1.0) ;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 108;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1778098652106;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4929602888790522063;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7665135519736516277;
+			mqVersion 381;
+			checksumv 0 3 2797579470 null  getNumChars 108 numChars 108 getNumTaxa 14 numTaxa 14   short true   bits 95   states 95   sumSquaresStatesOnly 34854.0 sumSquares 34854.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState true false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 784 579;
+			setLocation -887 -192;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			setActive;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7665135519736516277 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 0 -72;
+					setLocation -887 -192;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				hideWindow;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

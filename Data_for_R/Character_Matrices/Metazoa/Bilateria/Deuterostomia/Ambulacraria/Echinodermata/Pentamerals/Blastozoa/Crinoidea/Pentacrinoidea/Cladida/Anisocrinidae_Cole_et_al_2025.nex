@@ -1,0 +1,307 @@
+[Character data and commands to conduct the phylogenetic analyses presented in:
+Cole, Wright, and Hopkins, Phylogenetic position and stratigraphic uncertainty of a new flexible crinoid 
+from the Ordovician-Silurian boundary of Anticosti Island (Quebec, Canada): Journal of Paleontology.]
+
+[Characters and character states associated with the matrices below:
+1. Calyx shape ratio (height/width) measured at the top of the radials: 0: very high: > 1.0; 1: intermediate 1.0-0.5; 2: low: < 0.5
+2.  Calyx/aboral cup profile to the top of the radials: 0: cone shaped (~straight sides); 1: bowl shaped (rounded base, vertical sides); 2: globe/barrel shaped (rounded base, widest below the summit of cup)
+3.  Number of infrabasal plates: 0: five 1: three; 2: one
+4.  Infrabasal plate dimensions: 0: W>H; 1: H~W; 2: H>W
+5.  Basal plate dimensions: 0: W>H; 1: H~W; 2: H>W
+6.  Basal plates, relative sizes (including CD basal): 0: subequal; 1: unequal
+7.  Radial plate largest plate in calyx: 0: no; 1: yes
+8.  Number of posterior plates partially or completely in cup at or below height of radials: 0: > three; 1: ≤ three
+9.  Radianal plate shape: 0: pentagonal; 1: tetragonal; 2: hexagonal/septagonal
+10. Proximal position of radianal plate: 0: full width beneath C radial plate; 1: to left and below C radial plate; 2: within radial circlet above the CD basal
+11. Anal X presence: 0: absent; 1: present
+12. Anal X shape: 0: pentagonal; 1: hexagonal; 2: 7 or more sides
+13. Right tube plate presence: 0: absent; 1: present
+14. Presence of an anal sac: 0: absent; 1: present
+15. Height of the anal opening above the aboral cup: 0:  0 - 0.5x height of the arms; 1: 0.5 - 1.0x height of arms; 2: > height of the arms
+16. Anus position relative to crown: 0: near the summit; 1: below the summit
+17. Dominant medial column supporting sac: 0: absent; 1: present 
+18. Tube-like anal series: 0: absent; 1: present
+19. Lower brachials fixed: 0: absent; 1: present
+20. Fixed rays (i.e., interlocking): 0: absent; 1: present
+21. Interradial plates ("interbrachials" of some): 0: absent; 1: present
+22. Patelloid process: 0: absent; 1: present
+23. Highest position of axillary on primibrachials located in B-E rays: 0: IPr1; 1: IPr2; 2: ≥ IPr3
+24. Spacing between insertion of axillaries on main axis at and above the second brachitaxes in B-E rays: 0: regular; 1: irregular
+25. Overall outline pattern of arm bifurcations [see Ubaghs, 1978; fig. 115]: 0: isotomous; 1:  heterotomous [= 2 and 3 in Fig. 115 of Treatise]; 2: endotomous; 3: exotomous
+]
+
+
+[
+****************************************
+PHYLOGENETIC ANALYSES AND CHARACTER LIST
+****************************************
+
+Character data and commands to run three phylogenetic analyses are provided below:
+
+(1): Maximum parsimony
+(2): Bayesian inference (topology only)
+(3): Bayesian fossil tip-dating (divergence time estimation)
+
+To repeat an analysis, be sure that the correct matrix and commands have their brackets (i.e., []'s) removed, 
+then just execute the .nex file in the appropriate program (PAUP* or MrBayes).
+]
+
+[
+#NEXUS
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=12;
+	TAXLABELS
+		Cupulocrinus Homalocrinus Icthyocrinus Protaxocrinus Hormocrinus Ladacrinus Proanisocrinus Tintinnabulicrinus Paerticrinus Kyphosocrinus Anticosticrinus Anisocrinus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS  NCHAR=25; 
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	MATRIX
+	Cupulocrinus        10011 10100 11011 01100 11200 
+	Homalocrinus        20100 11122 0?0?0 00010 11112
+	Icthyocrinus        20101 0?100 0?000 10011 01110
+	Protaxocrinus       10101 1?100 1001? ?1110 11100
+	Hormocrinus         21100 11102 ???0? ?0010 11100
+	Ladacrinus          10101 11111 1011? ?0110 10110
+	Proanisocrinus      20101 11100 1010? ?0010 10100
+	Tintinnabulicrinus  21??2 11122 0?0?? ?0010 11112
+	Paerticrinus        21??1 11100 1211? ?0110 10210
+	Kyphosocrinus	    11101 01100 120?? ?0010 10112
+	Anticosticrinus	    10100 01100 120?? ?0010 10110
+	Anisocrinus	    101?0 01100 1100? ?0010 10110
+;
+
+END;
+]
+[
+**********************************
+MAXIMUM PARSIMONY ANALYSIS IN PAUP
+**********************************
+
+*Runs a 'branch and bound' maximum parsimony analysis.
+Excludes parsimony-uniformative characters.
+All character changes are unordered and equally weighted.
+
+]
+
+BEGIN PAUP;
+Outgroup 1;
+Exclude Uninf;
+BandB;
+Contree;
+
+END;
+
+[
+****************************************************
+UNDATED BAYESIAN ANALYSIS IN MRBAYES (TOPOLOGY ONLY)
+****************************************************
+
+*Runs a Bayesian analysis of phylogeny using only character data and basic Mk model [sampling all variable characters].
+Returns 50% majority rule consensus tree.
+
+]
+[
+BEGIN MRBAYES;
+set autoclose = yes nowarn = yes;
+lset rates = equal coding = variable;
+prset Brlenspr = Unconstrained : GammaDir ( 1.0 , 0.100 , 1.0 , 1.0 );
+mcmcp ngen = 100000 samplefreq = 50 printfreq = 100 nruns = 2 nchains = 4 relburnin = yes burninfrac = 0.25 temp = 0.1 savebrlens = yes;
+mcmc;
+sump;
+sumt;
+
+END;
+
+]
+
+[
+**********************************************
+BAYESIAN FOSSIL TIP-DATING ANALYSIS IN MRBAYES
+**********************************************
+
+*Runs a Bayesian fossil tip-dating analysis using both character and stratigraphic data to estimate divergence times.
+Uses results from undated analyses to constrain tree topology.
+The sampled ancestor implementation of the fossilized birth-death process (SA-FBD) == prior on trees and branch lengths.
+Samples additional species and genera (currently lacking character data) to improve parameter estimation.
+Independent gamma rates model used to 'relax' the morphological clock.
+All SA-FBD and morphological clock priors intentionally set to be flat and/or vague. 
+
+]
+
+
+
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=42 NCHAR=25;
+	FORMAT DATATYPE=standard SYMBOLS="012345" MISSING=?;
+
+MATRIX
+Cupulocrinus_humilis       		10011 10100 11011 01100 11200
+Cupulocrinus_angustatus    		10011 10100 11011 01100 11200
+Cupulocrinus_canaliculatus 		10011 10100 11011 01100 11200
+Cupulocrinus_crossmani			10011 10100 11011 01100 11200
+Cupulocrinus_heterocostalis		10011 10100 11011 01100 11200
+Cupulocrinus_jewetti			10011 10100 11011 01100 11200
+Cupulocrinus_levorsoni			10011 10100 11011 01100 11200
+Cupulocrinus_polydactylus		10011 10100 11011 01100 11200
+Cupulocrinus_sepulchrum			10011 10100 11011 01100 11200
+Proanisocrinus_oswegoensis		20101 11100 1010? ?0010 10100
+Anisocrinus_prinstaensi			101?0 01100 1100? ?0010 10110
+Anisocrinus_interradiatus		101?0 01100 1100? ?0010 10110
+Protaxocrinus_ovalis			10101 1?100 1001? ?1110 11100
+Protaxocrinus_aberrans			10101 1?100 1001? ?1110 11100
+Protaxocrinus_amii				10101 1?100 1001? ?1110 11100
+Protaxocrinus_anellus			10101 1?100 1001? ?1110 11100
+Protaxocrinus_cataractensis		10101 1?100 1001? ?1110 11100
+Protaxocrinus_elegans			10101 1?100 1001? ?1110 11100
+Protaxocrinus_girardeau		 	10101 1?100 1001? ?1110 11100
+Protaxocrinus_girvanensis		10101 1?100 1001? ?1110 11100
+Protaxocrinus_interbrachiatus	10101 1?100 1001? ?1110 11100
+Protaxocrinus_laevis		   	10101 1?100 1001? ?1110 11100
+Protaxocrinus_paraios			10101 1?100 1001? ?1110 11100
+Protaxocrinus_robustus			10101 1?100 1001? ?1110 11100    
+Tintinnabulicrinus_estoniensis	21??2 11122 0?0?? ?0010 11112
+Paerticrinus_arvosus			21??1 11100 1211? ?0110 10210
+Ladacrinus_asynaptos			10101 11111 1011? ?0110 10110
+Icthyocrinus_laevus				20101 0?100 0?000 10011 01110
+Icthyocrinus_gotlandicus		20101 0?100 0?000 10011 01110
+Clidochirus_anebos				????? ????? ????? ????? ?????
+Clidochirus_americanus			????? ????? ????? ????? ?????
+Clidochirus_serrulatus			????? ????? ????? ????? ?????
+Clidochirus_vaurealensis		????? ????? ????? ????? ?????
+Clidochirus_springeri			????? ????? ????? ????? ?????
+Clidochirus_ulrichi				????? ????? ????? ????? ?????   
+Hormocrinus_tenneesseensis		21100 11102 ???0? ?0010 11100
+Hormocrinus_anglicus			21100 11102 ???0? ?0010 11100
+Hormocrinus_quebecensis			21100 11102 ???0? ?0010 11100
+Homalocrinus_nanus				20100 11122 0?0?0 00010 11112
+Homalocrinus_liljevalli			20100 11122 0?0?0 00010 11112   
+Kyphosocrinus_tetreaulti		11101 01100 120?? ?0010 10112
+Anticosticrinus_natiscotecensis	10100 01100 120?? ?0010 10110
+
+;
+
+END;
+
+	Begin mrbayes;	
+	
+[set up likelihood model of character evolution]
+	lset applyto=(all) rates=equal coding=variable;
+
+[set up clade constraints]
+constraint node2 partial = 10-42 : 8-9; 
+constraint protaxocrinus = 13-24;
+constraint node3 = 10-12 25-42;
+constraint node4 = 10-12 25-26 28-42; 
+constraint node5 = 10-12 25 28-42; 
+constraint sagenocrinida = 10-12 25 28-42;
+constraint anisocrinidae = 10-12 41-42;
+constraint anisocrinus = 11-12 42;
+constraint node6 = 25 28-40;
+constraint icthyocrinidae = 28-35;
+constraint icthyocrinus = 28-29;
+constraint node7 = 25 36-40;
+constraint hormocrinus = 36-38;
+constraint node8 = 25 39-40;
+constraint homalocrinus = 39-40;
+
+
+[calibrate priors on stratigraphic ranges] 
+
+calibrate Cupulocrinus_humilis = uniform(449.1,453);
+calibrate Cupulocrinus_angustatus = uniform(445.2,453);
+calibrate Cupulocrinus_canaliculatus = uniform(453,458.4);
+calibrate Cupulocrinus_crossmani = uniform(445.2,453);		
+calibrate Cupulocrinus_heterocostalis = uniform(449.2,453);	
+calibrate Cupulocrinus_jewetti = uniform(449.1,458.4);
+calibrate Cupulocrinus_levorsoni = uniform(453,458.4);
+calibrate Cupulocrinus_polydactylus = uniform(433.4,445.2);
+calibrate Cupulocrinus_sepulchrum = uniform(443.0,445.2);	
+calibrate Proanisocrinus_oswegoensis = uniform(445.2,453);	
+calibrate Anisocrinus_prinstaensi = uniform(443.8,445.2);
+calibrate Anisocrinus_interradiatus = uniform(423.4,433.4);
+calibrate Protaxocrinus_ovalis = uniform(427.4,453);
+calibrate Protaxocrinus_aberrans = uniform(427.4,428.6);
+calibrate Protaxocrinus_amii = uniform(427.4,443.8);
+calibrate Protaxocrinus_anellus = uniform(427.4,443.8);
+calibrate Protaxocrinus_cataractensis = uniform(427.4,443.8);
+calibrate Protaxocrinus_elegans	= uniform(445.2,453);
+calibrate Protaxocrinus_girardeau = uniform(443.8,445.2);
+calibrate Protaxocrinus_girvanensis = uniform(445.2,453.0);	
+calibrate Protaxocrinus_interbrachiatus = uniform(423.4,433.4);
+calibrate Protaxocrinus_laevis = uniform(449.1,453);
+calibrate Protaxocrinus_paraios = uniform(443.8,445.2);
+calibrate Protaxocrinus_robustus = uniform(427.4,443.8);
+calibrate Tintinnabulicrinus_estoniensis = uniform(449.1,455.7);
+calibrate Paerticrinus_arvosus = uniform(440.8, 443.8);
+calibrate Ladacrinus_asynaptos = uniform(433.8,443.4);
+calibrate Icthyocrinus_laevus = fixed(423);
+calibrate Icthyocrinus_gotlandicus = uniform(423,433.4);
+calibrate Clidochirus_anebos = uniform(445.2,453);	
+calibrate Clidochirus_americanus = uniform(433.4,443.8);
+calibrate Clidochirus_serrulatus = uniform(443.8,445.2);
+calibrate Clidochirus_vaurealensis = uniform(443.8,445.2);
+calibrate Clidochirus_springeri = uniform(433.4,443.8);
+calibrate Clidochirus_ulrichi = uniform(433.4,443.8);
+calibrate Hormocrinus_tenneesseensis = uniform(423,433.4);
+calibrate Hormocrinus_anglicus = uniform(423.4,433.4);
+calibrate Hormocrinus_quebecensis = uniform(427.4,428.6);
+calibrate Homalocrinus_nanus = uniform(427.4,433.4);	
+calibrate Homalocrinus_liljevalli = uniform(423.4,433.4);
+calibrate Kyphosocrinus_tetreaulti = uniform(433.4, 438.5);
+calibrate Anticosticrinus_natiscotecensis = uniform(440.8,445.2);
+	
+[set prior distributions on tree shape, node ages, and blens]
+	prset treeagepr = offsetexp(453, 455.7); 
+	prset nodeagepr = calibrated; [set node age priors]
+	prset brlenspr = clock : fossilization;
+	prset topologypr = constraints(node2,protaxocrinus,node3,node4,node5,anisocrinidae,anisocrinus,node6,icthyocrinidae,icthyocrinus,node7,hormocrinus,node8,homalocrinus);
+
+
+[SA-FBD and relaxed morpho-clock settings] 
+	prset speciationpr = uniform(0,10);
+	prset extinctionpr = beta(1,1);
+	prset fossilizationpr = beta(1,1);
+	prset samplestrat = random;
+	prset sampleprob = 1;
+	prset clockvarpr = Igr;
+    prset clockratepr = normal(0.0025,0.1);   [truncated normal, mean=0.08, but very flat; see Supp Table 2 of Matzke & Wright 2016]
+	prset Igrvarpr = exp(1);
+	
+
+[mcmc settings]
+	mcmcp ngen=20000000 samplefreq=10000 printfreq=5000 nruns=2 nchains=4 relburnin=yes burninfrac=0.25 temp = 0.1 savebrlens=yes;
+	mcmc;
+	sump;
+	sumt;
+
+	end;
+	
+
+
+
+
+
+
+
+
+[
+#########################
+END PHYLOGENETIC ANALYSES
+#########################
+[mcmc settings]
+	mcmcp ngen=20000000 samplefreq=10000 printfreq=5000 nruns=2 nchains=4 relburnin=yes burninfrac=0.25 temp = 0.1 savebrlens=yes;
+	mcmc;
+	sump;
+	sumt;
+
+	end;
+
+]

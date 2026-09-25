@@ -1,0 +1,283 @@
+#NEXUS
+[written Wed Mar 18 11:57:07 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.73.44.215]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=72;
+	TAXLABELS
+		Leanchoilia_superlata Aglaspella_granulifera Aglaspis_spinifer Australaglaspis_stonyensis Beckwithia_typa Buenaspis_forteyi Burgessia_bella Cheloniellon_calmani Chlupacaris_dubia Chraspedops_modesta Cindarella_eucalla Cyclopites_vulgaris Duslia_insignis Emeraldella_brocki Emeraldella_brutoni Eozetetes_gemelli Flobertia_kochi Glypharthrus_magnoculus Glypharthrus_simplex Glypharthrus_thomasi Glypharthrus_trispinicaudatus Gogglops_ensifer Haikoucaris_ercaiensis Helmetia_expansa Kodymirus_vagans Kuamaia_lata Kwanyinaspis_maotiashanensis Liwia_convexa Marrella_splendens Martinssonia_elongata Mimetaster_hexagonalis Misszhouia_longicaudata Naraoia_compacta Naraoia_spinosa Nebalia_bipes Neostrabops_martini Phytophilaspis_pergamena Quasimodaspis_brentsae Retifacies_abnormalis Pygmaclypeatus_daziensis Saperion_glumaceum Sidneyia_inexpectans Sidneyia_minor Sinoburius_lunaris Skioldia_aldna Soomaspis_splendida Squamacula_clypeata Tariccoia_arrusensis Tegopelte_gigas Triopus_draboviensis Uarthrus_instabilis Xandarella_spectacullum Acanthomeridion_serratum Australimicola_spriggi Zhiwenia_coronata Luohuilinella_rarus Luohuilinella_deletres Haifengella_corona Yohoia_tenuis Carimersa_neptuni Gigoutella_mauretanica Olenoides_serratus Eoredlichia_intermedia Protolenus Olenellus_getzi Habelia_optata Weinbergina_opitzi Mollisonia_plenovenatrix Sanctacaris_uncata Waptia_fieldensis Tokummia_katalepsis Clypecaris_serrata 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=115;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 7 8 9 6";
+	MATRIX
+	Leanchoilia_superlata          0-00101011112400000010---0--1001000-000---00-0??10-0--0-----0-01000000011001010000000100010000-000-----?10101000-0-
+	Aglaspella_granulifera         10??-0-???????????????????????01110-0-01110100??00-0--0-----1011001000011001?10000000010?000101120-----?1001000100-
+	Aglaspis_spinifer              10??-0-???-??4???01?1?????????01110-0-011101001000-0--0-----11100110000110010100000000110100101120-----?1001000100-
+	Australaglaspis_stonyensis     10??-0-?????????????1?????????01110-0-011?0??01000-0--0-----101100?000011001?100000000?0000?1011?0-----?1001010110-
+	Beckwithia_typa                10??-0-???????????????????????01110-0-01110100??00-0--0-----1110000000011001?100000?0000?001?????0-----?1001100??0-
+	Buenaspis_forteyi              0-??-0---?????????????????????0???0-?00---0100??00-0--0-----0-02000000011000?11010000000-00001-0-10?00-000-----0-0-
+	Burgessia_bella                0-10-0------0400000010---0--0000--0-------01-00-00-0--0-----0-020000200010--000000000000-00000-000-----110010000-0-
+	Cheloniellon_calmani           0-10-0------0510100-11?11??-1101110-0-00--01001200-0--0-----0-02000000111001010001001100-000100110-----?10200000-11
+	Chlupacaris_dubia              10??-0-???????????????????????01110-?-00??01001200-0--0-----1??20?00??01100???0?000000?0???0???1?0----??1000000110-
+	Chraspedops_modesta            10??-0-???????????????????????01110-0-011100-0??00-0--0-----1011001000011001?100000000?00000?????0-----?1001010??0-
+	Cindarella_eucalla             0-10-0------050000001100111-10010010000---01001200-0--0-----0-01000021011001110000010000-00000-0000000?000-----0-0-
+	Cyclopites_vulgaris            10??-0-???????????????????????01110-0-01120??0??00-0--0-----1012000000011001?10000000010-000101120-----?10010001?0-
+	Duslia_insignis                0-1?-0---?????????????????????0???0-?00---0??0??00-0--0-----0-12000000111001?100010011001000100110-----?10200000-11
+	Emeraldella_brocki             0-10-0------041100001101112-1100--0-------01001000-0--0-----0-010000000110010100000000000000100110-----110010010-10
+	Emeraldella_brutoni            0-10-0------04110000110111?-1101000-000---0100??00-0--0-----0-01000000011001010000000??0?000100110-----?10010010-10
+	Eozetetes_gemelli              0-1?-0----?-??????????????????01??0-??01??01001000-0--0-----1011000000111001?100000000000101?????0-----?10010100-??
+	Flobertia_kochi                10??-0-?????????????1?????????01110-0-01??01001000-0--0-----10?200000001100??1000?000010-000?????0???????0???????0?
+	Glypharthrus_magnoculus        10??-0-???????????????????????01110-0-011100-0??00-0--0-----1?110?100011100??100000000??0000????10-----?1001000????
+	Glypharthrus_simplex           10??-0-???????????????????????01110-0-011100-0??00-0--0-----1010011000111001?10000000011?000102120-----?1001000110-
+	Glypharthrus_thomasi           10??-0-???????????????????????01110-0-001100-0??00-0--0-----10110?1000111001?100000000?00?00????20-----?1001000????
+	Glypharthrus_trispinicaudatus  10??-0-???????????????????????01110-0-01110??0??00-0--0-----1?110??000111001?100000000??0000100110-----?100?000??10
+	Gogglops_ensifer               11??-0-???????????????????????01110-0001110100??00-0--0-----10100010??111001?210?00?0010000??????0----??1000000??0-
+	Haikoucaris_ercaiensis         0-00101111001400000010---0--2001000-000---00000-00-0--0-----0-01000000011000010000000000-00000-000-----110001000-0-
+	Helmetia_expansa               0-??-0-??????4????????????????01020-010---01011-10-0--0-----0-01?0000001100002?001100000-00001-?-10011-100-----0-0-
+	Kodymirus_vagans               0-10-0------0411?0?-110?1??-1101110-0-011001001000-0--0-----0-11000000011001?10000000000000100-?20-----?10010000-0-
+	Kuamaia_lata                   0-1?-0----?-0?000??01101112-0101020-010---01011-10-0--0-----0-0100000011100002?001100000000001-0-100110100-----0-0-
+	Kwanyinaspis_maotiashanensis   0-??-0-???-???0000?01101010-1101020-010---01001000-0--0-----101100000001100102?0010000000000?0??00-----?1000000??0-
+	Liwia_convexa                  0-1?-0----?-0?000??011???1?-??0???0-???---0??0??00-0--0-----0-010000100110--010010000000???001-?-111010100-----0-0-
+	Marrella_splendens             0-10-0-00---0210-00-12---0---000--0-------00-0??00-0--0-----0-0300002000101000000000-000-00000-000-----?10200000-0-
+	Martinssonia_elongata          0-10-0-00---0500000012---0---100--0-------00-00-00-0--0-----0-01000020001000000000000000-000103100-----000-----0-0-
+	Mimetaster_hexagonalis         0-10-0-00---0310100-12---0---001000-000---00-01200-0--0-----0-0300002000101000000000-000-00000-000-----?10200000-0-
+	Misszhouia_longicaudata        0-11-0------050000101110111-110???0-000---01001210-0--0-----0-020000000100--0-021000000000-001-0-1?0000100-----0-0-
+	Naraoia_compacta               0-10-0------0500001013101121110???0-000---01001200-0--0-----0-020000001100--0-021000000000-001-0-1?0000100-----0-0-
+	Naraoia_spinosa                0-10-0------050000101101011-110???0-000---01001200-0--0-----0-000000000100--0-021000000000-001-0-1?0010100-----0-0-
+	Nebalia_bipes                  0-10-0------0500000012---0---101000-000---10-00-00-0--0-----0-01000020001000000000000000-000102100-----000-----0-0-
+	Neostrabops_martini            0-??-0-???????????????????????01110-0-00-00??0??00-0--0-----0-02000000011001?10001000000-000???0?0-??????0?????????
+	Phytophilaspis_pergamena       10??-0---????5????????????????01020-01100000-01200-0--0-----0-110000?1110000??0100000100000001-0-110001?00-----?-0-
+	Quasimodaspis_brentsae         10??-0-???????????????????????01110-0-01110100??00-0--0-----10110000001110?1?1?0000000?0-000?????0-----?1000000??0-
+	Retifacies_abnormalis          0-10-0------0410100-13---120-000--0-------01001000-0--0-----0-00000000011001010000000000-00001-0-10001-110010010-0-
+	Pygmaclypeatus_daziensis       0-10-0------0500000113---120-100--0-------01001000-0--0-----0-01000000011001010000000000-00001-0-10000-?10000010-0-
+	Saperion_glumaceum             0-1?-0----?-0?00???01101110-0001020-010---01011-10-0--0-----0-0-0001--0100--020100100000-00001-0-1?000-100-----0-0-
+	Sidneyia_inexpectans           0-10-0------0411-00-1101-10-11010011000---01201000-0--0-----0-01000000011001010000000000-000102110-----110100001-10
+	Sidneyia_minor                 0-10-0------0400000?1101-10?11010011000---01001000-0--0-----0-01000000011001010000000000-000100110-----11010000????
+	Sinoburius_lunaris             0-11-0------050000011110111-1101020-010--001001200-0--0-----0-00000021111000110000000000000001-0-100110?00-----0-0-
+	Skioldia_aldna                 0-1?-0----?-0?000??011???10-??01020-010---01011-10-0--0-----0-0-0001--0100--?20100100000-00001-0-1?000-100-----0-0-
+	Soomaspis_splendida            0-??-0---?????????????????????0???0-??0---0110??00-0--0-----0-020000100110--?11010000000-00001-0-11100-100-----0-0-
+	Squamacula_clypeata            0-10-0----?-0100-?0-10---0--1100--0-------01201000-0--0-----0-01000000011001010000000000-00001-0-10000?100-----0-0-
+	Tariccoia_arrusensis           0-??-0---?????????????????????0???0-??0---0110??00-0--0-----0-020000100110--?10010000000-00001-0-11100-100-----0-0-
+	Tegopelte_gigas                0-1?-0------0?0000??1????????001000-??0---01011-10-0--0-----0-0-0001--0100--?20100?00000-0-001-0-0?000-100-----0-0-
+	Triopus_draboviensis           0-??-0-???????????????????????0???0-000---0??0??00-0--0-----0-12?00000111001?100010011000000100110----??10200000-??
+	Uarthrus_instabilis            10??-0-???????????????????????01110-0001?10100??00-0--0-----???1000000011001?100000000?0?0001011?0-----?1001000100-
+	Xandarella_spectacullum        0-10-0------070000001110111-1101020-0110-001001200-0--0-----0-01000021011001110000000000-00000-0-00011-100-----0-0-
+	Acanthomeridion_serratum       0-10-0------050100??1100?10?11010011000---01101100-1001111100-01000000111011?1100000000010001011-0-----?10000001?0-
+	Australimicola_spriggi         0-10-0----?-0?????????????????00--0-------01001-10-0--0-----0-01?00000111001?10001000000100000-0-0-----?1000100?-0-
+	Zhiwenia_coronata              0-10-0----?-04??????1?0??1????010010000---01001000-0--0-----0-02000001111001?10001000000-00000-0-0-----?1000100?-0-
+	Luohuilinella_rarus            0-??-0---?????????????????????010010000---0??0??00-0--0-----0-01000021111001?10000000000-00000-?-?0???-??0??????-??
+	Luohuilinella_deletres         0-10-0------0400000011?0?11-1?010010000---01001200-0--0-----0-01000021111001?10000000000-00000-0-00010-?00-----?-0-
+	Haifengella_corona             0-??-0-???????????????????????01020-010---0??11-10-0--0-----0-00000000011000?20000000000-00001-0-10011-?00-----?-0-
+	Yohoia_tenuis                  0-00101110001400000010---0--1001000-000---00-0??00-0--0-----0-01?00000011000010000000000-000102110-----?10101000-0-
+	Carimersa_neptuni              0-10-0-0----052110001101011-1101000-000---00-01000-0--0-----0-110000001110000100000000100000114110-----1100?0000-0-
+	Gigoutella_mauretanica         ??10-0-0----050100101100010-1101110-?-000001001200-111100111??10000000111000021000000100000011-?-1??????00-----0-0-
+	Olenoides_serratus             1110-0-0----050000101100110-1101110-1-00000100110111111001111010000000111000021000000100000011-0-1-0011100-----0-0-
+	Eoredlichia_intermedia         1110-0------040000101100010-1101110-1-00000100110111111001111010000000111001021000010100000011-0-100001100-----0-0-
+	Protolenus                     ??10-0------050100101100110-1101110-?-000001001200-111100111??10000000111000021000000100000011-?-10000??00-----0-0-
+	Olenellus_getzi                1110-0------04????1???????????01110-1-00000100110110--0-----1010000000111010?21000000100000111-?-100000100-----0-0-
+	Habelia_optata                 0-??01001????600011110---???11011010000---00-0??00-0--0-----0-01000000011000010000000010010010-000-----110011010-0-
+	Weinbergina_opitzi             0-0-0?00?20016??011104---0--0?00--0-------01000-00-0--0-----0-010000000110000100000001000001102110-----110000100-0-
+	Mollisonia_plenovenatrix       0-0-01001?100710110?0100011-11011010000---00-00-00-0--0-----0-02000000011000010000000100010011-0-100001000-----0-0-
+	Sanctacaris_uncata             0-???100??????0000?1?0---0--1101000-0-0---0??0??00-0--0-----0-01000000011000010000000010010010??00-----110100000-0-
+	Waptia_fieldensis              0-1001000---04---01-13---0200011000-0-0---10-00-00-0--0-----0-01000020001100010000000000000010-1-0-----001-----0-0-
+	Tokummia_katalepsis            0-1001000---05---01-10---00-001???0-0-0---11000-00-0--0-----0-01000020001100010000000000000010-1-0-----001-----0-0-
+	Clypecaris_serrata             0-0-0?0008000?---?1-1?????????11000-0-0---1??00-00-0--0-----0-01000020001100010000000000000010-1-0-----001-----0-0-
+
+;
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  outgroup :  1, ingroup :  2- 72;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 115;
+
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL outgroup COLOR = (RGB 1.0 1.0 1.0) ;
+	TAXAGROUPLABEL ingroup COLOR = (RGB 1.0 1.0 1.0) ;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 115;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1773853027860;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2988504383827540242;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8834947483292036125;
+			mqVersion 381;
+			checksumv 0 3 1618633614 null  getNumChars 115 numChars 115 getNumTaxa 72 numTaxa 72   short true   bits 767   states 767   sumSquaresStatesOnly 581156.0 sumSquares 581156.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1286 703;
+			setLocation -3547 -143;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #2988504383827540242 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #2988504383827540242;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1186 631;
+					setLocation -3547 -143;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8834947483292036125 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1186 631;
+					setLocation -3547 -143;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

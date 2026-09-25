@@ -1,0 +1,262 @@
+#NEXUS
+[written Mon Oct 28 15:35:16 CDT 2024 by Mesquite  version 3.81 (build 955) at eas-f094c0.unl.edu/10.69.125.42]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=27;
+	TAXLABELS
+		Ctenocystis_utahensis Gyrocystis_platessa Gyrocystis_testudiformis Gyrocystis_cruzae Gyrocystis_badulesiensis Gyrocystis_erecta Progyrocystis_disjuncta Protocinctus_mansillaensis Elliptocinctus_barrandei Elliptocinctus_vizcainoi Sucocystis_theronensis Sucocystis_bretoni Lignanicystis_barriosensis Undatacinctus_undata Sucocystis_acrofera Undatacinctus_quadricornuta Undatacinctus_melendezi Asturicystis_jaekeli Sotocinctus_ubaghsi Trochocystites_bohemicus Trochocystoides_parvus Ludwigicinctus_truncatus Graciacystis_ambigua Bohemiacinctus_havliceki Nelegerocystis_ivantzovi Rozanovicystis_triangularis Davidocinctus_pembrokensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=60;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Ctenocystis_utahensis        011???000?0?????0000?000000000????????0020?00????????????000
+	Gyrocystis_platessa          1101110100(0 1)100000000?0000000000010012020110000001200001?1300
+	Gyrocystis_testudiformis     00011111000100000000?0000100000010012020101110001200001?1310
+	Gyrocystis_cruzae            1001?10?000100000000??000100000010012???0?00?0001200001??310
+	Gyrocystis_badulesiensis     11011102000110000000?01101011000201120?0010000001200001?1310
+	Gyrocystis_erecta            110??????00110000000???????????0201120??????00001200001??3?0
+	Progyrocystis_disjuncta      010?????100100000000?0000000000001001000200000001200001?0300
+	Protocinctus_mansillaensis   010111??200010000000?0022200000000?120??2000?0?122000011?310
+	Elliptocinctus_barrandei     (0 1)(0 1)0111010(1 2)(0 1 2)000000000022201022200201120?01100000122100011?210
+	Elliptocinctus_vizcainoi     0100?0??0100?1000000?0220102??00201120?001000001221?001??210
+	Sucocystis_theronensis       130111011(0 1)(0 1 2)010000000022201022200100121??0100000122000011?310
+	Sucocystis_bretoni           13011??111(0 1)010000000002201022200100120??0100000122000111?310
+	Lignanicystis_barriosensis   13110112011000010000022201022201101120112000000122100000?210
+	Undatacinctus_undata         100?????010010001111?0220102220000?1????0?00?00122100010?211
+	Sucocystis_acrofera          230?????010010000000?02201022200100120??01000001222100110110
+	Undatacinctus_quadricornuta  100?????010010000202?0222222220000?120??0100000122100001?211
+	Undatacinctus_melendezi      130?????010010001111?0220102220000?120??0100?0012210001??211
+	Asturicystis_jaekeli         121111?2000010000000?0000000000000?100??20000012222210110100
+	Sotocinctus_ubaghsi          100?01??0(0 1)0010000000?0000000000000?0000020000012222100110200
+	Trochocystites_bohemicus     1(0 3)(0 1)111010(1 2)(0 1)02000000002220002220000?110112000012222221111?210
+	Trochocystoides_parvus       1000?000000010000000?0022002200000?1????20000122222210110210
+	Ludwigicinctus_truncatus     101?????010010100000?0222222222000?12???000000012200001??210
+	Graciacystis_ambigua         00(0 1)1011200(0 1)000000000000022200000100000102000001022100010????
+	Bohemiacinctus_havliceki     011011??001010000000002220222200100120?010000012221000111210
+	Nelegerocystis_ivantzovi     ????????????????????????????????????????????????????????????
+	Rozanovicystis_triangularis  ????????????????????????????????????????????????????????????
+	Davidocinctus_pembrokensis   ????????????????????????????????????????????????????????????
+
+;
+
+END;
+BEGIN LABELS;
+	CHARGROUPLABEL General_Features COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Stele COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Marginal_Frame COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Operculum_&_Porta COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Dorsal_&_Ventral_Membranes COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Food_Grooves COLOR = (RGB 1.0 1.0 1.0) ;
+
+
+END;
+
+BEGIN SETS;
+	CHARPARTITION * UNTITLED  =  General_Features :  1- 3, Stele :  4- 8, Marginal_Frame :  9- 32 59- 60, Operculum_&_Porta :  33- 38, Dorsal_&_Ventral_Membranes :  39- 45, Food_Grooves :  46- 58;
+	CHARPARTITION RevBayes  =  General_Features :  1- 3, Stele :  4- 8, Marginal_Frame :  9- 32 59- 60, Operculum_&_Porta :  33- 38, Dorsal_&_Ventral_Membranes :  39- 45, Food_Grooves :  46- 58;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 9 12- 17 19 21- 32 34- 40 42- 45 54- 57 59- 60, ord:  10- 11 18 20 33 41 46- 53 58;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 60;
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 23 TEXT = 'From Zamora, Rahman & Smith 2013. The ontogeny of cinctans (stem-group Echinodermata) as revealed by a new genus, Graciacystis, from the Middle Cambrian of Spain.  Palaeontology 56(2):399-410.';
+	TEXT  TAXON = 24 TEXT = Was_Asturicystis_havliceki;
+	TEXT  TAXON = 25 TEXT = 'Uncoded: included for FBD analyses only.';
+	TEXT  TAXON = 26 TEXT = 'Uncoded: included for FBD analyses only.';
+	TEXT  TAXON = 27 TEXT = 'Uncoded: included for FBD analyses only.';
+
+	SU  C = 10 N = selected B = TRUE;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1730147717029;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2894927786314248916;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 172880876848575489;
+			tell It;
+				setSelected  10;
+				attachments ;
+			endTell;
+			mqVersion 381;
+			checksumv 0 3 3023552953 null  getNumChars 60 numChars 60 getNumTaxa 27 numTaxa 27   short true   bits 15   states 15   sumSquaresStatesOnly 6134.0 sumSquares 6134.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1463 727;
+			setLocation 80 54;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #172880876848575489 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 214;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1363 655;
+					setLocation 80 54;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #172880876848575489 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1363 655;
+					setLocation 80 54;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

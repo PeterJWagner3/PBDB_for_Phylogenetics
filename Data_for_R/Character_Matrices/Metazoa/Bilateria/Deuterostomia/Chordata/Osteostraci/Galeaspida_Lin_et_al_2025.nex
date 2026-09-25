@@ -1,0 +1,608 @@
+#NEXUS
+[written Wed Aug 07 10:10:34 CST 2024 by Mesquite  version 3.51 (build 898) at ??/10.127.0.164]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=67;
+	TAXLABELS
+		Ateleaspis_tessellata Altigibbaspis_huiqingae Anjiaspis_ericius Anjiaspis_reticularis Antiquisagittaspis_cornuta Asiaspis_expansa Bannhuanaspis_vukhuci Cyclodiscaspis_ctenus Damaspis_vartus Dongfangaspis_major Duyunolepis_paoyangensis Dunyu_longiforus Eugaleaspis_changi Falxcornus_liui Foxaspis_novemura Gantarostraspis_gengi Geraspis_rara Gumuaspis_rostrata Huananaspis_wudinensis Jiangxialepis_jiujiangensis Jiangxialepis_retrospina Jiangxialepis_rongi Kwangnanaspis_subtriangularis Laxaspis_qujingensis Lopadaspis_pinglensis Lungmenshanaspis_kiangyouensis Macrothyraspis_longicornis Meishanaspis_lehmani Microhoplonaspis_microthyris Nanpanaspis_microculus Nanningaspis_zengi Nochelaspis_maeandrine Pentathyraspis_pelta Platylomaspis_serratus Polybranchiaspis_liaojiaoshanensis Pterogonaspis_yuhaii Qingmenaspis_microculus Qingshuiaspis_junqingi Qushiaspis_elaia Rumporostralis_xikengensis Rumporostralis_shipanensis Rhegmaspis_xiphoidea Sanchaspis_magalarostrata Sanqiaspis_rostrata Shuyu_zhejiangensis Sinogaleaspis_shankouensis Sinoszechuanaspis_yanmenpaensis Stephaspis_dipteriga Tridensaspis_magnoculus Tujiaaspis_vividus Wenshanaspis_zhichangensis Wumengshanaspis_cuntianensis Xitunaspis_magnus Yongdongaspis_littoralis Yunnanogaleaspis_major Zhaotongaspis_janvieri Miaojiaaspis_dichotomus Xiushuiaspis_jiangxiensis Xiyuichthys_zhangi_ Xiyuichthys_lixiensis Deanaspis_longpingi Changxingaspis_gui Dayongaspis_hunanensis Dayongaspis_colubra Hanyangaspis_guodingshanensis Hongshanaspis_inexpectatus Dunyu_xiushanensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=73;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	CHARSTATELABELS 
+		1 Median_dorsal_opening /  absent present,
+		2 Festooned_pattern_of_sensory_canals_on_dorsal_surface_of_headshield /  absent present,
+		3 Aspidine_tubercles /  absent present,
+		4 Shape_of_headshield /  'trapezoid-like' 'triangular-like' 'oval-like' 'armet-like' 'fork-like' 'torpedo-like',
+		5 Margin_of_headshield /  serrated smooth,
+		6 Shape_of_median_dorsal_opening /  'transverse slit-like' 'oval-like' _slender_longitudinal_oval,
+		7 Slender_longitudinal_oval_median_dorsal_opening /  'not slit-like (length/width<6)' 'slit-like (length/width>6)',
+		8 'Heart-shaped median dorsal opening' /  absent present,
+		9 'Position of median dorsal opening:' /  not_subterminal subterminal,
+		10 Anterior_end_of_median_dorsal_opening /  subterminal some_distance_behind_rostral_margin_of_shield terminal,
+		11 Posterior_end_of_median_dorsal_opening /  in_front_of_or_level_with_anterior_margin_of_orbital_opening between_anterior_margin_of_orbital_opening_and_posterior_margin_of_orbital_opening posteriorly_beyond_posterior_margin_of_orbital_opening,
+		12 Size_of_orbital_openings /  large small,
+		13 Position_of_orbital_openings /  'dorsal position and close to mid-line of headshield' 'dorsal position and not close to mid-line of headshield' lateral_position ventrolaterally_placed_orbital_openings,
+		14 Cornual_process /  absent present,
+		15 Extending_trajectory_of_cornual_process /  projecting_posterolaterally projecting_laterally projecting_backward,
+		16 Portion_of_headshield_behind_cornual_process /  short long,
+		17 Position_of_cornual_process_base /  near_posterior_end_of_headshield away_from_posterior_end_of_headshield,
+		18 Spines_on_cornual_process /  absent present,
+		19 Inner_cornual_process /  present absent,
+		20 Shape_of_inner_cornual_process /  'broad leaf-shaped' 'spine-shaped',
+		21 Rostral_margin_of_headshield /  without_rostral_angle with_rostral_angle,
+		22 Rostral_process /  absent present,
+		23 Shape_of_rostral_process /  broad slender,
+		24 Spines_or_tubercles_on_margin_of_rostral_process /  absent present,
+		25 Fenestrae_on_dorsal_surface_of_headshield /  absent present,
+		26 Size_of_dorsal_fenestra /  small large,
+		27 Shape_of_dorsal_fenestra /  'slender oval-like' 'broad bean-like',
+		28 Position_of_dorsal_fenestra /  'lateral-dorsal position' dorsal_position,
+		29 Position_of_dorsal_fenestra_relative_to_orbital_opening /  'orbital opening inside, fenestra outside' 'orbital opening outside, fenestra inside',
+		30 'Median transverse canals (mtc)' /  two one more_than_two,
+		31 Short_branches_running_from_posterior_supraorbital_canal /  absent present,
+		32 Lateral_transverse_canal /  short long,
+		33 Branching_end_of_lateral_transverse_canal /  absent present,
+		34 Lateral_transverse_canals_leaving_from_infraorbital_canal /  present absent,
+		35 The_lateral_transverse_canals_leaving_from_infraorbital_canal_before_ltcd /  present absent,
+		36 Fourth_lateral_transverse_canal /  present absent,
+		37 Lateral_transverse_canals_behind_the_fourth_lateral_transverse_canal /  present absent,
+		38 Anterior_supraorbital_canal /  absent present,
+		39 Posterior_supraorbital_canal /  present absent,
+		40 'Posterior supraorbital canals meet with infraorbital canal (ifc)' /  no yes,
+		41 Posterior_supraorbital_canals /  'funnel-shaped' parallel 'V-shaped',
+		42 'Branching end of posterior supraorbital canals (soc2)' /  absent present,
+		43 'Medial dorsal canal (mdc)' /  develeped degenerated absent,
+		44 Medial_dorsal_canal_and_posterior_supraorbital_canal /  unjointed contact,
+		45 'U-shaped medial dorsal canal' /  absent present,
+		46 Portion_of_headshield_behind_dorsal_commissure_proportionally /  long short,
+		47 Dermal_postbranchial_wall /  short long,
+		48 Elongated_branchial_region /  absent present,
+		49 Number_of_branchial_fossae /  5~7_pairs 9~17_pairs more_than_20_pairs,
+		50 Maximum_width_of_headshield_placed /  posteriorly medially,
+		51 'Width/length in oval-like headshield' /  '< 1' '>1',
+		52 Nearly_parallel_lateral_margins_of_headshield /  absent present,
+		53 Broad_and_large_middle_dorsal_spine_of_headshield /  absent present,
+		54 Broad_ventral_rim /  absent present,
+		55 Unclosed_rostral_margin /  present absent,
+		56 Ornamentation_of_the_headshield /  'star-shaped tubercles' tiny_granular_tubercles coarse_granular_tubercles 'polygon-shaped tubercles' central_big_tubercles_surronded_by_radially_arranged_tubercles,
+		57 Pineal_organ /  on_front_of_or_level_with_posterior_margin_of_orbital_opening behind_posterior_margin_of_orbital_opening,
+		58 'Ratio between pre-pineal length and post-pineal length in mid-line of cephalic shield larger than 1.0' /  no yes,
+		59 Preorbital_commissure /  absent present,
+		60 Ventrally_curved_branchial_fossae /  absent present,
+		61 Ventral_rim_of_headshield /  absent present,
+		62 'Sickle-like complex of cornual and inner cornual processes (the angle of the cornual and inner cornual processes is equal to or more than 90 degrees)' /  absent present,
+		63 The_inner_cornual_process_exceeds_the_posterior_edge_of_the_cornual_process_in_the_galeaspids_with_triangular_headshields /  absent present,
+		64 Median_dorsal_ridge_or_spine_of_headshield /  absent present,
+		65 Central_canal /  absent present,
+		66 Dermal_bone_of_headshield /  no_less_than_1_mm_in_thickness less_than_1_mm_in_thickness,
+		67 Vestige_of_median_transverse_canal /  absent _present,
+		68 Medial_dorsal_canal_and_posterior_supraorbital_canal_forming_a_smooth_curve /  no yes,
+		69 Orientation_of_boundary_between_branchial_region_and_pericardinal_region /  horizontal oblique,
+		70 Long_divison_of_headshield_in_dorsal_aspect_posterior_to_the_branchial_region /  absent present,
+		71 'Length of post-branchial division' /  long short,
+		72 'Inter-branchial region' /  absent present,
+		73 'Shape of the inter-branchial region' /  cylinder triangle ; 
+	MATRIX
+	Ateleaspis_tessellata               00001--0???000----??00--0----00??????01???0?0??000-??01????010?0??0?0????
+	Altigibbaspis_huiqingae             111211-0010010----0000--0----1011000010?20100001?1000013???010?11?0???-??
+	Anjiaspis_ericius                   1111020001010100000100--0----?000??01?00100?110000-0011101?010110?0???-??
+	Anjiaspis_reticularis               1111020001000100000110--0----?00000??0001001110000-001110110100???0???-??
+	Antiquisagittaspis_cornuta          111411-001002101100011000----10110101000212-0001?0-01011???010?10?0???-??
+	Asiaspis_expansa                    111311-001011110000111100----10?011?1000202-000110-00010???010?00?0?10-10
+	Bannhuanaspis_vukhuci               111211-0010010----0000--0----10110000001202-00011100001????010?00?0???-??
+	Cyclodiscaspis_ctenus               111201-0010020----0000--0----1?11??0??0?0???0001?110001110?010?11?0???-??
+	Damaspis_vartus                     111211-0010010----0000--0----11110000001201000011110?011101010?11?0???-??
+	Dongfangaspis_major                 111211-0010010----0000--0----11110000001202-00012100001?10?010?00?0?10-10
+	Duyunolepis_paoyangensis            111211-0010110----1-00--0----?0??????0???????0012100001010?010?0?????0-??
+	Dunyu_longiforus                    1111121001201120001-00--0----101111111000001110000-00013110010?00?01??-??
+	Eugaleaspis_changi                  1111121001101100001-00--0----101011111001001110000-0001?110010?0010100-0-
+	Falxcornus_liui                     1111121001101100000010--0----1?101111?00100111???0-00011110??110010?00-0-
+	Foxaspis_novemura                   111201-0010010----1-00--0----?????????????????0121000011???01??0????10-10
+	Gantarostraspis_gengi               111411-001102???????11010----?0110101000212-000110-10011???010?00?????-??
+	Geraspis_rara                       111111-001001100001-00--0----?0101101000002-0?0010-0001110?010?0????00-0-
+	Gumuaspis_rostrata                  111411-0010010----0011000----1010010?000202-0001?10000100??010?00?0?00-0-
+	Huananaspis_wudinensis              111311-10101211?001011100----?0???????????????01?0-00011??0010?1??????-??
+	Jiangxialepis_jiujiangensis         1111120002001100000100--0----1?000001?00002-01???0-01002000?10010?0?00-0-
+	Jiangxialepis_retrospina            1111120002001100000100--0----1?000001?00002-01???0-01003000??0010?0???-??
+	Jiangxialepis_rongi                 1111020002001100010100--0----1?000001000002-010000-01004000010010?0?00-0-
+	Kwangnanaspis_subtriangularis       111111-001001100001-00--0----10?011?10????2-0?0010-0?010???010?00?0???-??
+	Laxaspis_qujingensis                111211-0010010---?0000--0----11110000001201000011110?010101010?11?0?10-11
+	Lopadaspis_pinglensis               111211-0010010---?1-00--0----10110101001202-000121000010???010?10?0?10-10
+	Lungmenshanaspis_kiangyouensis      111311-101011110001-111010000?0???????????????0110-000110??010?0??????-??
+	Macrothyraspis_longicornis          111311-101012110101-11101111110???1??000202-000110-000111??010?1??0???-??
+	Meishanaspis_lehmani                1111120002001100000100--0----10000001?0000??010000-00014000010000?0?00-0-
+	Microhoplonaspis_microthyris        111211-0010010---?0000--10000?0??????0???????0011100001????010?0????10-1?
+	Nanpanaspis_microculus              111311-00101111110??11100----10101101000202-00011100?01????01??00?0???-??
+	Nanningaspis_zengi                  11141???01???0---?1011000----????????????????????100?112???010?0??????-??
+	Nochelaspis_maeandrine              1111121001001100000000--0----10101111?001001110000-00010100010100?01??-??
+	Pentathyraspis_pelta                111211-0010110---?0010--1000010?0?101100202-000111000010???010?00?0?10-1?
+	Platylomaspis_serratus              11140???01???0---?1011000----???????????????????0100?112???010?0??????-??
+	Polybranchiaspis_liaojiaoshanensis  111211-0010010---?0000--0----111000000012010000111000010101010?11?0?10-11
+	Pterogonaspis_yuhaii                1111121001101110000011100----101011111001001110000-000111?0011100111??-??
+	Qingmenaspis_microculus             111311-001010110001-111011110?0???????????????01?0-0001?1??010?0??????-??
+	Qingshuiaspis_junqingi              1111120002001100000100--0----10000001000002-010000-00012000010010?0???-??
+	Qushiaspis_elaia                    111411-0011?2120100111100----?011??01?0?20????0110-0001411?010?0??????-??
+	Rumporostralis_xikengensis          1111120002001100000100--0----201010011002001110000-00002010010000?0?00-0-
+	Rumporostralis_shipanensis          1111120002001100000100--0----????????????????10000-000020??01000????00-0-
+	Rhegmaspis_xiphoidea                111511-0011130---?1-11110----?0???????0?20????0110-1001310?100?0??????-??
+	Sanchaspis_magalarostrata           111411-001001101100011000----10110101001212-000110-010111?1011?11?0?10-11
+	Sanqiaspis_rostrata                 111411-001002120001-11000----10?011??000202-000110-10011???010?00?0?10-11
+	Shuyu_zhejiangensis                 1111120002001100000100--0----10100001?00002-010000-00011000010000?0?00-0-
+	Sinogaleaspis_shankouensis          1111120001101100000100--0----201000011002001110000-00012101010001?0000-0-
+	Sinoszechuanaspis_yanmenpaensis     111311-101012110111-111011111?0?01101000202-0001?0-00011??1010?0??????-??
+	Stephaspis_dipteriga                111301-001011110101-1110100001???01?0000202-000??0-00011???010?00?0?10-10
+	Tridensaspis_magnoculus             111112100110111000??11100----10??????100?001110000-00011??0011?0011100-0-
+	Tujiaaspis_vividus                  1111120001101100000000--0----21010001000011?010000-00012??101000??????-??
+	Wenshanaspis_zhichangensis          111411-001002100010000--0----20110100000212-000120-0001100?010?01?0?10-10
+	Wumengshanaspis_cuntianensis        111511-001?03120000111110----?0???????????????0110-1001210?100?0????10-11
+	Xitunaspis_magnus                   1111121001101100001-00--0----10101111100000111???0-00003110??0?0101???-??
+	Yongdongaspis_littoralis            1111120001101100000000--0----101000111001001110000-00011111010001?10??-??
+	Yunnanogaleaspis_major              1111120001001100000000--0----101011111001001110000-00011100010000?01??-??
+	Zhaotongaspis_janvieri              111411-001002101110100--0----101101010002?2-000120-00011???01??00?0?10-10
+	Miaojiaaspis_dichotomus             1111120001101100000100--0----100100010000010010000-0001110001000??????-??
+	Xiushuiaspis_jiangxiensis           111200-0100010----0000--0----0000010001???2-00100100001100001??10?1?0100-
+	Xiyuichthys_zhangi_                 111201-0100010----0000--0----0000000001???2-001001?00011??001???0?1?0110-
+	Xiyuichthys_lixiensis               111201-0100010----0000--0----0000000001???2-001001?00012??001???0?1?0110-
+	Deanaspis_longpingi                 1?121200100010----0000--0----????????????????0100100?01100?01???????0100-
+	Changxingaspis_gui                  111200-0100010----0000--0----00010000000002-00100100001100001??11?1?0110-
+	Dayongaspis_hunanensis              111101-010000100000000--0----00000000?1???2-000000-0?010?00010?00?1?00-0-
+	Dayongaspis_colubra                 111101-010000100000000--0----00000000100002-000000-0?011?00010?00?1?00-0-
+	Hanyangaspis_guodingshanensis       111010-0100020----0000--0----0000000001???2-000?00-0?010?00010?10?1?00-0-
+	Hongshanaspis_inexpectatus          111010-0100020----0000--0----0000000001???2-000?00-0?011??0010??0?1?00-0?
+	Dunyu_xiushanensis                  1111121001201120001-00--0----101011111000001110000-00013110010?00001?????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 73;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 73;
+END;
+
+BEGIN NOTES;
+
+	SUT   TAXON = 57 NAME = color INTEGER = 9;
+	SUT   TAXON = 58 NAME = color INTEGER = 5;
+	SUT   TAXON = 59 NAME = color INTEGER = 5;
+	SUT   TAXON = 60 NAME = color INTEGER = 5;
+	SUT   TAXON = 61 NAME = color INTEGER = 5;
+	SUT   TAXON = 65 NAME = color INTEGER = 7;
+	SUT   TAXON = 66 NAME = color INTEGER = 7;
+
+	SU  T = 65 C = 1 N = color I = 7;
+	SU  T = 66 C = 1 N = color I = 7;
+
+	SU  T = 65 C = 2 N = color I = 7;
+	SU  T = 66 C = 2 N = color I = 7;
+
+	SU  T = 65 C = 3 N = color I = 7;
+	SU  T = 66 C = 3 N = color I = 7;
+
+	SU  T = 65 C = 4 N = color I = 7;
+	SU  T = 66 C = 4 N = color I = 7;
+
+	SU  T = 65 C = 5 N = color I = 7;
+	SU  T = 66 C = 5 N = color I = 7;
+
+	SU  T = 65 C = 6 N = color I = 7;
+	SU  T = 66 C = 6 N = color I = 7;
+
+	SU  T = 65 C = 7 N = color I = 7;
+	SU  T = 66 C = 7 N = color I = 7;
+
+	SU  T = 65 C = 8 N = color I = 7;
+	SU  T = 66 C = 8 N = color I = 7;
+
+	SU  T = 65 C = 9 N = color I = 7;
+	SU  T = 66 C = 9 N = color I = 7;
+
+	SU  T = 65 C = 10 N = color I = 7;
+	SU  T = 66 C = 10 N = color I = 7;
+
+	SU  T = 65 C = 11 N = color I = 7;
+	SU  T = 66 C = 11 N = color I = 7;
+
+	SU  T = 65 C = 12 N = color I = 7;
+	SU  T = 66 C = 12 N = color I = 7;
+
+	SU  T = 65 C = 13 N = color I = 7;
+	SU  T = 66 C = 13 N = color I = 7;
+
+	SU  T = 65 C = 14 N = color I = 7;
+	SU  T = 66 C = 14 N = color I = 7;
+
+	SU  T = 65 C = 15 N = color I = 7;
+	SU  T = 66 C = 15 N = color I = 7;
+
+	SU  T = 65 C = 16 N = color I = 7;
+	SU  T = 66 C = 16 N = color I = 7;
+
+	SU  T = 65 C = 17 N = color I = 7;
+	SU  T = 66 C = 17 N = color I = 7;
+
+	SU  T = 65 C = 18 N = color I = 7;
+	SU  T = 66 C = 18 N = color I = 7;
+
+	SU  T = 65 C = 19 N = color I = 7;
+	SU  T = 66 C = 19 N = color I = 7;
+
+	SU  T = 65 C = 20 N = color I = 7;
+	SU  T = 66 C = 20 N = color I = 7;
+
+	SU  T = 65 C = 21 N = color I = 7;
+	SU  T = 66 C = 21 N = color I = 7;
+
+	SU  T = 65 C = 22 N = color I = 7;
+	SU  T = 66 C = 22 N = color I = 7;
+
+	SU  T = 65 C = 23 N = color I = 7;
+	SU  T = 66 C = 23 N = color I = 7;
+
+	SU  T = 65 C = 24 N = color I = 7;
+	SU  T = 66 C = 24 N = color I = 7;
+
+	SU  T = 65 C = 25 N = color I = 7;
+	SU  T = 66 C = 25 N = color I = 7;
+
+	SU  T = 65 C = 26 N = color I = 7;
+	SU  T = 66 C = 26 N = color I = 7;
+
+	SU  T = 65 C = 27 N = color I = 7;
+	SU  T = 66 C = 27 N = color I = 7;
+
+	SU  T = 65 C = 28 N = color I = 7;
+	SU  T = 66 C = 28 N = color I = 7;
+
+	SU  T = 65 C = 29 N = color I = 7;
+	SU  T = 66 C = 29 N = color I = 7;
+
+	SU  T = 65 C = 30 N = color I = 7;
+	SU  T = 66 C = 30 N = color I = 7;
+
+	SU  T = 65 C = 31 N = color I = 7;
+	SU  T = 66 C = 31 N = color I = 7;
+
+	SU  T = 65 C = 32 N = color I = 7;
+	SU  T = 66 C = 32 N = color I = 7;
+
+	SU  T = 65 C = 33 N = color I = 7;
+	SU  T = 66 C = 33 N = color I = 7;
+
+	SU  T = 65 C = 34 N = color I = 7;
+	SU  T = 66 C = 34 N = color I = 7;
+
+	SU  T = 65 C = 35 N = color I = 7;
+	SU  T = 66 C = 35 N = color I = 7;
+
+	SU  T = 65 C = 36 N = color I = 7;
+	SU  T = 66 C = 36 N = color I = 7;
+
+	SU  T = 65 C = 37 N = color I = 7;
+	SU  T = 66 C = 37 N = color I = 7;
+
+	SU  T = 65 C = 38 N = color I = 7;
+	SU  T = 66 C = 38 N = color I = 7;
+
+	SU  T = 65 C = 39 N = color I = 7;
+	SU  T = 66 C = 39 N = color I = 7;
+
+	SU  T = 65 C = 40 N = color I = 7;
+	SU  T = 66 C = 40 N = color I = 7;
+
+	SU  T = 65 C = 41 N = color I = 7;
+	SU  T = 66 C = 41 N = color I = 7;
+
+	SU  T = 65 C = 42 N = color I = 7;
+	SU  T = 66 C = 42 N = color I = 7;
+
+	SU  T = 65 C = 43 N = color I = 7;
+	SU  T = 66 C = 43 N = color I = 7;
+
+	SU  T = 65 C = 44 N = color I = 7;
+	SU  T = 66 C = 44 N = color I = 7;
+
+	SU  T = 65 C = 45 N = color I = 7;
+	SU  T = 66 C = 45 N = color I = 7;
+
+	SU  T = 65 C = 46 N = color I = 7;
+	SU  T = 66 C = 46 N = color I = 7;
+
+	SU  T = 65 C = 47 N = color I = 7;
+	SU  T = 66 C = 47 N = color I = 7;
+
+	SU  T = 65 C = 48 N = color I = 7;
+	SU  T = 66 C = 48 N = color I = 7;
+
+	SU  T = 65 C = 49 N = color I = 7;
+	SU  T = 66 C = 49 N = color I = 7;
+
+	SU  T = 65 C = 50 N = color I = 7;
+	SU  T = 66 C = 50 N = color I = 7;
+
+	SU  T = 65 C = 51 N = color I = 7;
+	SU  T = 66 C = 51 N = color I = 7;
+
+	SU  T = 65 C = 52 N = color I = 7;
+	SU  T = 66 C = 52 N = color I = 7;
+
+	SU  T = 65 C = 53 N = color I = 7;
+	SU  T = 66 C = 53 N = color I = 7;
+
+	SU  T = 65 C = 54 N = color I = 7;
+	SU  T = 66 C = 54 N = color I = 7;
+
+	SU  T = 65 C = 55 N = color I = 7;
+	SU  T = 66 C = 55 N = color I = 7;
+
+	SU  T = 65 C = 56 N = color I = 7;
+	SU  T = 66 C = 56 N = color I = 7;
+
+	SU  T = 65 C = 57 N = color I = 7;
+	SU  T = 66 C = 57 N = color I = 7;
+
+	SU  T = 65 C = 58 N = color I = 7;
+	SU  T = 66 C = 58 N = color I = 7;
+
+	SU  T = 65 C = 59 N = color I = 7;
+	SU  T = 66 C = 59 N = color I = 7;
+
+	SU  T = 65 C = 60 N = color I = 7;
+	SU  T = 66 C = 60 N = color I = 7;
+
+	SU  T = 65 C = 61 N = color I = 7;
+	SU  T = 66 C = 61 N = color I = 7;
+
+	SU  T = 65 C = 62 N = color I = 7;
+	SU  T = 66 C = 62 N = color I = 7;
+
+	SU  T = 65 C = 63 N = color I = 7;
+	SU  T = 66 C = 63 N = color I = 7;
+
+	SU  T = 65 C = 64 N = color I = 7;
+	SU  T = 66 C = 64 N = color I = 7;
+
+	SU  T = 65 C = 65 N = color I = 7;
+	SU  T = 66 C = 65 N = color I = 7;
+
+	SU  T = 65 C = 66 N = color I = 7;
+	SU  T = 66 C = 66 N = color I = 7;
+
+	SU  T = 65 C = 67 N = color I = 7;
+	SU  T = 66 C = 67 N = color I = 7;
+
+	SU  T = 65 C = 68 N = color I = 7;
+	SU  T = 66 C = 68 N = color I = 7;
+
+	SU  T = 65 C = 69 N = color I = 7;
+	SU  T = 66 C = 69 N = color I = 7;
+
+	SU  T = 65 C = 70 N = color I = 7;
+	SU  T = 66 C = 70 N = color I = 7;
+
+	SU  T = 65 C = 71 N = color I = 7;
+	SU  T = 66 C = 71 N = color I = 7;
+
+	SU  T = 65 C = 72 N = color I = 7;
+	SU  T = 66 C = 72 N = color I = 7;
+
+	SU  T = 65 C = 73 N = color I = 7;
+	SU  T = 66 C = 73 N = color I = 7;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1722996634413;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5397378155903800296;
+			tell It;
+				setSelected  33;
+				setDefaultOrder  0 53 50 1 2 3 4 54 6 8 9 62 42 47 56 10 11 38 13 58 48 59 14 15 16 17 18 19 20 21 37 39 22 36 23 41 24 49 46 28 44 45 25 26 27 29 30 35 40 60 31 32 52 51 33 34 61 71 64 68 69 5 7 55 12 66 65;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6771120034037206001;
+			tell It;
+				setDefaultOrder  0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 52 53 54 55 56 57 58 59 60 61 62 63 67 64 65 66 68 69 70 71 72 73;
+				attachments ;
+			endTell;
+			mqVersion 351;
+			checksumv 0 3 348813780 null  getNumChars 73 numChars 73 getNumTaxa 67 numTaxa 67   short true   bits 63   states 63   sumSquaresStatesOnly 15790.0 sumSquares 15790.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 55;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1600 873;
+			setLocation -8 0;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6771120034037206001 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 306;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1545 801;
+					setLocation -8 0;
+					setFont SanSerif;
+					setFontSize 18;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+					colorRowNames  #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+					colorColumnNames  #mesquite.charMatrices.NoColor.NoColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1545 801;
+						setLocation -8 0;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #6771120034037206001 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1545 801;
+					setLocation -8 0;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

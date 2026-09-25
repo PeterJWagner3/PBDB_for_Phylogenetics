@@ -1,0 +1,339 @@
+#NEXUS
+[written Thu Dec 04 13:56:42 CST 2025 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.73.207.176]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=27;
+	TAXLABELS
+		Anglaspis_heintzi Nahanniaspis_mackenziei Anchipteraspis_crenulata Canadapteraspis_alocostomata Clavulaspis_finis Cosmaspis_transversa Doryaspis_nathorsti Drepanaspis_gemuendenensis Ecphymaspis_idahoensis Errivaspis_waynensis Europrotaspis_crenulata Gigantaspis_laticephala Gigantaspis_minima Larnovaspis_goujeti Loricopteraspis_dairydinglensis Mitraspis_cracens Panamintaspis_snowi Proteraspis_bucherei Protopteraspis_vogti Rachiaspis_pteriga Rhinopteraspis_crouchi Scutellaspis_wilsoni Stegobranchiaspis_baringensis Tuberculaspis_elyensis Unarkaspis_schultzei Xylaspis_prima Zascinaspis_carmani 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=54;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 Position_of_the_branchial_opening,
+		2 Delimitation_of_the_branchial_opening,
+		3 Orientation_of_the_branchial_openings,
+		4 Width_of_the_branchial_lamella,
+		5 Organization_of_ornamentation_on_the_dorsal_plate,
+		6 Ornamentation_showing_the_primordium_of_the_dorsal_plate,
+		7 Ornamentation_type,
+		8 Proportions_of_dorsal_spine,
+		9 Vertical_extension_of_dorsal_spine,
+		10 Cornual_plates,
+		11 Width_of_cornual_plates,
+		12 Delimitation_of_the_orbit,
+		13 Orbital_area,
+		14 Median_process_of_the_orbital_plate,
+		15 Posterior_margin_of_the_orbital_plate_in_contact_with_the_dorsal_plate,
+		16 Anterior_process_of_the_orbital_plate,
+		17 'Rostro-orbital contact of rostral margin with the orbital plate',
+		18 Length_of_the_posterior_process_of_the_orbital_plate,
+		19 'Orbito-branchial contact of the branchial and orbital plates',
+		20 Position_of_the_pineal_plate_or_macula,
+		21 Pineal_plate_shape,
+		22 Primordium_of_the_pineal_plate,
+		23 Anterior_margin_of_the_pineal_plate,
+		24 'Pineal-orbital contact',
+		25 Rostral_folds_on_the_orbital_plates,
+		26 'Rostro-pineal contact',
+		27 Proportions_of_the_rostral_area,
+		28 Shape_of_rostral_area,
+		29 Number_of_plates_on_dorsal_shield,
+		30 Contact_between_branchial_and_dorsal_plates,
+		31 Lateral_margins_of_the_dorsal_plate,
+		32 Posterior_margin_of_the_dorsal_plate,
+		33 Contact_between_posterior_and_lateral_margins_of_the_dorsal_plate,
+		34 Anterior_margin_of_the_dorsal_plate,
+		35 Aspect_of_transverse_commissures_of_the_dorsal_plate,
+		36 Anterior_transverse_commissure_pattern,
+		37 Second_pair_of_transverse_commissures,
+		38 Pattern_of_posterior_transverse_commissures,
+		39 Continuity_of_transverse_commissures_between_the_median_dorsal_canals,
+		40 Anterior_part_of_the_medial_dorsal_canals,
+		41 Prolongation_of_the_medial_dorsal_canals,
+		42 Contact_between_the_anterior_transverse_commissures_and_the_lateral_dorsal_canal,
+		43 Position_of_the_lateral_dorsal_canal_,
+		44 'Posterior prolongation of the supra-orbital canals',
+		45 'Posterior part of the supra-orbital canals',
+		46 'Pattern of each supra-orbital canal',
+		47 Canal_in_the_pineal_macula_or_plate,
+		48 Pattern_of_the_pineal_or_postpineal_canal,
+		49 Orogonial_plates,
+		50 Posterior_contact_of_the_oral_plates,
+		51 Ventral_lamella_lateral_brim_when_reduced_of_the_rostral_plate,
+		52 Position_of_the_postoral_canal,
+		53 Complexity_of_the_squamation,
+		54 Proportions_of_lateral_scales ; 
+	MATRIX
+	Anglaspis_heintzi                00000000-0-00-----2000---00000311-00000100102100000110
+	Nahanniaspis_mackenziei          00000000-0-00-----2000---00000311-0000010??0210??00?10
+	Anchipteraspis_crenulata         0002112311011001022000-0000012311220001030201100??1???
+	Canadapteraspis_alocostomata     000012210211210001011102120121200210122021212100??21??
+	Clavulaspis_finis                ????123????1221??0?22?111100201210????????????????????
+	Cosmaspis_transversa             1110121223-122010012211001002011111000?100?021??011?01
+	Doryaspis_nathorsti              00001210-2112020110211010102210002100121002???00111011
+	Drepanaspis_gemuendenensis       11011210-30120-2-1022110000022321010001000-00201?-?000
+	Ecphymaspis_idahoensis           011?1231?211220010?221011100201210????????????????????
+	Errivaspis_waynensis             000012210201211011022111011121300010022101012011012101
+	Europrotaspis_crenulata          11101221130122000012210111012012111100?0210???1???1?01
+	Gigantaspis_laticephala          010112011201210001022211110021211011012110211211011001
+	Gigantaspis_minima               010112011201210202022211110021211011112100112111012101
+	Larnovaspis_goujeti              00001221021120100101211111012122001012?011212111??2???
+	Loricopteraspis_dairydinglensis  000012211201211001022102110021220010022001002011011101
+	Mitraspis_cracens                011?12211??1200000?11110121120320010022021212000???1??
+	Panamintaspis_snowi              010012210201210000022101120121000011102111112111???10?
+	Proteraspis_bucherei             1110122220-122000012211111002012111100?110201111??1?01
+	Protopteraspis_vogti             000011211201200101011100120021320011122030200200101101
+	Rachiaspis_pteriga               000211?301011001022000-000001230022000?03020??00??11??
+	Rhinopteraspis_crouchi           0000122102012110110221110111213100101120211120110121??
+	Scutellaspis_wilsoni             111?1231?0-12210100221121100201210????????????????????
+	Stegobranchiaspis_baringensis    000211210201200112021101020022100010122110211110011101
+	Tuberculaspis_elyensis           111?123113-122000001210212002012111000?110212111??1??1
+	Unarkaspis_schultzei             0100120102112001120221010201210000100121111112?0??2???
+	Xylaspis_prima                   11111210-0-12101120221010100211111111101102002111?10??
+	Zascinaspis_carmani              0100122223012201001221011200201101????????0122110110?1
+
+;
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL outgroup COLOR = (RGB 1.0 1.0 1.0) ;
+	TAXAGROUPLABEL ingroup COLOR = (RGB 1.0 1.0 1.0) ;
+
+	CHARGROUPLABEL Branchial COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Dorsal COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Cornual COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Orbital COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Pineal COLOR = (RGB 1.0 1.0 1.0) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  outgroup :  1- 2, ingroup :  3- 27;
+
+	CHARPARTITION * UNTITLED  =  Branchial :  1- 4, Dorsal :  5- 10, Cornual :  11- 12, Orbital :  13- 20, Pineal :  21- 25;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 54;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 54;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1764878202606;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5315656881204938486;
+			tell It;
+				setSelected  19;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4743614312961983890;
+			mqVersion 381;
+			checksumv 0 3 3853354357 null  getNumChars 54 numChars 54 getNumTaxa 27 numTaxa 27   short true   bits 15   states 15   sumSquaresStatesOnly 8096.0 sumSquares 8096.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1144 714;
+			setLocation -1473 -158;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #5315656881204938486 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #5315656881204938486;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1044 642;
+					setLocation -1473 -158;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4743614312961983890 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1044 642;
+					setLocation -1473 -158;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #4743614312961983890 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1044 642;
+					setLocation -1473 -158;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

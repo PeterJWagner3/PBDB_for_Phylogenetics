@@ -1,0 +1,313 @@
+#NEXUS
+[written Sat May 09 20:57:03 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/192.168.1.75]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=34;
+	TAXLABELS
+		Cheirolepis_canadensis Limnomis_delaneyi Mimipiscis_toombsi Moythomasia_lineata Aeduella_blainvillei Amblypterus_latus Amelangia_ornata Bourbonnella_fourrieri Bourbonnella_guilloti Bourbonnella_hirsuta Bourbonnella_jocelynae cf._Bourbonnella_sp._KUVP_85296 'Bourbonnella sp. POL-F 1994/1, ROK/6)' Briveichthys_chantepieorum Canobius_ramsayi Decazella_vetteri Elonichthys_fritschi Elonichthys_germari Igornella_montcellensis Igornichthys_bohemicus Neslovicella_elongata Neslovicella_rzehaki '''Otovice taxon''' Paramblypterus_decorus Paramblypterus_duvernoy Paramblypyerus_rohani Paramblypterus_vratislaviensis Platysella_descusi Platysella_lallyi Platysella_poplinae Progyrolepis_heyleri Puertollanichthys_ritchiei Spinarichthys_dispersus Westollia_crassa 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "X30871_Taxonomic_review__ontogeny_and_phylogeny_of_the_aeduellids_from_the_Upper_Carboniferous_Decazeville_Basin__Aveyron__France__morphobank.nex"';
+	DIMENSIONS  NCHAR=112;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	CHARSTATELABELS 
+		1 Body_proportions /  'Elongated body (Length/Depth ratio >3)' 'Deep body (Length/Depth ratio <3)',
+		2 'Skull/Body proportions' /  'Large skull (Body/Skull length ratio < 5)' 'Small skull (Body/Skull length ratio > 5)',
+		3 Skull_proportions /  'Long (Length/Depth ratio >0.9)' 'Depth (Length/Depth ratio >0.9)',
+		4 Orbit_proportions /  'Small orbits (Skull/Orbit length ratio > 3.5)' 'Large orbits (Skull/Orbit length ratio < 3.5)',
+		5 Gape_directed_slightly_upward /  No Yes,
+		6 Caudal_fin_proportions /  'Short caudal fin (Body/Caudal fin length ratio >3.5)' 'Large caudal fin (Body/Caudal fin length ratio <3.5)',
+		7 Ossification_of_the_palate_bones_and_coronoid /  Palatal_bones_and_coronoid_ossified Palatal_bones_and_coronoid_with_little_or_no_ossification,
+		8 Posterior_ascending_process_of_the_parasphenoid /  Absent 'Present with an angle <80°' 'Present with an angle >80°',
+		9 Presence_of_the_premaxilla /  Yes No,
+		10 Premaxilla_proportions /  'Dorso-ventrally elongated (Length/Depth <1)' 'Antero-posteriorly elongated (Length/Depth >1)',
+		11 Premaxilla_contacts_the_anterior_inferior_infraorbital /  Yes No,
+		12 Premaxilla_contribution_to_the_orbit /  No Yes,
+		13 Presence_of_the_rostral /  Yes No,
+		14 'Number of postrostral(s)' /  4 2 1 0,
+		15 Postrostral_shape /  Rectangular Pentagonal Hexagonal,
+		16 Postrostral_ornamenation /  Long_ridges Tubercles_and_short_ridges,
+		17 Postrostral_anterior_margin_shape /  Straight 'V-shaped',
+		18 Small_posterior_process_of_the_postrostral /  Absent Present,
+		19 'Nasal bones (Nasal, Preorbital) ornamentation' /  Ridges Tubercles,
+		20 'Nasal (Nasal, Preorbital) bones with a notch' /  Yes No,
+		21 Nasal_bones_ornamentation_distinct_from_the_other_skull_bones /  No Yes,
+		22 Skull_roof_ornamentation /  Ridges Knobs Flat_tubercles,
+		23 Pineal_foramen /  Present Absent,
+		24 Parietal_proportions /  'Elongated (Length/Depth ratio between 1,5 and 2,5)' 'Short (Length/Depth ratio <1,5)' 'Very elongated (Length/Depth ratio >2,5)',
+		25 Parietal_ventral_margin_shape /  Straight 'V-shaped or with a notch',
+		26 Interparietal_suture_shape /  Straight Lobed_or_sinusoidal,
+		27 Parietal_and_Postparietal_proportions /  'Parietal slightly smaller or larger than the Postparietal (Parietal/Postparietal length ratio <1,2)' 'Parietal larger than the (Postparietal (Parietal/Postparietal length ratio >1,2)',
+		28 Postparietal_proportions /  'Rectangular-shaped elongated antero-posteriorly (Length/Depth ratio >1,2)' 'Square-shaped (Length/Depth ratio between 0,8 and 1,2)' 'Rectangular-shaped elongated dorso-ventrally (Length/Depth ratio <0,8)',
+		29 Postparietal_ventral_margin_shape /  Straight Concave 'V-shaped or oblique',
+		30 Pit_lines_number_in_the_postparietal /  3 2,
+		31 Course_of_the_supraorbital_canal /  From_the_parietal_to_the_postparietal From_the_parietal_to_the_supratemporal Stopping_in_the_parietal,
+		32 'Dermosphenotic/Intertemporo-dermosphenotic reaching the nasal bones (Nasal, Preorbital)' /  Yes No,
+		33 'Dermosphenotic/Intertemporo-dermosphenotic posteroventral process' /  Present Absent,
+		34 'Dermosphenotic and Dermopterotic (Supratemporal) proportions' /  'Dermosphenotic/Intertemporo-dermosphenotic larger than the Supratemporal (Dermosphenotic/Supratemporal length ratio >1)' 'Dermosphenotic/Intertemporo-dermosphenotic smaller than the Supratemporal (Dermosphenotic/Supratemporal length ratio <1)',
+		35 Supratemporal_ventral_process /  Absent Present,
+		36 Supratemporal_posterior_process /  Absent Present,
+		37 Contact_of_the_supratemporal_with_the_postparietal /  All_the_medial_margin_of_the_supratemporal_is_in_contact_with_the_postparietal The_two_posterior_thirds_of_the_medial_margin_of_the_supratemporal_is_in_contact_with_the_postparietal The_posterior_half_of_the_medial_margin_of_the_supratemporal_is_in_contact_with_the_postparietal,
+		38 Accessory_extrascapular_number /  0 2 4,
+		39 Extrascapular_number /  2 3 4 '>4',
+		40 Number_of_sclerotic_ring_elements /  4 5 'Absent or poorly/not ossified',
+		41 'Number of ventral infraorbital(s) (including the lacrymal)' /  1 '3-5',
+		42 Ventral_infraorbital_posterior_and_jugal_proportions /  'Ventral infraorbital posterior smaller than the jugal (Ventral infraorbital posterior/Jugal length ratio <1)' 'Ventral infraorbital posterior larger than the jugal (Ventral infraorbital posterior/Jugal length ratio >1)',
+		43 Jugal_shape /  'L-shaped' 'Rectangular antero-posteriorly elongated',
+		44 'Shape of the antero-dorsal margin of the L-shaped jugal' /  Concave Oblique,
+		45 Number_of_infraorbital_posterior /  0 1 2 3 5,
+		46 'Number of suborbital(s) (including the spiracular)' /  0 1 2 3 '4-6' '8-9' '>9',
+		47 Preoperculum_inclination /  'Preoperculum inclined ventro-anteriorly (angle with body axis <50°)' 'Preoperculum erected (angle with body axis between 50° and 110°)',
+		48 Preoperculum_extension /  Preoperculum_reaching_at_least_the_level_of_the_third_of_the_anterior_margin_of_the_operculum Preoperculum_reaching_less_than_the_level_of_the_third_of_the_anterior_margin_of_the_operculum,
+		49 Preoperculum_reaching_the_supratemporal /  No Yes,
+		50 Maxilla_proportions /  'Deep maxilla (Length/Depth ratio <2,8)' 'Gracile maxilla (Length/Depth ratio >2,8)',
+		51 Maxilla_ornamentation /  Ridges Flat_tubercles No,
+		52 Maxillary_plate_shape /  'Crescent-shaped' 'Rectangular-shaped' 'Oval-shaped' 'Triangular-shaped',
+		53 Maxillary_plate_contribution_to_the_maxilla_length /  'Medium-sized maxillary plate (Maxilla/Maxillary plate length ratio between 2,3 and 1,5)' 'Large maxillary plate (Maxilla/Maxillary plate length ratio <1,5)' 'Small maxillary plate (Maxilla/Maxillary plate length ratio >2,3)',
+		54 Maxillary_plate_proportions /  'Low maxillary plate (Length/Depth ratio >1,8)' 'Medium-sized maxillary plate (Length/Depth ratio between 1,8 and 1,3)' 'Deep maxillary plate (Length/Depth ratio <1,3)',
+		55 Maxillary_plate_ventral_margin_shape /  'Inclined postero-ventrally' Straigth_or_slightly_convex,
+		56 'Postero-dorsal extension of the maxillary plate' /  Absent Present,
+		57 'Dentalosplenial deeper than the anterior part of the maxilla (anterior to the maxillary plate)' /  'Yes (Dentalosplenial/Maxilla depth ratio >1,5)' 'No (Dentalosplenial/Maxilla depth ratio <1,5)',
+		58 Dentalosplenial_proportions /  'Elongated (Length/Depth ratio >3,5)' 'Deep (Length/Depth ratio <3,5)',
+		59 'Marginal tooth (Dentary and maxilla tooth) morphology' /  Conical Tubular,
+		60 Number_of_marginal_tooth_row /  1 2,
+		61 Marginal_tooth_homodonty /  'No, heterodonty in the same tooth row' Yes 'Homodonty in the same tooth row, but heterodonty between different tooth rows',
+		62 'Number of dermohyal(s)' /  1 0 3 '>3',
+		63 Epipreoperculum_present /  No Yes,
+		64 Gap_between_the_skull_roof_bones_and_the_opercular_series_bones /  Yes No,
+		65 Operculum_contacts_extrascapular /  No Yes,
+		66 Opercular_series_bones_ornamentation /  Ridges Flat_tubercles Spiky_tubercles,
+		67 Operculum_shape /  'Quadrangular-shaped' 'Triangular-shaped',
+		68 Bending_angle_of_the_operculum /  'No (Bending angle of 180°)' 'Yes (Bending angle <180°)',
+		69 Dorsal_margin_of_the_operculum_shorter_than_the_ventral_margin /  'Yes (Dorsal/Ventral margin length ratio <0.9)' 'No, the dorsal margin is larger (Dorsal/Ventral margin length ratio >1.1)' 'No, the dorsal margin and the ventral margin have the same size (Dorsal/Ventral margin length ratio between O.9 and 1.1)',
+		70 Operculum_proportions /  'Deep operculum (total Depth/Length of the ventral margin ratio >1,5)' 'Long operculum (total Depth/Length of the ventral margin ratio <1,5)',
+		71 Operculum_depth_proportions_with_the_suboperculum /  'Operculum and suboperculum at roughly the same depth (Operculum/Suboperculum depth ratio between 0,8 and 1,5)' 'Operculum deeper than the suboperculum (Operculum/Suboperculum depth ratio >1,5)' 'Suboperculum deeper than the operculum (Operculum/Suboperculum depth ratio <0,8)',
+		72 Operculum_length_proportions_with_the_suboperculum /  'Ventral margin of the operculum of roughly the same size as the ventral margin of the suboperculum (Operculum ventral margin/Suboperculum ventral margin length ratio between 0,8 and 1,5)' 'Ventral margin of the suboperculum larger than the ventral margin of the operculum (Operculum ventral margin/Suboperculum ventral margin length ratio <0,8)' 'Ventral margin of the operculum larger than the ventral margin of the suboperculum (Operculum ventral margin/Suboperculum ventral margin length ratio >1,5)',
+		73 Operculum_dorsal_margin_shape /  Rounded Straight,
+		74 'Suture/Contact between the operculum and the suboperculum' /  Horizontal 'U-shaped, with the suboperculum dorsal margin concave' 'Oblique, oriented antero-ventrally',
+		75 Suboperculum_shape /  'Rectangular-shaped, elongated antero-posteriorly' 'Parallellogram-shaped, with margins (dorsal/ventral and/or anterior/posterior) conspicuously oblique' 'Rectangular-shaped, elongated dorso-ventrally (the dorsal margin can be slightly oblique)' 'Trapezoidal, with a conspicuous sloping margin',
+		76 Suboperculum_proportions /  'Anterior margin deeper (Posterior margin/Anterior margin depth ratio <0.9)' 'Anterior and posterior margin at roughly the same size (Posterior margin/Anterior margin depth ratio between 0.9 and 1.1)' 'Posterior margin deeper (Posterior margin/Anterior margin depth ratio between 1.1 and 1.8)' 'Posterior margin significantly deeper (Posterior margin/Anterior margin depth ratio >1.8)',
+		77 'Number of branchiostegal ray(s)' /  '10-13' '>13' '9-7' '6-4' 3 2 1,
+		78 Branchiostegal_ray_shape /  'Rectangular-shaped' 'Ovoid-shaped',
+		79 First_branchiostegal_ray_size /  'Same size as the second branchiostegal ray (First branchiostegal ray/Second branchiostegal ray width ratio <1,8)' 'Wider than the second branchiostegal ray (First branchiostegal ray/Second branchiostegal ray width ratio >1,8)',
+		80 Last_branchiostegal_ray_size /  'Smaller than the lateral gular (Last branchiostegal ray/Lateral gular length ratio <1)' 'Larger than the lateral gular (Last branchiostegal ray/Lateral gular length ratio >1)',
+		81 Medial_gular_and_lateral_gular_proportions /  'Medial gular smaller than the lateral gular (Medial gular/Lateral gular length ratio <1)' 'Medial gular larger than the lateral gular (Medial gular/Lateral gular length ratio >1)',
+		82 Lateral_gular_shape /  'Ovoid-shaped' 'Rectangular-shaped (at least the posterior part)',
+		83 Medial_gular_shape /  'Ovoid-shaped' 'Rhombic, elongated antero-posteriorly' 'Lance-shaped',
+		84 'Posttemporal (Suprascapulare) shape' /  'Semi-circular' Rectangular,
+		85 Presence_of_a_presupracleithrum /  Yes No,
+		86 Supracleithrum_proportions /  'Short dorso-ventrally and elongated antero-posteriorly (Depth/Length ratio <3,5)' 'Elongated dorso-ventrally and short antero-posteriorly (Depth/Length ratio >3,5)',
+		87 Supracleithrum_lateral_margin_ornamentation /  Smooth 'Spine-like denticulations',
+		88 Cleithrum_shape /  'Khepesh-shaped, with lateral branch and ventral branch reduced' 'Ovoid-shaped, with large lateral branch and ventral branch',
+		89 Number_of_postcleithrum /  1 0 2,
+		90 Lepidotrichia_sutures /  Straight Sigmoidal,
+		91 Origin_of_the_pectoral_fin /  Directly_at_the_cleithrum On_a_scaly_lobe,
+		92 Segmentation_of_the_pectoral_fin_lepidotrichia /  Yes 'Only the posterior lepidotrichia, at least the first anterior lepidotrichia are unsegmented' 'No, all the lepidotrichia are unsegmented',
+		93 Number_of_scale_rows_from_the_supracleithrum_to_the_pelvic_fin_base /  '>17' '13-17' '9-12' '5-8',
+		94 Pelvic_fin_base_on_a_field_of_minute_scales /  No Yes,
+		95 Number_of_scale_rows_from_the_supracleithrum_to_the_anal_fin_base /  '>28' '24-28' '19-23' '<19',
+		96 Anterior_extremity_of_the_anal_fin_base_position /  'Before/at the level of the anterior extremity of the dorsal fin base' Between_the_level_of_the_anterior_extremity_of_the_dorsal_fin_base_and_the_level_of_the_posterior_extremity_of_the_dorsal_fin_base 'After/at the level of the posterior extremity of the dorsal fin base',
+		97 Anal_fin_base_on_a_field_of_minute_scales /  No Yes,
+		98 Dorsal_fin_located_in_three_or_less_scales_rows_before_or_after_the_anal_fin /  No Yes,
+		99 Number_of_scale_rows_from_the_supracleithrum_to_the_dorsal_fin_base /  '>34' '30-34' '25-29' '<25',
+		100 Dorsal_fin_base_on_a_field_of_minute_scales /  No Yes,
+		101 'Fin (excepting the caudal fin) with the largest leading edge' /  Pectoral_fin Pelvic_fin Dorsal_fin Anal_fin,
+		102 'Fin (excepting the caudal fin) with the largest base' /  Pelvic_fin Dorsal_fin Anal_fin,
+		103 'Number of scale rows from the supracleithrum to the caudal fin base (at the ventral lobe)' /  '>50' '41-50' '36-40' '<36',
+		104 Caudal_inversion /  Sharp Gradual,
+		105 Number_of_scale_rows_from_the_supracleithrum_to_the_caudal_fin_scale_inversion /  '>65' '45-65' '40-44' '<40',
+		106 Caudal_fin_lobes_proportions /  'Slightly heterocercal (Dorsal lobe/Ventral lobe length ratio <1.7)' 'Strongly heterocercal, with a larger dorsal lobe (Dorsal lobe/Ventral lobe length ratio >1.7)',
+		107 Number_of_ridges_scales_before_the_dorsal_fin /  '>7' '5-7' '2-4',
+		108 Beginning_of_the_dorsal_fin_ridge_scales /  At_the_skull 'After the skull, with at least a scale row between the skull and the ridge scales',
+		109 Presence_of_large_scutes_before_the_anal_fin /  'Yes (1 to 3)' No,
+		110 Presence_of_large_scutes_between_the_anal_fin_and_the_caudal_fin /  Yes No,
+		111 Scales_lateral_face_ornamentation /  Ridges Smooth Spines,
+		112 Ornamentation_of_the_posterior_margin_of_the_anterior_flank_scales /  'No/little denticulations' Strong_denticulation ; 
+	MATRIX
+	Cheirolepis_canadensis                 0000000000000000000000101000000000000000000000000000100000000000001010110000000000001100000000000000000100210110
+	Limnomis_delaneyi                      000000??011003----00000000110?000000000?0000000001000000000000000000101001000000000000001001??210130112121000010
+	Mimipiscis_toombsi                     01010000000103----0000000000000000000000000000000000010000000000000001000000000000000000000010000000110000000010
+	Moythomasia_lineata                    00010000000103----0000001010000000000020000000000100010000000000000000001000000000010000000001011110110001000010
+	Aeduella_blainvillei                   0(0 1)01111-1---12(1 2)1100112100010011000000032100046110113001110101?011101(0 1)000023(2 3)60001010110111103121113121(2 3)13(0 1)210000
+	Amblypterus_latus                      000100010101120100001212001(0 1)0000111022010000140000?00200001110000100000002102100?0?11???10002?201021(0 2 3)12020210?00
+	Amelangia_ornata                       0?011?1-1---12????01121????0211000000??21000351101?30210101011011201011000116000111?110?111021????21??????21??0?
+	Bourbonnella_fourrieri                 110?11???????????????2?????????????????201????100013021110101?0??101??0??02?500??????????1?021121121312020210000
+	Bourbonnella_guilloti                  0101111-1---12????011210001001100000001201001?100013021110101?011101010200226?0?????110?111021121121212020110000
+	Bourbonnella_hirsuta                   0101111-1---1221100112100010011000000022000014110013021110101201110100120022500000?01111111020121121(2 3)12020110001
+	Bourbonnella_jocelynae                 0?0?0????????????????21?0012011?00001??2??????010012111000????010100202010216?0????0110?1?1020310130??????(1 2)10?00
+	cf._Bourbonnella_sp._KUVP_85296        ??0?1?1-1---1221100112100010011000000??2??????100013021?10101????1????????22600?????110111?02?2???3????1??????00
+	'Bourbonnella sp. POL-F 1994/1, ROK/6)'01?11?1-??????11100112110001011000000??2??00?????013??1?10101?0?110100000232?0?????0????11?03?211131(2 3)1303?????00
+	Briveichthys_chantepieorum             01000?01??????????1010120010012011101??0??00??00010001100001200000001011012100?00001100?1001??????????????21??11
+	Canobius_ramsayi                       0000011-0100121000000010101200001010000?001011101003010000001?0110000120021230000000100?1000303000302231(2 3)0210000
+	Decazella_vetteri                      0001111-1---12111101121(0 2)00100110000000220100341000130(1 2)1(0 1)10101?01110(0 1)0(0 1)10001150001010110111003122113121303021?100
+	Elonichthys_fritschi                   010000010010122110???11200100100000000200001030011000000000121110010111100221010000100001000(1 2 3)?(0 1 2 3)1?(0 1)(0 1 2 3)102(0 1 2 3)010??0111
+	Elonichthys_germari                    0100000100?0122110???11?10100100000000200001030011000000000121110010101110211010000100001000(1 2)?(1 2)1?(0 1)2?021?1?210111
+	Igornella_montcellensis                ????0?1-?????????????2120011011?100000????????0001?00100???????????????????????????0????1?????????????????????00
+	Igornichthys_bohemicus                 00010?1-??????????11121200112110100000?10?????0001?0010000001?0??100000002222?0????1100?1?02202?0???????????0020
+	Neslovicella_elongata                  0101101-1---12????01121100000110000000220110??110013021010101?011101000002325001?0?01101111020220(0 1)20(1 2)1(2 3)02021?001
+	Neslovicella_rzehaki                   0001111-1---1221100112110000011000000002010014110013021010101?01110100000232500000101101111030221131213031210001
+	'''Otovice taxon'''                    0101111-1---?????????2100101111000001002?????????013021110101?01?10100000233????????1???11?031220131(2 3)13030211?01
+	Paramblypterus_decorus                 010000??0101122110001210111100001101111000001600000002001011130110001010001020000001110100002?211021312120210010
+	Paramblypterus_duvernoy                010001010101121110001210111100001100201?000014000010020000111(0 2)0111000110021021000000100?000020210021212121210011
+	Paramblypyerus_rohani                  0000000101011211110012101111000011012110000015000010020000111001110001000211200000000011200021(1 2)11121312120210001
+	Paramblypterus_vratislaviensis         0101000101001211100?121210110000111020010000140000?0020000111000010020000211210????0100?100020211021322120210000
+	Platysella_descusi                     101?111-1---?????????210001001100??????2?????????1??????01101?0??10110?0?222500?????1??1?0102?11?12??1213?????00
+	Platysella_lallyi                      1110101-1---??????0112100010211000???022??????1??113021001101?011101000000226001?0??1001?1?0??221021?13131210100
+	Platysella_poplinae                    101?10?-1---??????01121??????11??????0?2??????1??1130210??1???0??10100??0022????????1????1??2?12?12???30(2 3)0????00
+	Progyrolepis_heyleri                   010000010?0012????10101201100--11000100?0000120011000100000120000000101011210000000?1000100120111?????1?10210111
+	Puertollanichthys_ritchiei             0000101-1---12211001121200100111010000220????????013021110101?01010101000233510??0001??11100303100302120(2 3)1211100
+	Spinarichthys_dispersus                ??0?0?????????????????????????????????????????100013221000101?01?101010202324100010?101111?0??????????????????01
+	Westollia_crassa                       0101111-1---1211100112110011011000000022000025100013011010101001110100000232500010201101110021111121212020210100
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 112;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 112;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1778378223926;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3648615595801140989;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3053279615632212690;
+			mqVersion 381;
+			checksumv 0 3 1099496122 null  getNumChars 112 numChars 112 getNumTaxa 34 numTaxa 34   short true   bits 127   states 127   sumSquaresStatesOnly 63873.0 sumSquares 63873.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1011 715;
+			setLocation 8 29;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3053279615632212690 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 911 643;
+					setLocation 8 29;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

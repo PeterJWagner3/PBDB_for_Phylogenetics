@@ -1,0 +1,422 @@
+#NEXUS
+[written Sat Jul 27 22:18:44 CDT 2024 by Mesquite  version 3.70 (build 940) at EAS-F094C0.hsd1.mn.comcast.net/192.168.0.12]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=58;
+	TAXLABELS
+		Normalograptus_angustus Normalograptus_normalis Normalograptus_rectangularis Rhaphidograptus_toernquisti Normalograptus_magnus Normalograptus_praecursor Normalograptus_gnomus Normalograptus_laciniosus Normalograptus_ojsuensis Normalograptus_extraordinarius Normalograptus_parvulus Normalograptus_persculptus Metabolograptus_sibericus Neodiplograptus_modestus Neodiplograptus_africanus Neodiplograptus_fezzanensis Normalograptus_avitus Normalograptus_aff._avitus_sensu_Williams_1983 Neodiplograptus_sinuatus Neodiplograptus_elongatus Neodiplograptus_tcherskyi Neodiplograptus_magnus Metaclimacograptus_orientalis Metaclimacograptus_slalom Metaclimacograptus_undulatus Sudburigraptus_illustris Normalograptus_jideliensis Hirsutograptus_jinyangensis Hirsutograptus_comantis Normalograptus_madernii Paramplexograptus_paucispinus Paramplexograptus_kiliani Paraclimacograptus_innotatus Normalograptus_nikolayevi Rivagraptus_bellulus Rivagraptus_kayi Agetograptus_spiniferus Glyptograptus_tamariscus Glyptograptus_tamariscoides Glyptograptus_aff._incertus Glyptograptus_supernus Comograptus_comatus Sudburigraptus_cortoghianensis Sudburigraptus_eberleini Sudburigraptus_sp._1_Koren_&_Rickards_2004 Petalolithus_ankyratus Petalolithus_intermedius Parapetalolithus_sp._A_Melchin_1998 Parapetalolithus_palmeus Akidograptus_ascensus Dimorphograptus_minutus Atavograptus_primitivus Atavograptus_ceryx Atavograptus_atavus Pseudorthograptus_inopinatus Pseudorthograptus_obuti Hirsutograptus_introversus Pseudoretiolites
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=55;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C";
+	MATRIX
+	Normalograptus_angustus                         10220(1 2)0000000000(0 1)0000(1 2)(0 1)02(0 1)12(1 2)00000022012(1 2)000002(0 1)100?000
+	Normalograptus_normalis                         (0 1)0220(1 2)000000(0 1)00000000100201220000002201220000000100?000
+	Normalograptus_rectangularis                    (0 1)02202000000100000000(0 1)(0 2)0201220000002201220000000100?000
+	Rhaphidograptus_toernquisti                     0004020000001(0 1)2100000(0 2)(1 2)12012200000032002200000301010000
+	Normalograptus_magnus                           002(2 3)010000001000100000201112100001100102100001011000000
+	Normalograptus_praecursor                       1032010000001000100000202112100001102(0 1)02100001011000000
+	Normalograptus_gnomus                           102201000000100(0 1)100000201112100001101102100001011000000
+	Normalograptus_laciniosus                       1022010000001001100001001112100001121100100001011000000
+	Normalograptus_ojsuensis                        00320100000?1000(0 1)0000(0 2)(0 1)02012200000132002(1 2)00001311(0 1)0?000
+	Normalograptus_extraordinarius                  (0 1)0(3 4)(1 2)0100000?100010000210201220000013200220000(0 1)3120(0 1)?000
+	Normalograptus_parvulus                         (0 1)0(2 3)(1 2)010000001000100002(0 1)02112200001132(0 1)12100001311000000
+	Normalograptus_persculptus                      (0 1)0320100000?100010000(0 2)(1 2)02112200001132(0 1)1210000131100?000
+	Metabolograptus_sibericus                       10?20?00000?1000100002(0 1)0201220000113201220000131100?000
+	Neodiplograptus_modestus                        10(2 3)201000000100010000??021122000011(1 3)2002100001(0 3)1110?000
+	Neodiplograptus_africanus                       00310100000?100?1000002021122(0 1)000113211220001131210?000
+	Neodiplograptus_fezzanensis                     00?(1 2)0100000??00?1000002021122(0 1)000113211210001131210?000
+	Normalograptus_avitus                           0023010000021(0 1)0101000100201220000100200220002100(1 2)00?000
+	Normalograptus_aff._avitus_sensu_Williams_1983  00330?000012?(0 1)0?010011002012(1 2)00001022002(1 2)0002120100?000
+	Neodiplograptus_sinuatus                        1022010000001001000000202(0 2)02100001101(0 1)0210000(1 2)211310000
+	Neodiplograptus_elongatus                       1022010000001001000000202002200000001(0 1)02100021?11210000
+	Neodiplograptus_tcherskyi                       1022010000001001000000202202200000101102100022211310000
+	Neodiplograptus_magnus                          00420100000?100?1000002021122100011321(0 1)220001131210?000
+	Metaclimacograptus_orientalis                   1021000000000000000002002202200020032202200020301030000
+	Metaclimacograptus_slalom                       1021000000000000000002002202230020032202230020301030000
+	Metaclimacograptus_undulatus                    1021000000000000000003002202230023032202230023301030000
+	Sudburigraptus_illustris                        112201000000?001(1 2)0000020110?(0 1)000??10110000000??11000000
+	Normalograptus_jideliensis                      1032010000001000(0 1)000010020122200101020122200(0 1)0001000000
+	Hirsutograptus_jinyangensis                     (0 1)032010000001000000001002012220010102(0 1)12220000001000000
+	Hirsutograptus_comantis                         0032111000001000000001002012222(0 1)00102012222(0 1)00001000000
+	Normalograptus_madernii                         11321100010020011001500021122(0 1)00(0 1)1132012200011311000000
+	Paramplexograptus_paucispinus                   1132010001(0 1)120013001500021122100(0 1)11320122100(0 1)1311000000
+	Paramplexograptus_kiliani                       (0 1)13201000111?0013001500021122100111320122(0 1)00(0 1)1311000000
+	Paraclimacograptus_innotatus                    1032010000002001(1 3)000002021(0 1)2110011102102110000011000000
+	Normalograptus_nikolayevi                        1011020000001000100001001112100001121112100001211000000
+	Rivagraptus_bellulus                            201102000121200110014000111(1 2)100102121100000102211001000
+	Rivagraptus_kayi                                2011020001212001100140001(0 1)121000(0 2)1121(0 2)02100002211001000
+	Agetograptus_spiniferus                         201102000111201110014001111(1 2)100102121100000102211001000
+	Glyptograptus_tamariscus                        1003010001112001100220001112100001101012100001010000000
+	Glyptograptus_tamariscoides                     1003010001112001000220001112100000111012100000110000000
+	Glyptograptus_aff._incertus                     (0 1)033010001112001100110002102100001102002100001011000000
+	Glyptograptus_supernus                           1023020001112001100140001112100001121012100001011000000
+	Comograptus_comatus                             1023100001112001200140002112200011112112(1 2)00001(0 1)11000000
+	Sudburigraptus_cortoghianensis                  11320000010??00110115000211210000110200210000101100?000
+	Sudburigraptus_eberleini                        11?20000011??00120115000110100000110100100000101100?000
+	Sudburigraptus_sp._1_Koren_&_Rickards_2004      1132000001102001301110001101000002101?01000002011000000
+	Petalolithus_ankyratus                          003301410111?001310210001111000012121111000002112000000
+	Petalolithus_intermedius                        0043014101112001310210001112000022111112000012112000000
+	Parapetalolithus_sp._A_Melchin_1998             1023000001112001200140001112000002101112000001011000000
+	Parapetalolithus_palmeus                        10230100011??00120021000111000000210111000000101200?000
+	Akidograptus_ascensus                           000(3 4)012000121(1 2)01011001002012200000002012200020001000000
+	Dimorphograptus_minutus                         000401000012?211011301012012200000002002200020001000000
+	Atavograptus_primitivus                         000401000122?211011331021012200000001012200020001030000
+	Atavograptus_ceryx                              000401000122?2110113310210(0 1)21000000010(0 1)2100020001030000
+	Atavograptus_atavus                             000401000122?211011331021012100001001110100001011020000
+	Pseudorthograptus_inopinatus                    1033014201112001300140001(0 1)01000202101001000202011000000
+	Pseudorthograptus_obuti                         00(0 3)(2 3)014310012001300??0201121000112101121000112011000000
+	Hirsutograptus_introversus                      003201431?012001300140?01221000132101221000132011000110
+	Pseudoretiolites                                10?201431101?001300120001221000112101221000112010000111
+
+;
+
+END;
+BEGIN MacClade;
+	Version 4.0 84;
+	LastModified -1049985170;
+	FileSettings editor '1' '1' '47' '1';
+	Singles 010;
+	Editor 0001101111111110010001001 '0' '72' Gadget '12' '152' '1' all;
+	EditorPosition '44' '6' '495' '777';
+	TreeWindowPosition '46' '6' '677' '752';
+	ListWindow Characters closed Gadget '12' '50' '25' '321' '374' 000;
+	ListWindow Taxa closed Gadget '12' '70' '45' '253' '318' 100000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '10' '559' '1407' '203' '235';
+	WindowOrder Data States;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '578' '1268' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Gadget '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' ( normal ) Gadget '10' ( normal ) Gadget '12' ( normal ) Gadget '12' ( normal ) Gadget '12' ( bold ) Gadget '12' ( normal ) Gadget '12' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 55;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 55;
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 14 TEXT = Neodiplograptus_modestsus;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1722136724473;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4165409199984318527;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3756273176977706200;
+			mqVersion 370;
+			checksumv 0 3 3061119344 null  getNumChars 55 numChars 55 getNumTaxa 58 numTaxa 58   short true   bits 63   states 63   sumSquaresStatesOnly 31506.0 sumSquares 31506.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1298 834;
+			setLocation 8 34;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #4165409199984318527  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSourceEditMode #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					laxMode;
+					setTreeBlock -2147483647;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1902.1606269856451.3997460253235687718;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1198 762;
+					setLocation 8 34;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.SearchTreeToolAssistant.SearchTreeToolExtra.randomlyRotate;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setFont Gadget;
+						setFontSize 12;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(58,(57,(56,((46,47),((55,(44,45)),(49,(48,(42,((41,(36,(35,37))),((38,39),(40,((43,(30,(31,32))),((33,(7,(5,((8,34),(26,(19,(20,21))))))),(6,(14,((16,(15,22)),((11,12),(13,((9,10),(4,((23,(24,25)),((2,3),(1,((29,(27,28)),((17,18),(50,(51,(52,(53,54)))))))))))))))))))))))))))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				setEditMode 'Edited, based on Default Symmetrical Tree+   [Stored Trees]   [Stored Trees]   [Stored Trees]   [Stored Trees]';
+				desuppressEPCResponseNORESET;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3756273176977706200 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 339;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1198 762;
+					setLocation 8 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

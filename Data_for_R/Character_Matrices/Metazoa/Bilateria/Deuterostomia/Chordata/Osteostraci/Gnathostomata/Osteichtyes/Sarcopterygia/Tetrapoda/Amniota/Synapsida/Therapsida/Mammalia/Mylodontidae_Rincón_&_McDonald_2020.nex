@@ -1,0 +1,31 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=22 NCHAR=25 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4 5 6 7 8 9" MISSING=? GAP=- ;
+MATRIX
+
+Megalonyx_jeffersoni						101001011-010101111101010
+Glossotherium_wegneri						11201010-101210--00100001
+Paramylodon_harlani							1120100101010100111101011
+Pseudoprepotherium_socorrensis	112110110010210010111110-
+Pseudoprepotherium_urumaquensis	112110110010212010-------
+Magdalenabradys_kollosiaia			121100100100201110-------
+Urumacotherium_garciai					012--1010-11001-10-1-----
+Eionaletherium_tanycnemius			1100210001000110100000000
+Pseudoprepotherium_venezuelanum	112000110010210010-------
+Magdalenabradys_confusum				1221001000001101100101000
+Chubutherium_ferelloi						10201001--10010010-----1-
+Simomylodon_uccasamamensis			102011011110010-110100011
+Hapalops_ruetimeyeri						01102101-000200--01001110
+Hapalops_longiceps							01102101-000200--0-00-110
+Analcimorphus_giganteus					02100201-000000--01001110
+Eremotherium_laurillardi				002012001000001-010011111
+Nothrotheriops_shastense				0020121110010000011001011
+Rumaquia_robusta								012112011000000-010000-01
+Pyramiodontherium_scillatoyanei	022012011-0100110100110-1
+Pyramiodontherium_brevirostrum	022012011-01001-010011-11
+Lestodon_armatus								1121011000002100110111001
+Thinobadistes_segnis						0110101100002100110101100
+;
+end;

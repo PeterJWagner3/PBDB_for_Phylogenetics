@@ -1,0 +1,2832 @@
+#NEXUS
+[written Sat May 09 20:56:57 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/192.168.1.75]
+
+BEGIN TAXA;
+	TITLE Calathites;
+	DIMENSIONS NTAX=96;
+	TAXLABELS
+		Choanoflagellata Porifera Placozoa Xianguangia Daihua Theiokylixia 'Calathites_spinalis' 'Calathites_macrocalyx' Dinomischus_venustus Dinomischus_isolatus 'Dinomischus_nudus' Siphusauctum Daihuoides Fasciculus Xanioascus Ctenorhabdotus_capulus Ctenorhabdotus_campanelliformis Thalassostaphylos Thaumactena Galeactena Maotianoascus Batofasciculus Trigoides Gemmactena Beroe Euplokamis Pleurobrachia Haeckelia Mnemiopsis Ocyropsis Ctenoplana Cestum Ganesha Thalassocalyce Nematostella Anemonia Aiptasia Metridium Antipathes Cerianthus Corynactis Montastraea Porites Acropora Zoanthus Anthomastus Nephthyigorgia Leptogorgia Cornularia Virgularia Haliclystus Craterolophus Carybdea Chiropsalmus Carukia Nausithoe Atorella Aurelia Rhizostoma Hydra Candelabrum Ectopleura Hydractinia Clytia Obelia Physalia Craseoa Nanomia Aegina Halitrephes Entoprocta Bryozoa Brachiopoda Phoronida Mollusca Annelida Echinodermata Pterobranchia Enteropneusta Chaetognatha Onychophora Arthropoda Nemertea Urochordata Cephalochordata Vertebrata Nematoda Nematomorpha Priapulida Gastrotricha Tardigrada Kinorhyncha Loricifera Gnathifera Xenacoelomorpha Platyhelminthes 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=294;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	CHARSTATELABELS 
+		1 Collar_complex /  absent present,
+		2 Multicellularity_with_extracellular_matrix /  absent present,
+		3 Extracellular_digestion /  absent present,
+		4 Ostia_with_porocytes /  absent present,
+		5 'Septate junctions (SJs)' /  absent present,
+		6 'Tight junctions (TJs)' /  absent present,
+		7 'Gap junctions (GJs)' /  absent present,
+		8 'Adherens junctions (AJs)' /  absent present,
+		9 Hemidesmosomes /  absent present,
+		10 Epithelia /  absent present,
+		11 Basal_laminae /  absent present,
+		12 Collagen /  absent present,
+		13 Nerve_cells /  absent present,
+		14 Acetylcholine_used_as_a_neurotransmitter /  absent present,
+		15 Diffuse_nervous_system /  absent present,
+		16 'Hox/ParaHox gene' /  absent present,
+		17 Epidermis_with_pulsatite_bodies /  absent present,
+		18 Xenacoelomorph_cilia /  absent present,
+		19 Striated_ciliary_rootlets /  absent present,
+		20 Diploblasts_made_of_2_cell_layers /  absent present,
+		21 Triploblasts_made_of_3_cell_layers /  absent present,
+		22 Spiral_cleavage_with_4d_mesoderm /  absent present,
+		23 'Through-gut' /  absent present,
+		24 'U-shaped gut' /  absent present,
+		25 'Protonephridia (or homologues)' /  absent present,
+		26 Fate_of_blastopore /  protostomy deuterostomy amphistomy,
+		27 Body_cuticle_with_chitin /  absent present,
+		28 'Body cuticle with ?-chitin' /  absent present,
+		29 Body_cuticle_moulted /  absent present,
+		30 Segmented_body_with_jointed_limbs /  absent present,
+		31 Lobopods /  absent present,
+		32 Slime_papillae /  absent present,
+		33 Telescoping_mouth_cone_with_protrudable_stylets /  absent present,
+		34 Respiration_via_metameric_tracheae_and_spiracles /  absent present,
+		35 Teloblastic_segmentation /  absent present,
+		36 'Longitudinal ventral nerve cord(s)' /  absent present,
+		37 'Circum-pharyngeal, collar-shaped brain with anterior and posterior rings of perikarya separated by a ring-shaped neuropil' /  absent present,
+		38 Introvert_with_scalid_rings /  absent present,
+		39 Flosculi /  absent present,
+		40 'Immunoreactivity of horseradish peroxidase (HRP)' /  absent present,
+		41 Lophophore /  absent present,
+		42 Trochophore /  absent present,
+		43 Radula /  absent present,
+		44 Segmental_metanephridia_sacculus /  absent present,
+		45 'Chitinous microvillar appendages (chaetae)' /  absent present,
+		46 'Parapodia with dorsal and ventral branches terminated by ?-chitinous chaetae' /  absent present,
+		47 Eversible_proboscis_surrounded_by_rhynchocoel /  absent present,
+		48 Complex_jaw_apparatus_in_pharynx /  absent present,
+		49 Mesoderm /  absent present,
+		50 Origin_of_mesoderm /  from_the_blastopore_lips_and_as_ectomesoderm from_the_walls_of_the_archenteron_or_neural_crest,
+		51 'Mixocoel (haemocoel) surrounded by segmented mesoderm' /  absent present,
+		52 Radial_cleavage /  absent present,
+		53 Coelom_formation /  schizocoely enterocoely,
+		54 Trimeric_coelom /  absent present,
+		55 Pharyngeal_slits /  absent present,
+		56 'Endostyle (or homologues)' /  absent present,
+		57 Longitudinal_dorsal_nerve_cord /  absent present,
+		58 Notochord /  absent present,
+		59 Stomochord /  absent present,
+		60 Haemal_system_with_axial_complex /  absent present,
+		61 Calcareous_endoskeleton_composed_of_separate_ossicles /  absent present,
+		62 Tornaria_type_larva /  absent present,
+		63 Zig_zag_myomeres /  absent present,
+		64 Endothelium_that_lines_the_inner_wall_of_blood_vessels /  absent present,
+		65 Neural_crest /  absent present,
+		66 Neurogenic_placodes /  absent present,
+		67 Dorsoventral_axis /  absent present,
+		68 Anterior_posterior_axis /  absent present,
+		69 Symmetry /  absent present,
+		70 Type_of_symmetry /  bilateral biradial triradial tetraradial pentaradial hexaradial octaradial,
+		71 Compression_in_oral_aboral_axis /  absent present,
+		72 Compression_in_stomodeal_plane /  absent_ present,
+		73 Compression_in_tentacular_plane /  absent present,
+		74 Cydippid_larvae /  absent present,
+		75 Ciliary_rosettes /  absent present,
+		76 'Radially-arranged outgrowths from the interface between the oral and aboral regions' /  absent present,
+		77 Radial_outgrowths_fixed_in_globular_configuration /  absent present,
+		78 Radial_outgrowths_tentacular /  absent present,
+		79 Outer_sheaths_on_external_surface_of_radial_outgrowths /  absent present,
+		80 Number_of_outer_sheaths /  single teo_pairs,
+		81 Pinnules_emerging_from_outgrowths /  absent present,
+		82 Ciliary_row_borne_on_pinnules /  absent present,
+		83 Median_dark_line_along_outgrowths /  absent present,
+		84 'Y-shaped ornament on outgrowth' /  absent present,
+		85 Cushion_rows_arranged_along_outgrowths /  absent present,
+		86 Number_of_cushion_rows /  eight eighteen six twenty_four more_than_24 sixteen,
+		87 Cushion_paired /  paired unpaired,
+		88 Uniformity_of_cushion_rows /  uniform non_uniform,
+		89 Orientation_of_cushion_rows /  adaxial abaxial,
+		90 Large_cilia /  absent present,
+		91 Large_cilia_fused_to_form_locomotory_plate /  absent present,
+		92 'aboral body region modified into attachment stalk [modified character]' /  absent present,
+		93 'Stalk with narrow attachment to calyx base [New character]',
+		94 'Stalk with longitudinal rays or spokes [new character]' /  absent present,
+		95 Bulbous_base_at_the_terminate_end_of_stalk_ /  absent present,
+		96 Circular_depression_on_basal_disc /  absent present,
+		97 Aboral_region_represented_only_by_apical_organ /  absent present,
+		98 Apical_organ_forming_narrow_pointed_extension /  absent present,
+		99 Ciliary_dome /  absent present,
+		100 Statolith /  absent present,
+		101 Balancers /  absent present,
+		102 Ciliated_furrows /  absent present,
+		103 Trifurcating_ciliated_furrows /  absent present,
+		104 'Interplate ciliated groove (ICG)' /  absent present,
+		105 Comb_row_nerves_with_giant_axons /  absent present,
+		106 Polar_field /  absent present,
+		107 Aboral_papillae /  absent present,
+		108 Oral_dome_with_paired_bracts /  absent present,
+		109 Extension_of_the_oral_surface_to_form_oral_cone /  absent present,
+		110 Morphology_of_the_tip_of_oral_extension /  narrow voluminous 'manubrium-like',
+		111 Oral_structure_separated_by_circumferential_constriction_ /  absent present,
+		112 Constriction_type /  skirt_or_bell lappets_,
+		113 Mouth_as_margin_of_creeping_sole /  absent present,
+		114 Oral_lobes /  absent present,
+		115 Auricles /  absent present,
+		116 Brood_chambers /  absent present,
+		117 Pharyngeal_ridges /  absent_ present,
+		118 Sealing_ridges_of_pharynx /  absent present,
+		119 Macrocilia_on_the_lip /  absent present,
+		120 Pharyngeal_canals /  absent present,
+		121 Tentacular_canals /  absent present,
+		122 Meridional_canals /  absent present,
+		123 Diverticula_of_meridional_canals /  absent present,
+		124 Circumoral_ring_canal /  absent present,
+		125 Termination_of_meridional_and_pharyngeal_canals /  both_terminate_blindly branch_to_form_a_complex_network united_with_the_circumoral_ring_canal,
+		126 Aboral_canal /  absent present,
+		127 Interradial_canals /  absent present,
+		128 Number_of_interradial_canals /  two four,
+		129 Adradial_canals /  directly_branch_from_the_infundibulum branch_from_interradial_canals,
+		130 Anal_canals_and_pores /  absent present,
+		131 Paired_ctenophore_tentacles /  absent present,
+		132 Colloblasts /  absent present,
+		133 Tentilla /  absent present,
+		134 Disposition_of_tentilla /  fringing_along_tentacles fringing_along_elongate_oral_margin,
+		135 Tentacle_sheaths /  absent present,
+		136 Opening_position_of_tentacles /  orally aborally,
+		137 'Skeletal elements (sclerotised outgrowths and/or calyx)' /  absent present,
+		138 Skeletonisation_restricted_to_aboral_capsule /  absent present,
+		139 Tentacles_extending_beyond_skeletal_rods_and_outer_sheaths /  absent present,
+		140 calyx_region_more_elongate_than_skeletal_rods /  absent present,
+		141 skeletal_rods_tapering_to_sharp_points,
+		142 Medial_structures_of_skeletal_elements /  absent present,
+		143 Kinked_spokes /  absent present,
+		144 Spinose_spokes /  absent present,
+		145 'Radiating flaps/lobes' /  absent present,
+		146 Longitudinal_lobe_fins /  absent present,
+		147 Mesoglea /  absent present,
+		148 Mesoglea_cellular /  absent present,
+		149 Embryonic_development /  direct indirect,
+		150 Structure_of_mitochondrial_DNA /  circular linear,
+		151 Cnidae /  absent present,
+		152 Cnidae_in_gastrodermis /  absent present,
+		153 Cnidocil /  immobile mobile,
+		154 Cnidae_apical_structure /  'flaps/cap' operculum 'no flaps/operculum',
+		155 Spirocyst /  absent present,
+		156 Ptychocyst /  absent present,
+		157 Nematocyst /  absent present,
+		158 Stenoteles /  absent present,
+		159 Euryteles /  absent present,
+		160 Birhopaloids /  absent present,
+		161 Rhopalonemes /  absent present,
+		162 Desmonemes /  absent present,
+		163 Mastigophores /  absent present,
+		164 Isorhizas /  absent present,
+		165 Atrichous_isorhizas /  absent present,
+		166 Holotrichous_isorhizas /  absent present,
+		167 Apotrichous_isorhizas /  absent present,
+		168 Basitrichous_isorhizas /  absent present,
+		169 Zooxanthellae /  absent present,
+		170 Mesogleal_skeleton /  absent present,
+		171 Ectodermal_skeleton /  absent present,
+		172 Composition_of_ectodermal_skeleton /  proteinaceous calcitic,
+		173 Corallum /  absent present,
+		174 Columella /  absent present,
+		175 Costae /  absent present,
+		176 Octocorallian_spicules /  absent present,
+		177 Spicules_in_tentacle /  absent present,
+		178 Gorgonin /  absent present,
+		179 Periderm /  absent present,
+		180 Cuticle_layers_in_periderm /  one _two__ five,
+		181 Periderm_type /  corneous coriaceous fibrous,
+		182 Periderm_expression /  entire_polyp hydrocaulus_or_hydrorhiza basal_region_or_podocyst stolon_and_anthostele,
+		183 Tubular_periderm /  absent present,
+		184 Peridermal_tooth /  absent present,
+		185 Periderm_with_annulation /  absent present,
+		186 Annulation_distribution /  parts_of_body entire_body,
+		187 Propagation_through_lateral_budding /  absent present,
+		188 Location_of_gonads /  Gastrodermis Epidermis,
+		189 Oocyte_development /  oocytes_develop_without_accessory_cells oocytes_develop_with_accessory_cells oocytes_develop_within_follicles oocytes_develop_from_uptake_of_somatic_or_other_germ_line_cells,
+		190 Nectosome /  absent present,
+		191 Pneumatophore /  absent present,
+		192 Planula /  absent present,
+		193 Planula_ciliation /  absent present,
+		194 Number_of_endodermal_cells_of_the_planula /  variable 'constant, n=16',
+		195 Glandular_cells_in_the_planula /  absent present,
+		196 Nervous_cells_in_the_planula /  absent present,
+		197 Relationship_between_axes_of_planula_and_adult /  'oral-aboral axis in the adult derived from the longitudinal axis of the planula' 'oral-aboral axis in the adult derived from the transverse axis of the planula',
+		198 Actinula /  absent present,
+		199 Polypoid_phase /  absent present,
+		200 Polyp_life_mode /  solitary colonial,
+		201 Polymorphic_polyps /  absent present,
+		202 Pedal_disc /  absent present,
+		203 Coelenteron /  absent present,
+		204 Actinopharynx /  absent present,
+		205 Siphonoglyph /  absent present,
+		206 Number_of_siphonoglyphs /  one more_than_one__,
+		207 Gastric_cavity_partitioned_by_mesentery_ /  absent present,
+		208 Mesenterial_filament /  absent present,
+		209 Number_of_mesenterial_filament_strips /  two_strips___ three_strips___ one_strip__,
+		210 Ciliated_tract_on_mesenterial_filament /  absent present,
+		211 Acontia /  absent present,
+		212 Number_of_mesenteries /  more_than_twelve_ ten eight four,
+		213 Mesentery_in_polyp /  absent present,
+		214 Coupled_mesenteries /  absent present,
+		215 Paired_mesenteries /  absent present,
+		216 Mesentery_pair_morphology_ /  members_the_same_size__ members_differ_in_size__,
+		217 Paired_secondary_cycle /  absent present,
+		218 Perfect_mesentery /  absent present,
+		219 Perfect_mesentery_only /  absent present,
+		220 Number_of_perfect_mesenteries /  eight six_or_multiple_of_six ten,
+		221 Directive_mesentery /  absent present,
+		222 Number_of__directive_mesentery_pairs /  one_pair__ two_pairs__,
+		223 Mesentery_formation /  only_primary_tentacles new_septa_arise_in_the_exocoel_to_either_side_of_the_ventral_directive from_ventral between_directive_and_transverse_septa anywhere_around_the_circumference,
+		224 Gonads_on_mesenteries_of_1st_cycle /  absent present,
+		225 Gonads_on_mesenteries_of_2nd_and_subsequent_cycles /  absent present,
+		226 Number_of_tentacles_in_polyp /  six eight twelve_ sixteen eighteen more_than_twenty__,
+		227 Structure_of_polyp_tentacles /  hollow solid,
+		228 Arrangement_of_tentacles /  scattered one_cycle__ more_than_one_cycle__,
+		229 'Two-tentacle polyp stage' /  absent present,
+		230 Tentacle_retractile /  non_retractile__ retractile,
+		231 'Tentacle/coelenteron relationship' /  one_tentacle_per_endocoel_and_per_exocoel__ 'one tentacle per exocoel, multiple per endocoel  ',
+		232 Catch_tentacle /  absent present,
+		233 Acrospheres /  absent present,
+		234 Marginal_spherules /  absent_ holotrichous,
+		235 Acrorhagi /  absent present,
+		236 Mesogleal_sphincter /  absent present,
+		237 Ectodermal_longitudinal_muscle_location /  tentacles_and_oral_disc_only whole_body,
+		238 Gastrodermic_musculature /  not_in_bunches__ organised_in_bunches_of_gastrodermal_origin__ organised_in_bunches_of_ectodermal_origin__,
+		239 Basilar_musculature /  absent present,
+		240 Retractor_muscle /  weak defined,
+		241 Parietal_muscle /  absent present,
+		242 Organisation_of_the_nervous_system /  nets_ with_nerve_rings__,
+		243 Canal_system_in_polyp /  absent present,
+		244 Mesogleal_lacunae /  absent present,
+		245 Ephyrae /  absent present,
+		246 Marginal_lappet_type /  without_lappet_stem with_lappet_stem,
+		247 Number_of_marginal_lappets /  five eight twelve sixteen,
+		248 Medusoid_phase /  absent present,
+		249 Location_of_medusa_formation /  lateral_budding_from_an_entocodon apical_or_oral direct_development_without_polyp_stage,
+		250 Type_of_apical_medusa_formation /  strobilation without_transverse_fission,
+		251 Strobilation_type /  polydisc monodisc,
+		252 Adult_medusoid_shape /  bell_ pyramidal cubic,
+		253 'Shape of horizontal cross-section of the medusa' /  circular 'four-part symmetry  ',
+		254 Umbrellar_margin /  smooth_and_continuous__ lobed,
+		255 'Rhopalia/rhopalioids' /  absent present,
+		256 Complex_eyes_in_rhopalia /  absent present,
+		257 Statocysts /  absent present,
+		258 Statocyst_origin /  endodermic ectodermic,
+		259 Statolith_composition /  MgCaPO4 CaSO4,
+		260 Ocelli_in_medusa /  absent present,
+		261 'Giant fibre nerve net (GFNN) in medusae' /  absent present,
+		262 Nerve_ring_in_medusa /  absent present,
+		263 Number_of_rings_in_nerve_ring_ /  one two,
+		264 Manubrium /  absent present,
+		265 Gastric_filaments /  absent present,
+		266 Gastric_saccule /  absent present,
+		267 Coronal_muscle /  'well-developed  ' marginal_and_tiny__,
+		268 Longitudinal_muscles_in_the_peduncle /  absent present,
+		269 Pedalium_of_coronate_type /  absent present,
+		270 Pedalium_of_cubozoan_type /  absent present,
+		271 Pedalial_branching /  absent present,
+		272 Velum /  absent present,
+		273 Claustrum /  absent present,
+		274 Tentacles_in_medusa /  absent present,
+		275 Structure_of_medusa_tentacle /  hollow__ solid,
+		276 Shape_of_medusa_tentacle /  filiform capitate,
+		277 Tentacular_bulbs /  absent present,
+		278 Tentacular_insertion /  at_umbrellar_margin__ away_from_margin__,
+		279 Number_of_tentacular_whorls_in_medusa /  one_whorl__ two_whorls__,
+		280 Oral_arms_with_suctorial_mouths /  absent present,
+		281 Mesentery_in_medusa /  absent present,
+		282 Mesenteric_shape_in_medusa /  straight 'Y-shaped  ',
+		283 Perradial_mesenteries /  absent present,
+		284 Radial_canals /  absent present,
+		285 Circular_canal /  absent present,
+		286 Circular_canal_partial /  absent present,
+		287 Peripheral_canal_system /  absent present,
+		288 Velarium /  absent present,
+		289 Velar_canals /  absent present,
+		290 Frenulae /  absent present,
+		291 Coronal_furrow /  absent present,
+		292 Gonadal_location /  manubrium radial_canals__ both_sides_of_gastric_septa,
+		293 Urticant_rings /  absent present,
+		294 Peronia /  absent present ; 
+	MATRIX
+	Choanoflagellata                 100--------00--0-00---0---------------------0---0-----------------000----000-------------0--??----000----0------------------------00----0---?---0-0--00---000---------------------0---------?--0------0---0---0----------------------------------------0----------------------------------------------
+	Porifera                         1101(0 1)00101(0 1)10--00000000-0-0-0000000--000000000000--0--00-0000000--00(0 1)?---000-------------0-0??----0000---0----0-0000---0-0-0-00--000----0---?---0-101(0 1)0---000------------00----0--0---------?--0------0---0---0----------------------------------------0----------------------------------------------
+	Placozoa                         0110?00101010--10010000-0-0-0000000--000000000000--0--00-0000000--000----000-------------0--??----0000---0----0-0000---0-0-0-00--000----0---?---0-0-000---000------------00----0--0---------?--0------0---0---0----------------------------------------0----------------------------------------------
+	Xianguangia                      ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????12??-??10110111111000100---10-?????????00-0-000?????-?????????00----101000000-????0???????????????????????????0-------0???????????10-011??1????01????????????4?100?0??????????????????????????????????????????????????????????????
+	Daihua                           ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????12??-??1011111111100010100-00-?????????10-0-000?????-?????????00----101000000-????0???????????????????????????0-------0???????????10-01??????????????????????4?100?0??????????????????????????????????????????????????????????????
+	Theiokylixia                     ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????1??????11110????11000??101000-?????????00-0-000???????????????0?????101000000-????????????????????????????????0-------0???????????10?01???1??????????????????4?100?0??????????????????????????????????????????????????????????????
+	'Calathites_spinalis'            ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????1???-??101101?11???????111000-?????????00-0-000?????-?????????00----101000000-????????????????????????????????0-------0???????????10-01??????????????????????4?100?0??????????????????????????????????????????????????????????????
+	'Calathites_macrocalyx'          ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????1??????101??1???1?000??111??0-?????????00?0-000???????????????0?????101000000-????????????????????????????????0-------0???????????10?011??1?????1????????????4?100?0??????????????????????????????????????????????????????????????
+	Dinomischus_venustus             ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????1???-??101101???11000??100100-?????????0100-000?????-?????????00----100110000-????0???????????????????????????0-------0???????????10-010??1?????1????????????4?100?0??????????????????????????????????????????????????????????????
+	Dinomischus_isolatus             ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????1???-??10110???????????100100-?????????0??0-000?????-?????????00----???11???0-????0???????????????????????????0-------0???????????10-01??????????????????????4?100?0??????????????????????????????????????????????????????????????
+	'Dinomischus_nudus'              ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????1??????101??????????????00??0-?????????0??0-000???????????????0?????100110000-????????????????????????????????0-------0???????????10?01???1?????1??????????????100?0??????????????????????????????????????????????????????????????
+	Siphusauctum                     ??10??????????????????0-?????000000??00???0?0000??????0??0000?0?????15??-??111100-?01200010110000-?????????0100-000?????-?????????00----0-------10????0???????????????????????????0-------0???????????10-010??0------------------0?100?0??????????????????????????????????????????????????????????????
+	Daihuoides                       ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?01110??????????????????????0-00??????-?????????00----0-------0-????????????????????????????????0-------????????????????????0----------------------------???????????????????????????????????????????????????????????
+	Fasciculus                       ?????????????????????????????000000??00???0?0000??????0??0000?0?????11??-??1100-0-?014111??0-?--????????1??01?0-00??????-?????????00----0-------0-????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Xanioascus                       ?????????????????????????????000000??00???0?0000??????0??0000?0?????11??-??1100-0-?013101??0-?--10???????100110-00??????-?????????00----0-------0-????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Ctenorhabdotus_capulus           ?????????????????????????????000000??00???0?0000??????0??0000?0?????11??-??1100-0-?013111??0-?--100??11??0001110000?????-?????????00----11------0-????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Ctenorhabdotus_campanelliformis  ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?013101??0-?--100??11?10001110000?????-?????????00----11------0-????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Thalassostaphylos                ?????????????????????????????000000??00???0?0000??????0??0000?0?????11??-??1100-0-?0151?1??0-?--10???????1001110000?????-?????????00----0-------0-????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Thaumactena                      ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?010001??0-?--110????????01?10000?????-?????????00----10000?0010????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Galeactena                       ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?010001??0-?--110?????1??01110000?????-????1????00----10000?0011????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Maotianoascus                    ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?010001??0-?--100????????01110000?????-?????????00----10000?0011????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Batofasciculus                   ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?010001??0-?--110????????01?11000?????-?????????00----1000010110????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Trigoides                        ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?010001??0-?--110????????01?11000?????-?????????00----1000011010????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Gemmactena                       ?????????????????????????????000000??00???0?0000??????0??0000?0?????1???-??1100-0-?010001??0-?--110????????01?11000?????-?????????00----1000011010????????????????????????????????0--------??????????????0????0----------------------------???????????????????????????????????????????????????????????
+	Beroe                            0110001111111110001100100-0-000000000000000000000--0--000000000000001101-011100-0-0010101110-?--101111000110110-00000111-111200-0100----0-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Euplokamis                       0110001111111110001100100-0-000000000000000000000--0--0000000000000011000111100-0-0010101110-?--101111001100100-00000001110001???11110110-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Pleurobrachia                    0110001111111110001100100-0-000000000000000000000--0--0000000000000011000111100-0-0010101110-?--101111000100100-0000000111000111111110110-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Haeckelia                        0110001111111110001100100-0-000000000000000000000--0--0000000000000011000111100-0-0010101110-?--101111000110100-0000000011000?0-01100-100-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Mnemiopsis                       0110001111111110001100100-0-000000000000000000000--0--0000000000000011001111100-0-0010111110-?--101111010100100-0110100111012111111111010-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Ocyropsis                        0110001111111110001100100-0-000000000000000000000--0--0000000000000011001111100-0-0010111110-?--101111010100100-0110?0011111211111(0 1)111010-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Ctenoplana                       0110001111111110001100100-0-000000000000000000000--0--0000000000000011110111100-0-0010101110-?--101111000110100-1001000111101110(0 1)11110110-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Cestum                           0110001111111110001100100-0-000000000000000000000--0--0000000000000011001111100-0-0010111110-?--101111000?00100-0000000111012111111111110-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Ganesha                          0110001111111110001100100-0-000000000000000000000--0--00000000000000110?1111100-0-0010101110-?--1011110???00110-00000001110121111?1111110-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Thalassocalyce                   0110001111111110001100100-0-000000000000000000000--0--0000000000000011010111100-0-0010101110-?--1011110???00120-00000001110121111?1111010-------0-11000---000------------00----0--0---------?--0------0---100-0----------------------------------------0----------------------------------------------
+	Nematostella                     01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111011101010000011??01000----0-00-------001--110110010-01111111100111101011141?30201000000010110000--0----------------------------------------------
+	Anemonia                         01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111011101010000011?10?100----0-00-------001--110110010-11111111100111011011141150201000110011110000--0----------------------------------------------
+	Aiptasia                         01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111011101010000011??01100----0-00-------001--110110010-1111111111011101101114??50201000001011110000--0----------------------------------------------
+	Metridium                        01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111011101010000011??00000----0-00-------001--110110010-11111111110111011011140150201110001011110000--0----------------------------------------------
+	Antipathes                       01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111210100000110001?0101000-00-------0010011011001100111111200111100112113??50100000000?10000000--0----------------------------------------------
+	Cerianthus                       01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111?111(0 2)111000001???0??00----0-00-------001--110110010-01110111100110-01111021?50200000000100000000--0----------------------------------------------
+	Corynactis                       01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111(0 2)10100000110100000----0-00-------001--110110010-1110-112000111011010-4??50201101000110000000--0----------------------------------------------
+	Montastraea                      01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111(0 2)1010000011010010110110-00-------0010011011001100110-112000111011010-4??50201001000?10000000--0----------------------------------------------
+	Porites                          01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111(0 2)1010000011010010110110-00-------0010011011001100110-112000111011010-4??30201001000?10000000--0----------------------------------------------
+	Acropora                         01101001111110110011000-0-0-000000000000000000000--0--0000000000000015---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111?1010000011010010110110-00-------0010011011001100110-112000111011010-4??20201001000?10000000--0----------------------------------------------
+	Zoanthus                         01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111(0 2)1010000011?101100----0-00-------0010011011001100111011110011111101111??50201000001010010010--0----------------------------------------------
+	Anthomastus                      01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-10000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111?00100000?11?00?10----1100-------00100110110011001110110102110-0110100??10100000000?10000000--0----------------------------------------------
+	Nephthyigorgia                   01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-10000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111?00100000?11?00?10----1110-------00100110110011001110110102110-0110100??10100000000?10000000--0----------------------------------------------
+	Leptogorgia                      01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-10000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111?00100000?11?00?10----1110-------00100110110011001110110102110-0110100??10100000000?10000000--0----------------------------------------------
+	Cornularia                       01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-10000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1110111?00100000?11?00?10----0-01?030-0-00100110110011001110110102110-0110100??10100000000?10000000--0----------------------------------------------
+	Virgularia                       01101001111110110011000-0-0-000000000000000000000--0--0000000000000010---001010-10000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-1110111?00100000?11?00010----0-00-------00100110110011101110110102110-0110100??10100000000?10000000--0----------------------------------------------
+	Haliclystus                      01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-101111?10010100001??00000----0-010020-0-102--101000010-0100-10---3100-00--0----10010-00000?20000100--111-110100--000-1101100-00101000011000-00000200
+	Craterolophus                    01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-101111??0010100001??00000----0-010020-0-102--101000010-0100-10---3100-00--0----10010-00000?20000100--111-110100--000-1101000-01101000011000-00000200
+	Carybdea                         01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1011110100111000111100100----0-011020-0-10?--110??0010-0100-10---30------------11110-00000?20001100--111-2101110111101100-01000100000011010-01110100
+	Chiropsalmus                     01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1011110100111000111100000----0-011020-0-?0?--110??0010-0100-10---30------------11110-00000?20001100--111-2101110111101110-01100101000011010-01110100
+	Carukia                          01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1011110100111000111100?00----0-011020-0-10?--110??0010-0100-10---30------------11110-00000?20001100--11012101110111101100-01000100000011010-01110100
+	Nausithoe                        01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111111?10010100001??00000----0-011001111(0 1)00--1????0010-0100-10---3100-00--0----51100-00000?2000010103110000110101110-1100-10-00110000010010-00001100
+	Atorella                         01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-111111?10010100001??00000----0-011001111?00--1????0010-0100-10---3100-00--0----51100-00000?2000010102110?001101??010-1100-10-00110000010010-00001100
+	Aurelia                          01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1111110100101000011000000----0-010020-0-101--1??110010-0100-10---3100-00--0----31100-00000?2000010111110000110101110-1100-00-0010000000-011100000100
+	Rhizostoma                       01101001111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1111110100101000011100000----0-010020-0-101--1??000010-0100-10---3100-00--0----31100-00000?2000010111110(0 1)00110101110-1100-00-000-----10-011100000100
+	Hydra                            01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-100110010011100111110?000----0-012200---113--0-----010-0100-10----0------------?0100-00000?00000000--0----------------------------------------------
+	Candelabrum                      01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-100110010011100111100?000----0-010010-0-013000-----11100100-10----0------------5?000-00000?00000000--0----------------------------------------------
+	Ectopleura                       01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-100110010011100111??01000----0-010010-0-013000-----11100100-10----0------------5?100-00000?00000000--10--0000-0--11111000-00-101?010000-111000000000
+	Hydractinia                      01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-1011100100111001111?0?000----0-010010-0-013001??11001110100-10----0------------3?100-00000?00000000--10--0000-???{0 1}1??100?-00-?011010000-?110?0000000
+	Clytia                           01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-1011100100111000111001000----0-010001010013001??11001110100-10----0------------51100-00000?00000000--10--0000-110?1111000-00-1010010000-011000000100
+	Obelia                           01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-1-?000-0000---0000-0-00000000-0-0-00--000----0-------0-1011100100111000111001000----0-010001010013001??11001110100-10----0------------51100-00000?00000000--10--0000-110?1111000-00-0011010000-011000000100
+	Physalia                         01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1011100100111111110100000----0-010000---01?011??11001110100-10----0------------?0?00-00000?00000000--10--0000-0--01111000-00-100--1--00-011000000000
+	Craseoa                          01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1011100100111111110?00000----0-010000---01?111??11001110100-10----0------------?0?00-00000?00000000--10--0000-0--01111000-00-100--1--00-011000000000
+	Nanomia                          01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?-00-0000---0000-0-00000000-0-0-00--000----0-------0-1011100100111111110?00000----0-010000---01?101??11001110100-10----0------------?0?00-00000?00000000--10--0000-0--01111000-00-100--1--00-011000000000
+	Aegina                           01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-101110?100100000011010000----0-00--------13001??00100---100-10---------------------------------------12--0010-10?01??0000-00-1011001000-001010000001
+	Halitrephes                      01101011111110110011000-0-0-000000000000000000000--0--0000000000000013---001010-0-000----0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-101110?100111000011000000----0-00--------13001??00000---100-10---------------------------------------12--0000-10001111000-00-1011000000-011000000110
+	Entoprocta                       01101011111111010011111110100000000000000100000010-0--0000000000001110---001010-0-000----0-1-?0-0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Bryozoa                          011010111111110100111111100-000000000000100010001000010000000000001110---00(0 1)010-0-000----0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Brachiopoda                      0110101111111101001111(0 1)11(0 1)0-000000000000100010001000010000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Phoronida                        011010111111110100111111100-000000000000100000001000010000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Mollusca                         0110101111111101001111101(0 1 2)(0 1)0000000010000011010001000000000000000001110---00(0 1)010-0-000----0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Annelida                         0110101111111101001111101(0 1 2)0-000000110000010011001000000000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Echinodermata                    011010011111110100111010110-000000000000000000001101111000011100001110---00(0 1)010-(0 1)0000----0-(0 1)??0-0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Pterobranchia                    011010111111110100111011110-000000010000000000001101111100110100001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Enteropneusta                    011010111111110100111010110-000000010000000000001101111100110100001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Chaetognatha                     011010111111110100111010110-000000010000000000011100010000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Onychophora                      0110101111111101001110101211101101110001000100001010000000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Arthropoda                       0110101111111101001110101(0 1)1111000(0 1)110001000100001010000000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-{0 1}00---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Nemertea                         0110101111111101001111101(0 1)0-000000010000010000101000000000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Urochordata                      011011111111110100111010110-000000000000000000001100101111000000111110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Cephalochordata                  011010111111110100111010110-000000000000000000001101101111000010001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Vertebrata                       011001111111110100111010110-00000000000000000000110(0 1)101111000011111110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Nematoda                         01101011111111010011101010101000000111010000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Nematomorpha                     01101011111111010011101011101000000101010000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Priapulida                       01101011111111010011101011111000000111110000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Gastrotricha                     011010111111110100111110100-0000000100000000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Tardigrada                       0110101111111101001110101011101010?10001000000001010000000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Kinorhyncha                      0110101111111101001110101?101000001111110000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Loricifera                       0110101111111101001110101?101000000111110000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Gnathifera                       011010111111110100111110100-0000000100000000000110-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Xenacoelomorpha                  011000?1?1(0 1)111111111100-0-0-0000000?00000000000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-000---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+	Platyhelminthes                  01101011111111010011110-000-0000000100000100000010-0--0000000000001110---000-------------0-0-?--0-0000---0000-0-00000000-0-0-00--000----0-------0-0-100---000------------00----0--0---------?--0------0---000-0----------------------------------------0----------------------------------------------
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 294;
+
+END;
+
+BEGIN NOTES;
+
+	SUT   TAXON = 1 NAME = color INTEGER = 0;
+	SUT   TAXON = 4 NAME = color INTEGER = -1;
+	SUT   TAXON = 7 NAME = color INTEGER = 10;
+	SUT   TAXON = 10 NAME = color INTEGER = 10;
+	SUT   TAXON = 13 NAME = color INTEGER = 10;
+	TEXT  TAXON = 15 TEXT = s;
+	SUT   TAXON = 17 NAME = color INTEGER = 10;
+	SUT   TAXON = 18 NAME = color INTEGER = 10;
+	SUT   TAXON = 25 NAME = color INTEGER = 10;
+	SUT   TAXON = 26 NAME = color INTEGER = 10;
+	SUT   TAXON = 27 NAME = color INTEGER = 10;
+	SUT   TAXON = 28 NAME = color INTEGER = 10;
+	SUT   TAXON = 29 NAME = color INTEGER = 10;
+	SUT   TAXON = 30 NAME = color INTEGER = 10;
+	SUT   TAXON = 31 NAME = color INTEGER = 10;
+	SUT   TAXON = 32 NAME = color INTEGER = 10;
+	SUT   TAXON = 33 NAME = color INTEGER = 10;
+	SUT   TAXON = 34 NAME = color INTEGER = 10;
+	SUT   TAXON = 37 NAME = color INTEGER = 0;
+	SUT   TAXON = 40 NAME = color INTEGER = 10;
+	SUT   TAXON = 45 NAME = color INTEGER = 10;
+	SUT   TAXON = 49 NAME = color INTEGER = 10;
+	SUT   TAXON = 52 NAME = color INTEGER = 10;
+	SUT   TAXON = 53 NAME = color INTEGER = 10;
+	SUT   TAXON = 54 NAME = color INTEGER = 10;
+	SUT   TAXON = 55 NAME = color INTEGER = 10;
+	SUT   TAXON = 57 NAME = color INTEGER = 10;
+	SUT   TAXON = 62 NAME = color INTEGER = 0;
+	SUT   TAXON = 63 NAME = color INTEGER = 0;
+
+	SU  T = 12 C = 1 N = color I = 0;
+	SU  T = 13 C = 1 N = color I = 0;
+	SU  T = 14 C = 1 N = color I = 0;
+	SU  T = 18 C = 1 N = color I = 0;
+	SU  T = 40 C = 1 N = color I = 0;
+
+	SU  T = 13 C = 2 N = color I = 0;
+	SU  T = 18 C = 2 N = color I = 0;
+	SU  T = 40 C = 2 N = color I = 0;
+
+	SU  T = 13 C = 3 N = color I = 0;
+	SU  T = 18 C = 3 N = color I = 0;
+	SU  T = 40 C = 3 N = color I = 0;
+
+	SU  T = 18 C = 4 N = color I = 0;
+	SU  T = 40 C = 4 N = color I = 0;
+
+	SU  T = 18 C = 5 N = color I = 0;
+	SU  T = 40 C = 5 N = color I = 0;
+
+	SU  T = 18 C = 6 N = color I = 0;
+	SU  T = 40 C = 6 N = color I = 0;
+
+	SU  T = 18 C = 7 N = color I = 0;
+	SU  T = 40 C = 7 N = color I = 0;
+
+	SU  T = 18 C = 8 N = color I = 0;
+	SU  T = 40 C = 8 N = color I = 0;
+
+	SU  T = 18 C = 9 N = color I = 0;
+	SU  T = 40 C = 9 N = color I = 0;
+
+	SU  T = 18 C = 10 N = color I = 0;
+	SU  T = 40 C = 10 N = color I = 0;
+
+	SU  T = 18 C = 11 N = color I = 0;
+	SU  T = 40 C = 11 N = color I = 0;
+
+	SU  T = 18 C = 12 N = color I = 0;
+	SU  T = 40 C = 12 N = color I = 0;
+
+	SU  T = 18 C = 13 N = color I = 0;
+	SU  T = 40 C = 13 N = color I = 0;
+
+	SU  T = 18 C = 14 N = color I = 0;
+	SU  T = 40 C = 14 N = color I = 0;
+
+	SU  T = 18 C = 15 N = color I = 0;
+	SU  T = 40 C = 15 N = color I = 0;
+
+	SU  T = 18 C = 16 N = color I = 0;
+	SU  T = 40 C = 16 N = color I = 0;
+
+	SU  T = 18 C = 17 N = color I = 0;
+	SU  T = 40 C = 17 N = color I = 0;
+
+	SU  T = 18 C = 18 N = color I = 0;
+	SU  T = 40 C = 18 N = color I = 0;
+
+	SU  T = 18 C = 19 N = color I = 0;
+	SU  T = 40 C = 19 N = color I = 0;
+
+	SU  T = 18 C = 20 N = color I = 0;
+	SU  T = 40 C = 20 N = color I = 0;
+
+	SU  T = 18 C = 21 N = color I = 0;
+	SU  T = 40 C = 21 N = color I = 0;
+
+	SU  T = 18 C = 22 N = color I = 0;
+	SU  T = 40 C = 22 N = color I = 0;
+
+	TEXT   TAXON = 7 CHARACTER = 23 TEXT = 'basing on our observation, it should coded as absent';
+	SU  T = 7 C = 23 N = color I = 16;
+	SU  T = 18 C = 23 N = color I = 0;
+	SU  T = 40 C = 23 N = color I = 0;
+
+	SU  T = 7 C = 24 N = color I = 16;
+	SU  T = 18 C = 24 N = color I = 0;
+	SU  T = 40 C = 24 N = color I = 0;
+
+	SU  T = 18 C = 25 N = color I = 0;
+	SU  T = 40 C = 25 N = color I = 0;
+
+	SU  T = 18 C = 26 N = color I = 0;
+	SU  T = 40 C = 26 N = color I = 0;
+
+	SU  T = 18 C = 27 N = color I = 0;
+	SU  T = 40 C = 27 N = color I = 0;
+
+	SU  T = 18 C = 28 N = color I = 0;
+	SU  T = 40 C = 28 N = color I = 0;
+
+	SU  T = 18 C = 29 N = color I = 0;
+	SU  T = 40 C = 29 N = color I = 0;
+
+	SU  T = 18 C = 30 N = color I = 0;
+	SU  T = 40 C = 30 N = color I = 0;
+
+	SU  T = 18 C = 31 N = color I = 0;
+	SU  T = 40 C = 31 N = color I = 0;
+
+	SU  T = 18 C = 32 N = color I = 0;
+	SU  T = 40 C = 32 N = color I = 0;
+
+	SU  T = 18 C = 33 N = color I = 0;
+	SU  T = 40 C = 33 N = color I = 0;
+
+	SU  T = 18 C = 34 N = color I = 0;
+	SU  T = 40 C = 34 N = color I = 0;
+
+	SU  T = 18 C = 35 N = color I = 0;
+	SU  T = 40 C = 35 N = color I = 0;
+
+	SU  T = 18 C = 36 N = color I = 0;
+	SU  T = 40 C = 36 N = color I = 0;
+
+	SU  T = 18 C = 37 N = color I = 0;
+	SU  T = 40 C = 37 N = color I = 0;
+
+	TEXT   TAXON = 13 CHARACTER = 38 TEXT = 'we change the original score (uncertain) to the absent.';
+	SU  T = 13 C = 38 N = color I = 16;
+	SU  T = 18 C = 38 N = color I = 0;
+	SU  T = 40 C = 38 N = color I = 0;
+
+	SU  T = 18 C = 39 N = color I = 0;
+	SU  T = 40 C = 39 N = color I = 0;
+
+	SU  T = 18 C = 40 N = color I = 0;
+	SU  T = 40 C = 40 N = color I = 0;
+
+	SU  T = 18 C = 41 N = color I = 0;
+	SU  T = 40 C = 41 N = color I = 0;
+
+	SU  T = 18 C = 42 N = color I = 0;
+	SU  T = 40 C = 42 N = color I = 0;
+
+	SU  T = 18 C = 43 N = color I = 0;
+	SU  T = 40 C = 43 N = color I = 0;
+
+	SU  T = 18 C = 44 N = color I = 0;
+	SU  T = 40 C = 44 N = color I = 0;
+
+	SU  T = 18 C = 45 N = color I = 0;
+	SU  T = 40 C = 45 N = color I = 0;
+
+	SU  T = 18 C = 46 N = color I = 0;
+	SU  T = 40 C = 46 N = color I = 0;
+
+	SU  T = 18 C = 47 N = color I = 0;
+	SU  T = 40 C = 47 N = color I = 0;
+
+	SU  T = 18 C = 48 N = color I = 0;
+	SU  T = 40 C = 48 N = color I = 0;
+
+	SU  C = 49 N = color I = 10;
+	SU  T = 18 C = 49 N = color I = 0;
+
+	SU  T = 18 C = 50 N = color I = 0;
+	SU  T = 40 C = 50 N = color I = 0;
+
+	SU  T = 18 C = 51 N = color I = 0;
+	SU  T = 40 C = 51 N = color I = 0;
+
+	SU  T = 18 C = 52 N = color I = 0;
+	SU  T = 40 C = 52 N = color I = 0;
+
+	SU  T = 18 C = 53 N = color I = 0;
+	SU  T = 40 C = 53 N = color I = 0;
+
+	SU  T = 18 C = 54 N = color I = 0;
+	SU  T = 40 C = 54 N = color I = 0;
+
+	SU  T = 18 C = 55 N = color I = 0;
+	SU  T = 40 C = 55 N = color I = 0;
+
+	SU  T = 18 C = 56 N = color I = 0;
+	SU  T = 40 C = 56 N = color I = 0;
+
+	TEXT   CHARACTER = 57 TEXT = position_is_moved;
+	SU  C = 57 N = color I = 0;
+	SU  T = 18 C = 57 N = color I = 0;
+	SU  T = 40 C = 57 N = color I = 0;
+
+	SU  T = 18 C = 58 N = color I = 0;
+	SU  T = 40 C = 58 N = color I = 0;
+
+	SU  T = 18 C = 59 N = color I = 0;
+	SU  T = 40 C = 59 N = color I = 0;
+
+	SU  T = 18 C = 60 N = color I = 0;
+	SU  T = 40 C = 60 N = color I = 0;
+
+	SU  T = 18 C = 61 N = color I = 0;
+	SU  T = 40 C = 61 N = color I = 0;
+
+	SU  T = 18 C = 62 N = color I = 0;
+	SU  T = 40 C = 62 N = color I = 0;
+
+	SU  T = 18 C = 63 N = color I = 0;
+	SU  T = 40 C = 63 N = color I = 0;
+
+	SU  T = 18 C = 64 N = color I = 0;
+	SU  T = 40 C = 64 N = color I = 0;
+
+	SU  T = 18 C = 65 N = color I = 0;
+	SU  T = 40 C = 65 N = color I = 0;
+
+	SU  T = 18 C = 66 N = color I = 0;
+	SU  T = 40 C = 66 N = color I = 0;
+
+	SU  T = 18 C = 67 N = color I = 0;
+	SU  T = 40 C = 67 N = color I = 0;
+
+	SU  T = 18 C = 68 N = color I = 0;
+	SU  T = 40 C = 68 N = color I = 0;
+
+	SU  C = 69 N = color I = 16;
+	SU  T = 18 C = 69 N = color I = 0;
+
+	SU  C = 70 N = color I = 16;
+	TEXT   TAXON = 13 CHARACTER = 70 TEXT = 'in original scores, bilaterial or biradial, but all absent obsevious evidece.';
+	SU  T = 13 C = 70 N = color I = 16;
+	SU  T = 18 C = 70 N = color I = 0;
+
+	SU  T = 18 C = 71 N = color I = 0;
+	SU  T = 40 C = 71 N = color I = 0;
+
+	TEXT   CHARACTER = 72 TEXT = 'change to gap as this character is unique to ctenophore,and the name is adopted from brusca 2016, original name is ''compression in pharyngeal plane''';
+	SU  C = 72 N = color I = 16;
+	SU  T = 18 C = 72 N = color I = 0;
+	TEXT   TAXON = 26 CHARACTER = 72 TEXT = score_following_ruppert_2004;
+	SU  T = 40 C = 72 N = color I = 0;
+
+	SU  C = 73 N = color I = 16;
+	SU  T = 18 C = 73 N = color I = 0;
+	SU  T = 40 C = 73 N = color I = 0;
+
+	SU  T = 18 C = 74 N = color I = 0;
+	SU  T = 40 C = 74 N = color I = 0;
+
+	TEXT   CHARACTER = 75 TEXT = 'n all living forms, ciliary rosettes perforate the gastrodermis as routes for nutrient transport (25). ou et 2015^n';
+	SU  T = 18 C = 75 N = color I = 0;
+	SU  T = 40 C = 75 N = color I = 0;
+
+	SU  T = 18 C = 76 N = color I = 0;
+	SU  T = 40 C = 76 N = color I = 0;
+	TEXT   TAXON = 74 CHARACTER = 76 TEXT = 'lophophore is present in the phoronid, ';
+	SU  T = 74 C = 76 N = color I = 16;
+	TEXT   TAXON = 76 CHARACTER = 76 TEXT = 'although some of the sabellid displaying a circular ring of tentacle, but it actually composed of two parts, that means it is similar to the lophophorate rings';
+
+	SU  T = 18 C = 77 N = color I = 0;
+	SU  T = 40 C = 77 N = color I = 0;
+
+	SU  T = 18 C = 78 N = color I = 0;
+	SU  T = 40 C = 78 N = color I = 0;
+
+	TEXT   TAXON = 10 CHARACTER = 79 TEXT = we_assume_the_tentacle_is_envolopped_by_the_out_sheath_based_on_our_own_observations;
+	SU  T = 18 C = 79 N = color I = 0;
+	SU  T = 40 C = 79 N = color I = 0;
+
+	SU  C = 80 N = color I = 10;
+	SU  T = 18 C = 80 N = color I = 0;
+
+	SU  C = 81 N = color I = 16;
+	SU  T = 18 C = 81 N = color I = 0;
+	SU  T = 40 C = 81 N = color I = 0;
+
+	SU  C = 82 N = color I = 10;
+	TEXT   TAXON = 9 CHARACTER = 82 TEXT = uncertain;
+	SU  T = 9 C = 82 N = color I = 16;
+	SU  T = 18 C = 82 N = color I = 0;
+
+	SU  C = 83 N = color I = 10;
+	SU  T = 16 C = 83 N = color I = 10;
+	SU  T = 18 C = 83 N = color I = 0;
+	TEXT   TAXON = 20 CHARACTER = 83 TEXT = 'although we find dark line along the lobe in Galeactena, but this structure may not homologous with that in dinomischiids';
+	SU  T = 20 C = 83 N = color I = 16;
+
+	SU  C = 84 N = color I = 10;
+	SU  T = 1 C = 84 N = color I = 0;
+	SU  T = 2 C = 84 N = color I = 0;
+	SU  T = 3 C = 84 N = color I = 0;
+	SU  T = 4 C = 84 N = color I = 0;
+	SU  T = 5 C = 84 N = color I = 0;
+	SU  T = 7 C = 84 N = color I = 0;
+	SU  T = 9 C = 84 N = color I = 0;
+	SU  T = 12 C = 84 N = color I = 0;
+	SU  T = 14 C = 84 N = color I = 0;
+	SU  T = 15 C = 84 N = color I = 0;
+	SU  T = 16 C = 84 N = color I = 0;
+	SU  T = 17 C = 84 N = color I = 0;
+	SU  T = 18 C = 84 N = color I = 0;
+	SU  T = 19 C = 84 N = color I = 0;
+	SU  T = 20 C = 84 N = color I = 0;
+	SU  T = 21 C = 84 N = color I = 0;
+	SU  T = 22 C = 84 N = color I = 0;
+	SU  T = 23 C = 84 N = color I = 0;
+	SU  T = 24 C = 84 N = color I = 0;
+	SU  T = 35 C = 84 N = color I = 0;
+	SU  T = 36 C = 84 N = color I = 0;
+	SU  T = 37 C = 84 N = color I = 0;
+	SU  T = 38 C = 84 N = color I = 0;
+	SU  T = 39 C = 84 N = color I = 0;
+	SU  T = 40 C = 84 N = color I = 0;
+	SU  T = 41 C = 84 N = color I = 0;
+	SU  T = 42 C = 84 N = color I = 0;
+	SU  T = 43 C = 84 N = color I = 0;
+	SU  T = 44 C = 84 N = color I = 0;
+	SU  T = 45 C = 84 N = color I = 0;
+	SU  T = 46 C = 84 N = color I = 0;
+	SU  T = 47 C = 84 N = color I = 0;
+	SU  T = 48 C = 84 N = color I = 0;
+	SU  T = 49 C = 84 N = color I = 0;
+	SU  T = 50 C = 84 N = color I = 0;
+	SU  T = 51 C = 84 N = color I = 0;
+	SU  T = 52 C = 84 N = color I = 0;
+	SU  T = 53 C = 84 N = color I = 0;
+	SU  T = 54 C = 84 N = color I = 0;
+	SU  T = 55 C = 84 N = color I = 0;
+	SU  T = 56 C = 84 N = color I = 0;
+	SU  T = 57 C = 84 N = color I = 0;
+	SU  T = 58 C = 84 N = color I = 0;
+	SU  T = 59 C = 84 N = color I = 0;
+	SU  T = 60 C = 84 N = color I = 0;
+	SU  T = 61 C = 84 N = color I = 0;
+	SU  T = 62 C = 84 N = color I = 0;
+	SU  T = 63 C = 84 N = color I = 0;
+	SU  T = 64 C = 84 N = color I = 0;
+	SU  T = 65 C = 84 N = color I = 0;
+	SU  T = 66 C = 84 N = color I = 0;
+	SU  T = 67 C = 84 N = color I = 0;
+	SU  T = 68 C = 84 N = color I = 0;
+	SU  T = 69 C = 84 N = color I = 0;
+	SU  T = 70 C = 84 N = color I = 0;
+	SU  T = 71 C = 84 N = color I = 0;
+	SU  T = 72 C = 84 N = color I = 0;
+	SU  T = 73 C = 84 N = color I = 0;
+	SU  T = 74 C = 84 N = color I = 0;
+	SU  T = 75 C = 84 N = color I = 0;
+	SU  T = 76 C = 84 N = color I = 0;
+	SU  T = 77 C = 84 N = color I = 0;
+	SU  T = 78 C = 84 N = color I = 0;
+	SU  T = 79 C = 84 N = color I = 0;
+	SU  T = 80 C = 84 N = color I = 0;
+	SU  T = 81 C = 84 N = color I = 0;
+	SU  T = 82 C = 84 N = color I = 0;
+	SU  T = 83 C = 84 N = color I = 0;
+	SU  T = 84 C = 84 N = color I = 0;
+	SU  T = 85 C = 84 N = color I = 0;
+	SU  T = 86 C = 84 N = color I = 0;
+	SU  T = 87 C = 84 N = color I = 0;
+	SU  T = 88 C = 84 N = color I = 0;
+	SU  T = 89 C = 84 N = color I = 0;
+	SU  T = 90 C = 84 N = color I = 0;
+	SU  T = 91 C = 84 N = color I = 0;
+	SU  T = 92 C = 84 N = color I = 0;
+	SU  T = 93 C = 84 N = color I = 0;
+	SU  T = 94 C = 84 N = color I = 0;
+	SU  T = 95 C = 84 N = color I = 0;
+	SU  T = 96 C = 84 N = color I = 0;
+
+	SU  C = 85 N = color I = 16;
+	SU  T = 1 C = 85 N = color I = 0;
+	SU  T = 2 C = 85 N = color I = 0;
+	SU  T = 3 C = 85 N = color I = 0;
+	SU  T = 4 C = 85 N = color I = 0;
+	SU  T = 5 C = 85 N = color I = 0;
+	SU  T = 7 C = 85 N = color I = 0;
+	SU  T = 9 C = 85 N = color I = 0;
+	SU  T = 12 C = 85 N = color I = 0;
+	SU  T = 14 C = 85 N = color I = 0;
+	SU  T = 15 C = 85 N = color I = 0;
+	SU  T = 16 C = 85 N = color I = 0;
+	SU  T = 17 C = 85 N = color I = 0;
+	SU  T = 18 C = 85 N = color I = 0;
+	SU  T = 19 C = 85 N = color I = 0;
+	SU  T = 20 C = 85 N = color I = 0;
+	SU  T = 21 C = 85 N = color I = 0;
+	SU  T = 22 C = 85 N = color I = 0;
+	SU  T = 23 C = 85 N = color I = 0;
+	SU  T = 24 C = 85 N = color I = 0;
+	SU  T = 25 C = 85 N = color I = 0;
+	SU  T = 26 C = 85 N = color I = 0;
+	SU  T = 27 C = 85 N = color I = 0;
+	SU  T = 29 C = 85 N = color I = 0;
+	SU  T = 30 C = 85 N = color I = 0;
+	TEXT   TAXON = 31 CHARACTER = 85 TEXT = 'Coeloplane:found on alcyonarian corals; similar to Ctenoplana but lacks comb rows (replaced by simple papillae containing a blind meridional canal outgrowth --- Ruppert 2004';
+	SU  T = 31 C = 85 N = color I = 0;
+	SU  T = 32 C = 85 N = color I = 0;
+	SU  T = 33 C = 85 N = color I = 0;
+	SU  T = 34 C = 85 N = color I = 0;
+	SU  T = 35 C = 85 N = color I = 0;
+	SU  T = 36 C = 85 N = color I = 0;
+	SU  T = 37 C = 85 N = color I = 0;
+	SU  T = 38 C = 85 N = color I = 0;
+	SU  T = 39 C = 85 N = color I = 0;
+	SU  T = 40 C = 85 N = color I = 0;
+	SU  T = 41 C = 85 N = color I = 0;
+	SU  T = 42 C = 85 N = color I = 0;
+	SU  T = 43 C = 85 N = color I = 0;
+	SU  T = 44 C = 85 N = color I = 0;
+	SU  T = 45 C = 85 N = color I = 0;
+	SU  T = 46 C = 85 N = color I = 0;
+	SU  T = 47 C = 85 N = color I = 0;
+	SU  T = 48 C = 85 N = color I = 0;
+	SU  T = 49 C = 85 N = color I = 0;
+	SU  T = 50 C = 85 N = color I = 0;
+	SU  T = 51 C = 85 N = color I = 0;
+	SU  T = 52 C = 85 N = color I = 0;
+	SU  T = 53 C = 85 N = color I = 0;
+	SU  T = 54 C = 85 N = color I = 0;
+	SU  T = 55 C = 85 N = color I = 0;
+	SU  T = 56 C = 85 N = color I = 0;
+	SU  T = 57 C = 85 N = color I = 0;
+	SU  T = 58 C = 85 N = color I = 0;
+	SU  T = 59 C = 85 N = color I = 0;
+	SU  T = 60 C = 85 N = color I = 0;
+	SU  T = 61 C = 85 N = color I = 0;
+	SU  T = 62 C = 85 N = color I = 0;
+	SU  T = 63 C = 85 N = color I = 0;
+	SU  T = 64 C = 85 N = color I = 0;
+	SU  T = 65 C = 85 N = color I = 0;
+	SU  T = 66 C = 85 N = color I = 0;
+	SU  T = 67 C = 85 N = color I = 0;
+	SU  T = 68 C = 85 N = color I = 0;
+	SU  T = 69 C = 85 N = color I = 0;
+	SU  T = 70 C = 85 N = color I = 0;
+	SU  T = 71 C = 85 N = color I = 0;
+	SU  T = 72 C = 85 N = color I = 0;
+	SU  T = 73 C = 85 N = color I = 0;
+	SU  T = 74 C = 85 N = color I = 0;
+	SU  T = 75 C = 85 N = color I = 0;
+	SU  T = 76 C = 85 N = color I = 0;
+	SU  T = 77 C = 85 N = color I = 0;
+	SU  T = 78 C = 85 N = color I = 0;
+	SU  T = 79 C = 85 N = color I = 0;
+	SU  T = 80 C = 85 N = color I = 0;
+	SU  T = 81 C = 85 N = color I = 0;
+	SU  T = 82 C = 85 N = color I = 0;
+	SU  T = 83 C = 85 N = color I = 0;
+	SU  T = 84 C = 85 N = color I = 0;
+	SU  T = 85 C = 85 N = color I = 0;
+	SU  T = 86 C = 85 N = color I = 0;
+	SU  T = 87 C = 85 N = color I = 0;
+	SU  T = 88 C = 85 N = color I = 0;
+	SU  T = 89 C = 85 N = color I = 0;
+	SU  T = 90 C = 85 N = color I = 0;
+	SU  T = 91 C = 85 N = color I = 0;
+	SU  T = 92 C = 85 N = color I = 0;
+	SU  T = 93 C = 85 N = color I = 0;
+	SU  T = 94 C = 85 N = color I = 0;
+	SU  T = 95 C = 85 N = color I = 0;
+	SU  T = 96 C = 85 N = color I = 0;
+
+	SU  C = 86 N = color I = 16;
+	SU  T = 18 C = 86 N = color I = 0;
+	SU  T = 40 C = 86 N = color I = 0;
+
+	SU  C = 87 N = color I = 16;
+	SU  T = 13 C = 87 N = color I = 16;
+	SU  T = 18 C = 87 N = color I = 0;
+	SU  T = 40 C = 87 N = color I = 0;
+
+	SU  C = 88 N = color I = 16;
+	TEXT   TAXON = 13 CHARACTER = 88 TEXT = 'the original coding is non uniform, however, based on the fossil observation, this score is coded as uniform';
+	SU  T = 13 C = 88 N = color I = 16;
+	SU  T = 18 C = 88 N = color I = 0;
+	TEXT   TAXON = 31 CHARACTER = 88 TEXT = 'basen the text-figure 8.2G in Brusca 2016';
+	SU  T = 31 C = 88 N = color I = 16;
+	TEXT   TAXON = 32 CHARACTER = 88 TEXT = 'Four subtentacular comb rows rudimentary; remaining four along aboral edge of ribbon. ---from Ruppert 2004^n';
+	SU  T = 40 C = 88 N = color I = 0;
+
+	SU  C = 89 N = color I = 16;
+	SU  T = 18 C = 89 N = color I = 0;
+	SU  T = 40 C = 89 N = color I = 0;
+
+	TEXT   TAXON = 9 CHARACTER = 90 TEXT = 'it''s uncertain whether dinomischus has large cilia';
+	SU  T = 9 C = 90 N = color I = 16;
+	SU  T = 13 C = 90 N = color I = 0;
+	SU  T = 18 C = 90 N = color I = 0;
+	SU  T = 40 C = 90 N = color I = 0;
+
+	SU  T = 9 C = 91 N = color I = 16;
+	SU  T = 18 C = 91 N = color I = 0;
+	TEXT   TAXON = 36 CHARACTER = 91 TEXT = 'Beroida, Platyctenida, and most families of Cydippida (in families Haeckeliidae,^nBathyctenidae, Lampeidae, and Mertensiidae) have aboral papillae surrounding the apical sense organ (10)---from Ou et 2015^n';
+	SU  T = 40 C = 91 N = color I = 0;
+	SU  T = 56 C = 91 N = color I = 10;
+
+	SU  C = 92 N = color I = 10;
+	TEXT   TAXON = 5 CHARACTER = 92 TEXT = the_basal_tip_is_likely_different_from_the_stalk;
+	SU  T = 5 C = 92 N = color I = 16;
+	TEXT   TAXON = 51 CHARACTER = 92 TEXT = stalked_jellyfish_should_have_a_stalk;
+	SU  T = 51 C = 92 N = color I = 16;
+	SU  T = 52 C = 92 N = color I = 16;
+	TEXT   TAXON = 60 CHARACTER = 92 TEXT = 'here, the stalk is not present in hydra';
+	SU  T = 60 C = 92 N = color I = 16;
+
+	SU  C = 95 N = color I = 10;
+	SU  T = 18 C = 95 N = color I = 0;
+	SU  T = 51 C = 95 N = color I = 16;
+	SU  T = 52 C = 95 N = color I = 16;
+
+	TEXT   CHARACTER = 96 TEXT = 'the position is moved, the score is following Ou et 2022';
+	SU  C = 96 N = color I = 0;
+	TEXT   TAXON = 5 CHARACTER = 96 TEXT = 'now scored following Ou et al., 2022. ';
+	TEXT   TAXON = 14 CHARACTER = 96 TEXT = score_following_Zhao_et_2019;
+	SU  T = 14 C = 96 N = color I = 0;
+	SU  T = 15 C = 96 N = color I = 0;
+	SU  T = 16 C = 96 N = color I = 0;
+	SU  T = 17 C = 96 N = color I = 0;
+	SU  T = 18 C = 96 N = color I = 0;
+	SU  T = 19 C = 96 N = color I = 0;
+	SU  T = 20 C = 96 N = color I = 0;
+	SU  T = 21 C = 96 N = color I = 0;
+	SU  T = 22 C = 96 N = color I = 0;
+	SU  T = 23 C = 96 N = color I = 0;
+	SU  T = 24 C = 96 N = color I = 0;
+	SU  T = 25 C = 96 N = color I = 0;
+	SU  T = 26 C = 96 N = color I = 0;
+	SU  T = 27 C = 96 N = color I = 0;
+	SU  T = 28 C = 96 N = color I = 0;
+	SU  T = 29 C = 96 N = color I = 0;
+	SU  T = 30 C = 96 N = color I = 0;
+	SU  T = 31 C = 96 N = color I = 0;
+	SU  T = 32 C = 96 N = color I = 0;
+	SU  T = 33 C = 96 N = color I = 0;
+	SU  T = 34 C = 96 N = color I = 0;
+	TEXT   TAXON = 69 CHARACTER = 96 TEXT = 'because of the lack of polypoid phase, and coded as inapplicable';
+	SU  T = 69 C = 96 N = color I = 16;
+	SU  T = 70 C = 96 N = color I = 16;
+	TEXT   TAXON = 71 CHARACTER = 96 TEXT = score_following_Zhao_et_2019;
+	SU  T = 71 C = 96 N = color I = 16;
+	SU  T = 72 C = 96 N = color I = 16;
+	SU  T = 73 C = 96 N = color I = 16;
+	SU  T = 74 C = 96 N = color I = 16;
+	SU  T = 75 C = 96 N = color I = 16;
+	SU  T = 76 C = 96 N = color I = 16;
+	SU  T = 77 C = 96 N = color I = 16;
+	SU  T = 78 C = 96 N = color I = 16;
+	SU  T = 79 C = 96 N = color I = 16;
+	SU  T = 80 C = 96 N = color I = 16;
+	SU  T = 81 C = 96 N = color I = 16;
+	SU  T = 82 C = 96 N = color I = 16;
+	SU  T = 83 C = 96 N = color I = 16;
+	SU  T = 84 C = 96 N = color I = 16;
+	SU  T = 85 C = 96 N = color I = 16;
+	SU  T = 86 C = 96 N = color I = 16;
+	SU  T = 87 C = 96 N = color I = 16;
+	SU  T = 88 C = 96 N = color I = 16;
+	SU  T = 89 C = 96 N = color I = 16;
+	SU  T = 90 C = 96 N = color I = 16;
+	SU  T = 91 C = 96 N = color I = 16;
+	SU  T = 92 C = 96 N = color I = 16;
+	SU  T = 93 C = 96 N = color I = 16;
+	SU  T = 94 C = 96 N = color I = 16;
+	SU  T = 95 C = 96 N = color I = 16;
+	SU  T = 96 C = 96 N = color I = 16;
+
+	SU  T = 18 C = 97 N = color I = 0;
+	SU  T = 40 C = 97 N = color I = 0;
+
+	SU  T = 18 C = 98 N = color I = 0;
+	SU  T = 40 C = 98 N = color I = 0;
+
+	TEXT   CHARACTER = 99 TEXT = 'scleroctenophore has still apical capsule, and code as absent in ciliary dome, following ou et 2015';
+	SU  T = 16 C = 99 N = color I = 16;
+	SU  T = 17 C = 99 N = color I = 16;
+	SU  T = 18 C = 99 N = color I = 0;
+	SU  T = 19 C = 99 N = color I = 16;
+	SU  T = 20 C = 99 N = color I = 16;
+	SU  T = 21 C = 99 N = color I = 16;
+	SU  T = 22 C = 99 N = color I = 16;
+	SU  T = 23 C = 99 N = color I = 16;
+	SU  T = 24 C = 99 N = color I = 16;
+	SU  T = 40 C = 99 N = color I = 0;
+
+	SU  T = 18 C = 100 N = color I = 0;
+	SU  T = 40 C = 100 N = color I = 0;
+
+	SU  T = 18 C = 101 N = color I = 0;
+	SU  T = 40 C = 101 N = color I = 0;
+
+	TEXT   CHARACTER = 102 TEXT = 'the name has been change to \ciliated furrows/ from the ciliary grooves';
+	SU  C = 102 N = color I = 16;
+	SU  T = 18 C = 102 N = color I = 0;
+	SU  T = 40 C = 102 N = color I = 0;
+
+	TEXT   CHARACTER = 103 TEXT = char_from_Parry_2021_Chr_111;
+	SU  C = 103 N = color I = 10;
+	TEXT   TAXON = 15 CHARACTER = 103 TEXT = recoding_as_inappicable_from_absent;
+	SU  T = 15 C = 103 N = color I = 16;
+
+	SU  T = 18 C = 104 N = color I = 0;
+	SU  T = 40 C = 104 N = color I = 0;
+
+	TEXT   CHARACTER = 105 TEXT = character_from_Norekian_2020;
+	SU  C = 105 N = color I = 10;
+
+	TEXT   CHARACTER = 106 TEXT = 'pole plate is changed to "polar field"';
+	SU  C = 106 N = color I = 16;
+	SU  T = 18 C = 106 N = color I = 0;
+	SU  T = 40 C = 106 N = color I = 0;
+
+	TEXT   CHARACTER = 107 TEXT = 'most of cydippida has aboral papillae, but not all. refer from (ou et 2015), fossil taxa coding following parry et 2021';
+	SU  T = 15 C = 107 N = color I = 0;
+	SU  T = 18 C = 107 N = color I = 0;
+	TEXT   TAXON = 28 CHARACTER = 107 TEXT = 'Beroida, Platyctenida, and most families of Cydippida (in families Haeckeliidae, Bathyctenidae, Lampeidae, and Mertensiidae) have aboral papillae surrounding the apical sense organ from ou et 2015^n';
+	SU  T = 40 C = 107 N = color I = 0;
+
+	SU  C = 108 N = color I = 10;
+
+	SU  T = 2 C = 109 N = color I = 16;
+	SU  T = 3 C = 109 N = color I = 16;
+	SU  T = 18 C = 109 N = color I = 0;
+	SU  T = 35 C = 109 N = color I = 0;
+	SU  T = 36 C = 109 N = color I = 0;
+	SU  T = 40 C = 109 N = color I = 0;
+	SU  T = 46 C = 109 N = color I = 0;
+	TEXT   TAXON = 71 CHARACTER = 109 TEXT = 'it''s uncertain the oral surface present in the bilaterians';
+	SU  T = 71 C = 109 N = color I = 0;
+	SU  T = 72 C = 109 N = color I = 0;
+	SU  T = 73 C = 109 N = color I = 0;
+	SU  T = 74 C = 109 N = color I = 0;
+	SU  T = 75 C = 109 N = color I = 0;
+	SU  T = 76 C = 109 N = color I = 0;
+	SU  T = 77 C = 109 N = color I = 0;
+	SU  T = 78 C = 109 N = color I = 0;
+	SU  T = 79 C = 109 N = color I = 0;
+	SU  T = 80 C = 109 N = color I = 0;
+	SU  T = 81 C = 109 N = color I = 0;
+	SU  T = 82 C = 109 N = color I = 0;
+	SU  T = 83 C = 109 N = color I = 0;
+	SU  T = 84 C = 109 N = color I = 0;
+	SU  T = 85 C = 109 N = color I = 0;
+	SU  T = 86 C = 109 N = color I = 0;
+	SU  T = 87 C = 109 N = color I = 0;
+	SU  T = 88 C = 109 N = color I = 0;
+	SU  T = 89 C = 109 N = color I = 0;
+	SU  T = 90 C = 109 N = color I = 0;
+	SU  T = 91 C = 109 N = color I = 0;
+	SU  T = 92 C = 109 N = color I = 0;
+	SU  T = 93 C = 109 N = color I = 0;
+	SU  T = 94 C = 109 N = color I = 0;
+	SU  T = 95 C = 109 N = color I = 0;
+	SU  T = 96 C = 109 N = color I = 0;
+
+	TEXT   CHARACTER = 110 TEXT = scores_following_Parry_2021;
+	SU  C = 110 N = color I = 16;
+	TEXT   TAXON = 15 CHARACTER = 110 TEXT = coding_following_the_diagnositic_feature_from_conway_morris_1996;
+	SU  T = 15 C = 110 N = color I = 16;
+	SU  T = 18 C = 110 N = color I = 0;
+	TEXT   TAXON = 21 CHARACTER = 110 TEXT = 'miaotianoascys has oral skirt, likely has a large oral region';
+	SU  T = 21 C = 110 N = color I = 16;
+	SU  T = 40 C = 110 N = color I = 0;
+	SU  T = 93 C = 110 N = color I = 0;
+
+	TEXT   TAXON = 13 CHARACTER = 111 TEXT = 'this character is rescored as absent, as the oral region is likely forming a oral domes or not, but no constriction present';
+	SU  T = 13 C = 111 N = color I = 16;
+	SU  T = 18 C = 111 N = color I = 0;
+	SU  T = 40 C = 111 N = color I = 0;
+
+	SU  T = 18 C = 112 N = color I = 0;
+	TEXT   TAXON = 40 CHARACTER = 112 TEXT = 'previously, this chatacter was miss coded as #skirt or bell';
+	SU  T = 40 C = 112 N = color I = 16;
+
+	SU  T = 18 C = 113 N = color I = 0;
+	SU  T = 40 C = 113 N = color I = 0;
+
+	SU  T = 18 C = 114 N = color I = 0;
+	SU  T = 40 C = 114 N = color I = 0;
+
+	SU  C = 115 N = color I = 16;
+	SU  T = 15 C = 115 N = color I = 0;
+	SU  T = 16 C = 115 N = color I = 16;
+	SU  T = 17 C = 115 N = color I = 16;
+	SU  T = 18 C = 115 N = color I = 16;
+	SU  T = 19 C = 115 N = color I = 16;
+	SU  T = 20 C = 115 N = color I = 16;
+	SU  T = 21 C = 115 N = color I = 16;
+	SU  T = 22 C = 115 N = color I = 16;
+	SU  T = 23 C = 115 N = color I = 16;
+	SU  T = 24 C = 115 N = color I = 16;
+	SU  T = 40 C = 115 N = color I = 0;
+
+	SU  T = 18 C = 116 N = color I = 0;
+	SU  T = 40 C = 116 N = color I = 0;
+
+	TEXT   CHARACTER = 117 TEXT = 'At lease one genus of Lobata is reported to have pharyngeal longitudinal ridges resembling septa of cnidarians (25, 45). This character is uncertain in the fossil forms. (ou et 2015)^n';
+	SU  T = 18 C = 117 N = color I = 0;
+	TEXT   TAXON = 29 CHARACTER = 117 TEXT = 'These pharyngeal^ncilia occur in four longitudinal ridges (Mnemiopsis) resembling low septa and in a cluster at the junction with the stomach.---Ruppert 2004';
+	SU  T = 40 C = 117 N = color I = 0;
+
+	SU  T = 18 C = 118 N = color I = 0;
+	SU  T = 40 C = 118 N = color I = 0;
+
+	TEXT   CHARACTER = 119 TEXT = 'delete oral macrocilia and rename the macrocilia on pharynx lining inside of mouth to ''macrocilia on the lip'' based on ''Calcium activation of macrocilia in the ctenophore Beroi!''';
+	SU  C = 119 N = color I = 16;
+	SU  T = 18 C = 119 N = color I = 0;
+	SU  T = 40 C = 119 N = color I = 0;
+
+	SU  T = 18 C = 120 N = color I = 0;
+	TEXT   TAXON = 28 CHARACTER = 120 TEXT = 'All living ctenophore orders have a pair of pharyngeal canals (25, 51) and are coded as (1), except one species (Haeckelia rubra) of Cydippida from Ou et 2015^n';
+	SU  T = 40 C = 120 N = color I = 0;
+
+	SU  T = 18 C = 121 N = color I = 0;
+	SU  T = 40 C = 121 N = color I = 0;
+
+	SU  T = 18 C = 122 N = color I = 0;
+	SU  T = 40 C = 122 N = color I = 0;
+
+	SU  T = 18 C = 123 N = color I = 0;
+	TEXT   TAXON = 30 CHARACTER = 123 TEXT = 'For members^nof Platyctenida, Cydippida (Bathyctenidae), and Lobata (Ocyropsidae), meridional canals are also reported to have lateral canals (diverticula) from Ou et 2015^n';
+	SU  T = 40 C = 123 N = color I = 0;
+
+	SU  T = 18 C = 124 N = color I = 0;
+	SU  T = 40 C = 124 N = color I = 0;
+
+	SU  T = 18 C = 125 N = color I = 0;
+	SU  T = 40 C = 125 N = color I = 0;
+
+	TEXT   CHARACTER = 126 TEXT = 'Beroida lacks a typical aboral (infundibular) canal (ou et al. 2015)^n';
+	SU  C = 126 N = color I = 16;
+	SU  T = 18 C = 126 N = color I = 0;
+	TEXT   TAXON = 20 CHARACTER = 126 TEXT = 'following ou et 2015, coding Galeactena has a aboral canal';
+	SU  T = 20 C = 126 N = color I = 16;
+	SU  T = 40 C = 126 N = color I = 0;
+
+	SU  T = 18 C = 127 N = color I = 0;
+	TEXT   TAXON = 28 CHARACTER = 127 TEXT = 'In Beroida and two families (Haeckeliidae and Lampeidae) of Cydippida, all eight adradial canals directly branch from the infundibulum, without interradial canals from Ou et 2015^n';
+	SU  T = 40 C = 127 N = color I = 0;
+
+	SU  C = 128 N = color I = 10;
+	SU  T = 18 C = 128 N = color I = 0;
+	TEXT   TAXON = 58 CHARACTER = 128 TEXT = '-';
+	SU  T = 73 C = 128 N = color I = 10;
+
+	SU  T = 18 C = 129 N = color I = 0;
+	SU  T = 40 C = 129 N = color I = 0;
+
+	TEXT   CHARACTER = 130 TEXT = 'as of parry 2021, the presence of anal pore is contigent on the presence of anal canals, so previous two characters are intergreted into one';
+	SU  C = 130 N = color I = 16;
+	SU  T = 18 C = 130 N = color I = 0;
+	TEXT   TAXON = 25 CHARACTER = 130 TEXT = 'the anal pore is founded in the Beroe --- Norekian, Moroz 2019 ? Neural system and receptor diversity^n^n';
+	SU  T = 25 C = 130 N = color I = 16;
+	SU  T = 40 C = 130 N = color I = 0;
+
+	SU  T = 18 C = 131 N = color I = 0;
+	TEXT   TAXON = 30 CHARACTER = 131 TEXT = 'with the exception of beroids and adult Ocyropsis, two tentacles of variable length and arrangement, meaning the adult ocyropsis do not have tentacles. (from Records of ctenophores from South Africa)';
+	SU  T = 40 C = 131 N = color I = 0;
+
+	TEXT   CHARACTER = 132 TEXT = 'dinomischiid and siphusactum are coded as absent, becuase of the presence of cilia on the pinnule, also as Parry et 2021. I also consider the colloblast is contigent on the presence of ctenophore tentacles.';
+	SU  T = 4 C = 132 N = color I = 0;
+	SU  T = 5 C = 132 N = color I = 0;
+	SU  T = 9 C = 132 N = color I = 0;
+	SU  T = 12 C = 132 N = color I = 0;
+	TEXT   TAXON = 13 CHARACTER = 132 TEXT = 'because of no tentacle preserved, the colloblasts is coded as absent.';
+	SU  T = 13 C = 132 N = color I = 16;
+	SU  T = 14 C = 132 N = color I = 0;
+	SU  T = 15 C = 132 N = color I = 0;
+	SU  T = 16 C = 132 N = color I = 0;
+	SU  T = 17 C = 132 N = color I = 0;
+	SU  T = 18 C = 132 N = color I = 0;
+	SU  T = 19 C = 132 N = color I = 0;
+	SU  T = 20 C = 132 N = color I = 0;
+	SU  T = 21 C = 132 N = color I = 0;
+	SU  T = 22 C = 132 N = color I = 0;
+	SU  T = 23 C = 132 N = color I = 0;
+	SU  T = 24 C = 132 N = color I = 0;
+	SU  T = 40 C = 132 N = color I = 0;
+
+	SU  T = 18 C = 133 N = color I = 0;
+	TEXT   TAXON = 28 CHARACTER = 133 TEXT = 'Haeckelia: tentacles bear nematocysts obtained from and used on its cnidarian prey from ruppert 2004^n';
+	SU  T = 40 C = 133 N = color I = 0;
+
+	SU  T = 18 C = 134 N = color I = 0;
+	SU  T = 40 C = 134 N = color I = 0;
+
+	SU  T = 18 C = 135 N = color I = 0;
+	TEXT   TAXON = 33 CHARACTER = 135 TEXT = 'Ganeshida was previously scored as lacking tentacle sheaths, but they are in fact present (Brusca et al., 2016).';
+	SU  T = 33 C = 135 N = color I = 16;
+	SU  T = 40 C = 135 N = color I = 0;
+
+	SU  T = 18 C = 136 N = color I = 0;
+	SU  T = 40 C = 136 N = color I = 0;
+
+	TEXT   CHARACTER = 137 TEXT = 'this character is re-backed to the original Ou et 2015 Chr 52 and code as abesent in dinomischiids';
+	SU  C = 137 N = color I = 16;
+	SU  T = 4 C = 137 N = color I = 16;
+	SU  T = 5 C = 137 N = color I = 16;
+	SU  T = 7 C = 137 N = color I = 16;
+	SU  T = 9 C = 137 N = color I = 16;
+	TEXT   TAXON = 10 CHARACTER = 137 TEXT = 'it''s uncertain whether D. isolatus has skeletal elements, however, according to the description, --- As noted above there is, however, no direct evidence of any skeletal support.';
+	TEXT   TAXON = 16 CHARACTER = 137 TEXT = coding_following_Parry_2021;
+	SU  T = 16 C = 137 N = color I = 16;
+	SU  T = 17 C = 137 N = color I = 16;
+	SU  T = 18 C = 137 N = color I = 0;
+	SU  T = 40 C = 137 N = color I = 0;
+
+	SU  C = 138 N = color I = 10;
+
+	SU  C = 139 N = color I = 0;
+	SU  T = 1 C = 139 N = color I = 0;
+	SU  T = 2 C = 139 N = color I = 0;
+	SU  T = 3 C = 139 N = color I = 0;
+	SU  T = 4 C = 139 N = color I = 0;
+	SU  T = 5 C = 139 N = color I = 0;
+	SU  T = 7 C = 139 N = color I = 0;
+	TEXT   TAXON = 9 CHARACTER = 139 TEXT = 'based on the description in Zhao et 2019, D.venustus seems to have this character, however, it''s not obeserved in original description';
+	SU  T = 9 C = 139 N = color I = 16;
+	TEXT   TAXON = 10 CHARACTER = 139 TEXT = according_to_the_conway_description;
+	SU  T = 12 C = 139 N = color I = 16;
+	SU  T = 14 C = 139 N = color I = 0;
+	SU  T = 15 C = 139 N = color I = 0;
+	SU  T = 16 C = 139 N = color I = 0;
+	SU  T = 17 C = 139 N = color I = 0;
+	SU  T = 18 C = 139 N = color I = 0;
+	SU  T = 19 C = 139 N = color I = 0;
+	SU  T = 20 C = 139 N = color I = 0;
+	SU  T = 21 C = 139 N = color I = 0;
+	TEXT   TAXON = 22 CHARACTER = 139 TEXT = 'originally, this character is coded as ''absent'' in scleroctenophore';
+	SU  T = 22 C = 139 N = color I = 0;
+	SU  T = 23 C = 139 N = color I = 0;
+	SU  T = 24 C = 139 N = color I = 0;
+	SU  T = 35 C = 139 N = color I = 0;
+	SU  T = 36 C = 139 N = color I = 0;
+	SU  T = 37 C = 139 N = color I = 0;
+	SU  T = 38 C = 139 N = color I = 0;
+	SU  T = 39 C = 139 N = color I = 0;
+	SU  T = 40 C = 139 N = color I = 0;
+	SU  T = 41 C = 139 N = color I = 0;
+	SU  T = 42 C = 139 N = color I = 0;
+	SU  T = 43 C = 139 N = color I = 0;
+	SU  T = 44 C = 139 N = color I = 0;
+	SU  T = 45 C = 139 N = color I = 0;
+	SU  T = 46 C = 139 N = color I = 0;
+	SU  T = 47 C = 139 N = color I = 0;
+	SU  T = 48 C = 139 N = color I = 0;
+	SU  T = 49 C = 139 N = color I = 0;
+	SU  T = 50 C = 139 N = color I = 0;
+	SU  T = 51 C = 139 N = color I = 0;
+	SU  T = 52 C = 139 N = color I = 0;
+	SU  T = 53 C = 139 N = color I = 0;
+	SU  T = 54 C = 139 N = color I = 0;
+	SU  T = 55 C = 139 N = color I = 0;
+	SU  T = 56 C = 139 N = color I = 0;
+	SU  T = 57 C = 139 N = color I = 0;
+	SU  T = 58 C = 139 N = color I = 0;
+	SU  T = 59 C = 139 N = color I = 0;
+	SU  T = 60 C = 139 N = color I = 0;
+	SU  T = 61 C = 139 N = color I = 0;
+	SU  T = 62 C = 139 N = color I = 0;
+	SU  T = 63 C = 139 N = color I = 0;
+	SU  T = 64 C = 139 N = color I = 0;
+	SU  T = 65 C = 139 N = color I = 0;
+	SU  T = 66 C = 139 N = color I = 0;
+	SU  T = 67 C = 139 N = color I = 0;
+	SU  T = 68 C = 139 N = color I = 0;
+	SU  T = 69 C = 139 N = color I = 0;
+	SU  T = 70 C = 139 N = color I = 0;
+	SU  T = 71 C = 139 N = color I = 0;
+	SU  T = 72 C = 139 N = color I = 0;
+	SU  T = 73 C = 139 N = color I = 0;
+	SU  T = 74 C = 139 N = color I = 0;
+	SU  T = 75 C = 139 N = color I = 0;
+	SU  T = 76 C = 139 N = color I = 0;
+	SU  T = 77 C = 139 N = color I = 0;
+	SU  T = 78 C = 139 N = color I = 0;
+	SU  T = 79 C = 139 N = color I = 0;
+	SU  T = 80 C = 139 N = color I = 0;
+	SU  T = 81 C = 139 N = color I = 0;
+	SU  T = 82 C = 139 N = color I = 0;
+	SU  T = 83 C = 139 N = color I = 0;
+	SU  T = 84 C = 139 N = color I = 0;
+	SU  T = 85 C = 139 N = color I = 0;
+	SU  T = 86 C = 139 N = color I = 0;
+	SU  T = 87 C = 139 N = color I = 0;
+	SU  T = 88 C = 139 N = color I = 0;
+	SU  T = 89 C = 139 N = color I = 0;
+	SU  T = 90 C = 139 N = color I = 0;
+	SU  T = 91 C = 139 N = color I = 0;
+	SU  T = 92 C = 139 N = color I = 0;
+	SU  T = 93 C = 139 N = color I = 0;
+	SU  T = 94 C = 139 N = color I = 0;
+	SU  T = 95 C = 139 N = color I = 0;
+	SU  T = 96 C = 139 N = color I = 0;
+
+	TEXT   TAXON = 24 CHARACTER = 141 TEXT = s;
+
+	TEXT   CHARACTER = 142 TEXT = 'This feature refers to the medial ridge (external view) or groove (internal view) present in the skeletal elements. This character occurs in Batofasciculus, Gemmactena, and Trigoides.^n';
+	SU  T = 18 C = 142 N = color I = 0;
+	SU  T = 20 C = 142 N = color I = 0;
+	SU  T = 40 C = 142 N = color I = 0;
+
+	SU  T = 18 C = 143 N = color I = 0;
+	SU  T = 40 C = 143 N = color I = 0;
+
+	SU  T = 18 C = 144 N = color I = 0;
+	SU  T = 40 C = 144 N = color I = 0;
+
+	SU  T = 12 C = 145 N = color I = 0;
+	SU  T = 18 C = 145 N = color I = 0;
+	SU  T = 40 C = 145 N = color I = 0;
+
+	TEXT   CHARACTER = 146 TEXT = this_character_is_derived_from_Ou_et_2015_Chr_57;
+	SU  C = 146 N = color I = 10;
+
+	TEXT   TAXON = 2 CHARACTER = 147 TEXT = score_following_parry_2021;
+	SU  T = 2 C = 147 N = color I = 16;
+	SU  T = 18 C = 147 N = color I = 0;
+	SU  T = 40 C = 147 N = color I = 0;
+
+	SU  C = 148 N = color I = 16;
+	TEXT   TAXON = 2 CHARACTER = 148 TEXT = score_following_parry_2021;
+	SU  T = 2 C = 148 N = color I = 16;
+	SU  T = 18 C = 148 N = color I = 0;
+	SU  T = 40 C = 148 N = color I = 0;
+
+	TEXT   CHARACTER = 149 TEXT = 'ctenophore experienced cydippid larvae phase, thus should be treated as indirect brusca 2016 however, in the latest paper, Edgar, Ponciano et al. 2022 ? Ctenophores are direct developers';
+	SU  T = 18 C = 149 N = color I = 0;
+	SU  T = 40 C = 149 N = color I = 0;
+
+	SU  T = 18 C = 150 N = color I = 0;
+	SU  T = 40 C = 150 N = color I = 0;
+
+	SU  T = 18 C = 151 N = color I = 0;
+	SU  T = 40 C = 151 N = color I = 0;
+
+	SU  T = 18 C = 152 N = color I = 0;
+	SU  T = 40 C = 152 N = color I = 0;
+
+	SU  C = 153 N = color I = 0;
+	SU  T = 1 C = 153 N = color I = 0;
+	SU  T = 2 C = 153 N = color I = 0;
+	SU  T = 3 C = 153 N = color I = 0;
+	SU  T = 4 C = 153 N = color I = 0;
+	SU  T = 5 C = 153 N = color I = 0;
+	SU  T = 9 C = 153 N = color I = 0;
+	SU  T = 12 C = 153 N = color I = 0;
+	SU  T = 14 C = 153 N = color I = 0;
+	SU  T = 15 C = 153 N = color I = 0;
+	SU  T = 16 C = 153 N = color I = 0;
+	SU  T = 18 C = 153 N = color I = 0;
+	SU  T = 19 C = 153 N = color I = 0;
+	SU  T = 20 C = 153 N = color I = 0;
+	SU  T = 21 C = 153 N = color I = 0;
+	SU  T = 22 C = 153 N = color I = 0;
+	SU  T = 23 C = 153 N = color I = 0;
+	SU  T = 24 C = 153 N = color I = 0;
+	SU  T = 35 C = 153 N = color I = 0;
+	SU  T = 36 C = 153 N = color I = 0;
+	SU  T = 37 C = 153 N = color I = 0;
+	SU  T = 38 C = 153 N = color I = 0;
+	SU  T = 39 C = 153 N = color I = 0;
+	SU  T = 40 C = 153 N = color I = 0;
+	SU  T = 41 C = 153 N = color I = 0;
+	SU  T = 42 C = 153 N = color I = 0;
+	SU  T = 43 C = 153 N = color I = 0;
+	SU  T = 45 C = 153 N = color I = 0;
+	SU  T = 46 C = 153 N = color I = 0;
+	SU  T = 47 C = 153 N = color I = 0;
+	SU  T = 48 C = 153 N = color I = 0;
+	SU  T = 49 C = 153 N = color I = 0;
+	SU  T = 50 C = 153 N = color I = 0;
+	SU  T = 51 C = 153 N = color I = 0;
+	SU  T = 52 C = 153 N = color I = 0;
+	SU  T = 53 C = 153 N = color I = 0;
+	SU  T = 54 C = 153 N = color I = 0;
+	SU  T = 55 C = 153 N = color I = 0;
+	SU  T = 56 C = 153 N = color I = 0;
+	SU  T = 57 C = 153 N = color I = 0;
+	SU  T = 58 C = 153 N = color I = 0;
+	SU  T = 59 C = 153 N = color I = 0;
+	SU  T = 60 C = 153 N = color I = 0;
+	SU  T = 61 C = 153 N = color I = 0;
+	SU  T = 62 C = 153 N = color I = 0;
+	SU  T = 63 C = 153 N = color I = 0;
+	SU  T = 64 C = 153 N = color I = 0;
+	SU  T = 65 C = 153 N = color I = 0;
+	SU  T = 66 C = 153 N = color I = 0;
+	SU  T = 67 C = 153 N = color I = 0;
+	SU  T = 68 C = 153 N = color I = 0;
+	SU  T = 69 C = 153 N = color I = 0;
+	SU  T = 70 C = 153 N = color I = 0;
+	SU  T = 71 C = 153 N = color I = 0;
+	SU  T = 72 C = 153 N = color I = 0;
+	SU  T = 73 C = 153 N = color I = 0;
+	SU  T = 74 C = 153 N = color I = 0;
+	SU  T = 75 C = 153 N = color I = 0;
+	SU  T = 76 C = 153 N = color I = 0;
+	SU  T = 77 C = 153 N = color I = 0;
+	SU  T = 78 C = 153 N = color I = 0;
+	SU  T = 79 C = 153 N = color I = 0;
+	SU  T = 80 C = 153 N = color I = 0;
+	SU  T = 81 C = 153 N = color I = 0;
+	SU  T = 82 C = 153 N = color I = 0;
+	SU  T = 83 C = 153 N = color I = 0;
+	SU  T = 84 C = 153 N = color I = 0;
+	SU  T = 85 C = 153 N = color I = 0;
+	SU  T = 86 C = 153 N = color I = 0;
+	SU  T = 87 C = 153 N = color I = 0;
+	SU  T = 88 C = 153 N = color I = 0;
+	SU  T = 89 C = 153 N = color I = 0;
+	SU  T = 90 C = 153 N = color I = 0;
+	SU  T = 91 C = 153 N = color I = 0;
+	SU  T = 92 C = 153 N = color I = 0;
+	SU  T = 93 C = 153 N = color I = 0;
+	SU  T = 94 C = 153 N = color I = 0;
+	SU  T = 95 C = 153 N = color I = 0;
+	SU  T = 96 C = 153 N = color I = 0;
+
+	SU  C = 154 N = color I = 10;
+	SU  T = 18 C = 154 N = color I = 0;
+	SU  T = 40 C = 154 N = color I = 0;
+
+	SU  T = 18 C = 155 N = color I = 0;
+	SU  T = 40 C = 155 N = color I = 0;
+
+	SU  T = 18 C = 156 N = color I = 0;
+	SU  T = 40 C = 156 N = color I = 0;
+
+	SU  C = 157 N = color I = 10;
+	SU  T = 18 C = 157 N = color I = 0;
+
+	SU  T = 18 C = 158 N = color I = 0;
+	SU  T = 40 C = 158 N = color I = 0;
+
+	SU  T = 18 C = 159 N = color I = 0;
+	SU  T = 40 C = 159 N = color I = 0;
+
+	SU  T = 18 C = 160 N = color I = 0;
+	SU  T = 40 C = 160 N = color I = 0;
+
+	SU  T = 18 C = 161 N = color I = 0;
+	SU  T = 40 C = 161 N = color I = 0;
+	SU  T = 51 C = 161 N = color I = 10;
+
+	TEXT   CHARACTER = 162 TEXT = 'the original name is incorrect, #desomonemes';
+	SU  T = 18 C = 162 N = color I = 0;
+	SU  T = 40 C = 162 N = color I = 0;
+
+	SU  C = 163 N = color I = 0;
+	SU  T = 18 C = 163 N = color I = 0;
+	SU  T = 40 C = 163 N = color I = 0;
+
+	SU  C = 164 N = color I = 0;
+	SU  T = 18 C = 164 N = color I = 0;
+	SU  T = 40 C = 164 N = color I = 0;
+
+	TEXT   CHARACTER = 165 TEXT = 'These two characters are adopted from the character 13 in the dataset of Marques & Collins 2004, referring to two morphological types of nematocysts. ';
+	SU  C = 165 N = color I = 10;
+	SU  T = 18 C = 165 N = color I = 0;
+
+	SU  C = 166 N = color I = 10;
+	SU  T = 18 C = 166 N = color I = 0;
+	TEXT   TAXON = 36 CHARACTER = 166 TEXT = 'Anemonia viridis  shows microbasic b-mastigophores, microbasic p-mastigophores, holotrichous isorhizas, and spirocysts.^n^nFrom <https://link.springer.com/article/10.1007/s00435-021-00539-z> ';
+	SU  T = 36 C = 166 N = color I = 16;
+
+	SU  C = 167 N = color I = 0;
+	SU  T = 18 C = 167 N = color I = 0;
+	SU  T = 40 C = 167 N = color I = 0;
+
+	SU  C = 168 N = color I = 16;
+	SU  T = 18 C = 168 N = color I = 0;
+	SU  T = 35 C = 168 N = color I = 0;
+	SU  T = 38 C = 168 N = color I = 16;
+	SU  T = 40 C = 168 N = color I = 0;
+
+	SU  C = 169 N = color I = 0;
+	SU  T = 18 C = 169 N = color I = 0;
+	SU  T = 40 C = 169 N = color I = 0;
+
+	SU  T = 18 C = 170 N = color I = 0;
+	SU  T = 40 C = 170 N = color I = 0;
+
+	SU  T = 18 C = 171 N = color I = 0;
+	SU  T = 40 C = 171 N = color I = 0;
+
+	SU  T = 18 C = 172 N = color I = 0;
+	SU  T = 40 C = 172 N = color I = 0;
+
+	SU  C = 173 N = color I = 10;
+	SU  T = 18 C = 173 N = color I = 0;
+
+	SU  C = 174 N = color I = 0;
+	SU  T = 18 C = 174 N = color I = 0;
+	SU  T = 40 C = 174 N = color I = 0;
+
+	SU  C = 175 N = color I = 0;
+	SU  T = 18 C = 175 N = color I = 0;
+	SU  T = 40 C = 175 N = color I = 0;
+
+	SU  T = 18 C = 176 N = color I = 0;
+	SU  T = 40 C = 176 N = color I = 0;
+
+	SU  T = 18 C = 177 N = color I = 0;
+	SU  T = 40 C = 177 N = color I = 0;
+
+	SU  T = 18 C = 178 N = color I = 0;
+	SU  T = 40 C = 178 N = color I = 0;
+
+	SU  T = 18 C = 179 N = color I = 0;
+	SU  T = 40 C = 179 N = color I = 0;
+
+	SU  T = 18 C = 180 N = color I = 0;
+	SU  T = 40 C = 180 N = color I = 0;
+
+	SU  C = 181 N = color I = 16;
+
+	SU  C = 182 N = color I = 10;
+	SU  T = 18 C = 182 N = color I = 0;
+
+	SU  C = 183 N = color I = 10;
+	SU  T = 18 C = 183 N = color I = 0;
+	SU  T = 53 C = 183 N = color I = 0;
+
+	SU  C = 184 N = color I = 16;
+	SU  T = 18 C = 184 N = color I = 0;
+	SU  T = 40 C = 184 N = color I = 0;
+
+	SU  C = 185 N = color I = 10;
+	SU  T = 18 C = 185 N = color I = 0;
+	SU  T = 40 C = 185 N = color I = 0;
+
+	SU  C = 186 N = color I = 10;
+	SU  T = 18 C = 186 N = color I = 0;
+	SU  T = 40 C = 186 N = color I = 0;
+
+	SU  C = 187 N = color I = 0;
+	SU  T = 18 C = 187 N = color I = 0;
+	SU  T = 40 C = 187 N = color I = 0;
+
+	TEXT   CHARACTER = 188 TEXT = char_53_in_Ou_et_al._2022;
+	SU  C = 188 N = color I = 10;
+
+	SU  T = 18 C = 189 N = color I = 0;
+	SU  T = 40 C = 189 N = color I = 0;
+
+	SU  T = 18 C = 190 N = color I = 0;
+	SU  T = 40 C = 190 N = color I = 0;
+
+	SU  T = 18 C = 191 N = color I = 0;
+	SU  T = 40 C = 191 N = color I = 0;
+
+	SU  T = 18 C = 192 N = color I = 0;
+	SU  T = 40 C = 192 N = color I = 0;
+
+	SU  T = 18 C = 193 N = color I = 0;
+	SU  T = 40 C = 193 N = color I = 0;
+
+	SU  T = 18 C = 194 N = color I = 0;
+	SU  T = 40 C = 194 N = color I = 0;
+
+	SU  T = 18 C = 195 N = color I = 0;
+	SU  T = 40 C = 195 N = color I = 0;
+
+	SU  T = 18 C = 196 N = color I = 0;
+	SU  T = 40 C = 196 N = color I = 0;
+
+	SU  T = 18 C = 197 N = color I = 0;
+	SU  T = 40 C = 197 N = color I = 0;
+
+	SU  C = 198 N = color I = 16;
+	SU  T = 18 C = 198 N = color I = 0;
+	SU  T = 40 C = 198 N = color I = 0;
+
+	SU  T = 18 C = 199 N = color I = 0;
+	SU  T = 40 C = 199 N = color I = 0;
+
+	TEXT   TAXON = 13 CHARACTER = 200 TEXT = 'in original coding, it was coded as solitary, but it''s uncertain whether daihuoides is a polypoid organism ';
+	SU  T = 13 C = 200 N = color I = 16;
+	SU  T = 18 C = 200 N = color I = 0;
+	SU  T = 20 C = 200 N = color I = 0;
+	SU  T = 40 C = 200 N = color I = 0;
+
+	SU  T = 4 C = 201 N = color I = 10;
+	SU  T = 5 C = 201 N = color I = 10;
+	SU  T = 7 C = 201 N = color I = 10;
+	SU  T = 9 C = 201 N = color I = 10;
+	SU  T = 12 C = 201 N = color I = 10;
+	SU  T = 13 C = 201 N = color I = 16;
+	SU  T = 16 C = 201 N = color I = 1;
+	SU  T = 18 C = 201 N = color I = 0;
+	SU  T = 40 C = 201 N = color I = 0;
+
+	SU  T = 14 C = 202 N = color I = 0;
+	SU  T = 15 C = 202 N = color I = 0;
+	SU  T = 16 C = 202 N = color I = 0;
+	SU  T = 17 C = 202 N = color I = 0;
+	SU  T = 18 C = 202 N = color I = 0;
+	SU  T = 19 C = 202 N = color I = 0;
+	SU  T = 20 C = 202 N = color I = 0;
+	SU  T = 21 C = 202 N = color I = 0;
+	SU  T = 22 C = 202 N = color I = 0;
+	SU  T = 23 C = 202 N = color I = 0;
+	SU  T = 24 C = 202 N = color I = 0;
+	SU  T = 40 C = 202 N = color I = 0;
+
+	SU  T = 18 C = 203 N = color I = 0;
+	SU  T = 40 C = 203 N = color I = 0;
+
+	SU  C = 204 N = color I = 0;
+	SU  T = 18 C = 204 N = color I = 0;
+	SU  T = 40 C = 204 N = color I = 0;
+
+	SU  T = 18 C = 205 N = color I = 0;
+	SU  T = 40 C = 205 N = color I = 0;
+
+	SU  T = 18 C = 206 N = color I = 0;
+	SU  T = 40 C = 206 N = color I = 0;
+
+	TEXT   CHARACTER = 207 TEXT = 'original ''gut partitioned by septa ''';
+	TEXT   TAXON = 1 CHARACTER = 207 TEXT = 'though Parry 2021 code this as inapplicable bacause the presence of mesentery contingent on the presence of gut, here I code it as absent again';
+	SU  T = 1 C = 207 N = color I = 16;
+	SU  T = 2 C = 207 N = color I = 16;
+	SU  T = 3 C = 207 N = color I = 16;
+	TEXT   TAXON = 9 CHARACTER = 207 TEXT = 'it''s uncertain the pair plate-like structure could be interpreted as mesentery';
+	SU  T = 9 C = 207 N = color I = 16;
+	SU  T = 13 C = 207 N = color I = 16;
+	SU  T = 14 C = 207 N = color I = 16;
+	SU  T = 15 C = 207 N = color I = 16;
+	SU  T = 16 C = 207 N = color I = 16;
+	SU  T = 17 C = 207 N = color I = 16;
+	SU  T = 18 C = 207 N = color I = 16;
+	SU  T = 19 C = 207 N = color I = 16;
+	SU  T = 20 C = 207 N = color I = 16;
+	SU  T = 21 C = 207 N = color I = 16;
+	SU  T = 22 C = 207 N = color I = 16;
+	SU  T = 23 C = 207 N = color I = 16;
+	SU  T = 24 C = 207 N = color I = 16;
+	SU  T = 40 C = 207 N = color I = 0;
+
+	SU  C = 208 N = color I = 16;
+	SU  T = 13 C = 208 N = color I = 16;
+	SU  T = 14 C = 208 N = color I = 16;
+	SU  T = 15 C = 208 N = color I = 16;
+	SU  T = 16 C = 208 N = color I = 16;
+	SU  T = 17 C = 208 N = color I = 16;
+	SU  T = 18 C = 208 N = color I = 16;
+	SU  T = 19 C = 208 N = color I = 16;
+	SU  T = 20 C = 208 N = color I = 16;
+	SU  T = 21 C = 208 N = color I = 16;
+	SU  T = 22 C = 208 N = color I = 16;
+	SU  T = 23 C = 208 N = color I = 16;
+	SU  T = 24 C = 208 N = color I = 16;
+	SU  T = 40 C = 208 N = color I = 0;
+
+	SU  C = 209 N = color I = 16;
+	SU  T = 13 C = 209 N = color I = 16;
+	SU  T = 14 C = 209 N = color I = 16;
+	SU  T = 15 C = 209 N = color I = 16;
+	SU  T = 16 C = 209 N = color I = 16;
+	SU  T = 17 C = 209 N = color I = 16;
+	SU  T = 18 C = 209 N = color I = 16;
+	SU  T = 19 C = 209 N = color I = 16;
+	SU  T = 20 C = 209 N = color I = 16;
+	SU  T = 21 C = 209 N = color I = 16;
+	SU  T = 22 C = 209 N = color I = 16;
+	SU  T = 23 C = 209 N = color I = 16;
+	SU  T = 24 C = 209 N = color I = 16;
+	SU  T = 40 C = 209 N = color I = 0;
+
+	SU  T = 13 C = 210 N = color I = 16;
+	SU  T = 14 C = 210 N = color I = 16;
+	SU  T = 15 C = 210 N = color I = 16;
+	SU  T = 16 C = 210 N = color I = 16;
+	SU  T = 17 C = 210 N = color I = 16;
+	SU  T = 18 C = 210 N = color I = 16;
+	SU  T = 19 C = 210 N = color I = 16;
+	SU  T = 20 C = 210 N = color I = 16;
+	SU  T = 21 C = 210 N = color I = 16;
+	SU  T = 22 C = 210 N = color I = 16;
+	SU  T = 23 C = 210 N = color I = 16;
+	SU  T = 24 C = 210 N = color I = 16;
+	SU  T = 40 C = 210 N = color I = 0;
+
+	SU  T = 13 C = 211 N = color I = 16;
+	SU  T = 14 C = 211 N = color I = 16;
+	SU  T = 15 C = 211 N = color I = 16;
+	SU  T = 16 C = 211 N = color I = 16;
+	SU  T = 17 C = 211 N = color I = 16;
+	SU  T = 18 C = 211 N = color I = 16;
+	SU  T = 19 C = 211 N = color I = 16;
+	SU  T = 20 C = 211 N = color I = 16;
+	SU  T = 21 C = 211 N = color I = 16;
+	SU  T = 22 C = 211 N = color I = 16;
+	SU  T = 23 C = 211 N = color I = 16;
+	SU  T = 24 C = 211 N = color I = 16;
+	SU  T = 40 C = 211 N = color I = 0;
+
+	SU  C = 212 N = color I = 16;
+	SU  T = 1 C = 212 N = color I = 0;
+	SU  T = 2 C = 212 N = color I = 0;
+	SU  T = 3 C = 212 N = color I = 0;
+	SU  T = 4 C = 212 N = color I = 0;
+	SU  T = 5 C = 212 N = color I = 0;
+	SU  T = 9 C = 212 N = color I = 0;
+	SU  T = 12 C = 212 N = color I = 0;
+	SU  T = 13 C = 212 N = color I = 16;
+	SU  T = 14 C = 212 N = color I = 16;
+	SU  T = 15 C = 212 N = color I = 16;
+	SU  T = 16 C = 212 N = color I = 16;
+	SU  T = 17 C = 212 N = color I = 16;
+	SU  T = 18 C = 212 N = color I = 16;
+	SU  T = 19 C = 212 N = color I = 16;
+	SU  T = 20 C = 212 N = color I = 16;
+	SU  T = 21 C = 212 N = color I = 16;
+	SU  T = 22 C = 212 N = color I = 16;
+	SU  T = 23 C = 212 N = color I = 16;
+	SU  T = 24 C = 212 N = color I = 16;
+	SU  T = 35 C = 212 N = color I = 0;
+	SU  T = 36 C = 212 N = color I = 0;
+	SU  T = 37 C = 212 N = color I = 0;
+	SU  T = 38 C = 212 N = color I = 0;
+	SU  T = 39 C = 212 N = color I = 0;
+	SU  T = 40 C = 212 N = color I = 0;
+	SU  T = 41 C = 212 N = color I = 0;
+	SU  T = 42 C = 212 N = color I = 0;
+	SU  T = 43 C = 212 N = color I = 0;
+	SU  T = 45 C = 212 N = color I = 0;
+	SU  T = 46 C = 212 N = color I = 0;
+	SU  T = 47 C = 212 N = color I = 0;
+	SU  T = 48 C = 212 N = color I = 0;
+	SU  T = 49 C = 212 N = color I = 0;
+	SU  T = 50 C = 212 N = color I = 0;
+	SU  T = 51 C = 212 N = color I = 0;
+	SU  T = 52 C = 212 N = color I = 0;
+	SU  T = 53 C = 212 N = color I = 0;
+	SU  T = 54 C = 212 N = color I = 0;
+	SU  T = 56 C = 212 N = color I = 0;
+	SU  T = 57 C = 212 N = color I = 0;
+	SU  T = 58 C = 212 N = color I = 0;
+	SU  T = 59 C = 212 N = color I = 0;
+	SU  T = 60 C = 212 N = color I = 0;
+	SU  T = 61 C = 212 N = color I = 0;
+	SU  T = 62 C = 212 N = color I = 0;
+	SU  T = 63 C = 212 N = color I = 0;
+	SU  T = 64 C = 212 N = color I = 0;
+	SU  T = 65 C = 212 N = color I = 0;
+	SU  T = 66 C = 212 N = color I = 0;
+	SU  T = 67 C = 212 N = color I = 0;
+	SU  T = 68 C = 212 N = color I = 0;
+	SU  T = 69 C = 212 N = color I = 0;
+	SU  T = 70 C = 212 N = color I = 0;
+	SU  T = 71 C = 212 N = color I = 0;
+	SU  T = 72 C = 212 N = color I = 0;
+	SU  T = 73 C = 212 N = color I = 0;
+	SU  T = 74 C = 212 N = color I = 0;
+	SU  T = 75 C = 212 N = color I = 0;
+	SU  T = 76 C = 212 N = color I = 0;
+	SU  T = 77 C = 212 N = color I = 0;
+	SU  T = 78 C = 212 N = color I = 0;
+	SU  T = 79 C = 212 N = color I = 0;
+	SU  T = 80 C = 212 N = color I = 0;
+	SU  T = 81 C = 212 N = color I = 0;
+	SU  T = 82 C = 212 N = color I = 0;
+	SU  T = 83 C = 212 N = color I = 0;
+	SU  T = 84 C = 212 N = color I = 0;
+	SU  T = 85 C = 212 N = color I = 0;
+	SU  T = 86 C = 212 N = color I = 0;
+	SU  T = 87 C = 212 N = color I = 0;
+	SU  T = 88 C = 212 N = color I = 0;
+	SU  T = 89 C = 212 N = color I = 0;
+	SU  T = 90 C = 212 N = color I = 0;
+	SU  T = 91 C = 212 N = color I = 0;
+	SU  T = 92 C = 212 N = color I = 0;
+	SU  T = 93 C = 212 N = color I = 0;
+	SU  T = 94 C = 212 N = color I = 0;
+	SU  T = 95 C = 212 N = color I = 0;
+	SU  T = 96 C = 212 N = color I = 0;
+
+	TEXT   TAXON = 5 CHARACTER = 213 TEXT = 'this character is changed to uncertain, current evidence does not support the presence of mesenteries in the Daihua';
+	SU  T = 5 C = 213 N = color I = 16;
+	SU  T = 13 C = 213 N = color I = 16;
+	SU  T = 14 C = 213 N = color I = 16;
+	SU  T = 15 C = 213 N = color I = 16;
+	SU  T = 16 C = 213 N = color I = 16;
+	SU  T = 17 C = 213 N = color I = 16;
+	SU  T = 18 C = 213 N = color I = 16;
+	SU  T = 19 C = 213 N = color I = 16;
+	SU  T = 20 C = 213 N = color I = 16;
+	SU  T = 21 C = 213 N = color I = 16;
+	SU  T = 22 C = 213 N = color I = 16;
+	SU  T = 23 C = 213 N = color I = 16;
+	SU  T = 24 C = 213 N = color I = 16;
+	SU  T = 40 C = 213 N = color I = 0;
+
+	SU  C = 214 N = color I = 16;
+	SU  T = 13 C = 214 N = color I = 16;
+	SU  T = 14 C = 214 N = color I = 16;
+	SU  T = 15 C = 214 N = color I = 16;
+	SU  T = 16 C = 214 N = color I = 16;
+	SU  T = 17 C = 214 N = color I = 16;
+	SU  T = 18 C = 214 N = color I = 16;
+	SU  T = 19 C = 214 N = color I = 16;
+	SU  T = 20 C = 214 N = color I = 16;
+	SU  T = 21 C = 214 N = color I = 16;
+	SU  T = 22 C = 214 N = color I = 16;
+	SU  T = 23 C = 214 N = color I = 16;
+	SU  T = 24 C = 214 N = color I = 16;
+
+	SU  C = 215 N = color I = 16;
+	SU  T = 13 C = 215 N = color I = 16;
+	SU  T = 14 C = 215 N = color I = 16;
+	SU  T = 15 C = 215 N = color I = 16;
+	SU  T = 16 C = 215 N = color I = 16;
+	SU  T = 17 C = 215 N = color I = 16;
+	SU  T = 18 C = 215 N = color I = 16;
+	SU  T = 19 C = 215 N = color I = 16;
+	SU  T = 20 C = 215 N = color I = 16;
+	SU  T = 21 C = 215 N = color I = 16;
+	SU  T = 22 C = 215 N = color I = 16;
+	SU  T = 23 C = 215 N = color I = 16;
+	SU  T = 24 C = 215 N = color I = 16;
+	SU  T = 40 C = 215 N = color I = 0;
+
+	SU  T = 13 C = 216 N = color I = 16;
+	SU  T = 14 C = 216 N = color I = 16;
+	SU  T = 15 C = 216 N = color I = 16;
+	SU  T = 16 C = 216 N = color I = 16;
+	SU  T = 17 C = 216 N = color I = 16;
+	SU  T = 18 C = 216 N = color I = 16;
+	SU  T = 19 C = 216 N = color I = 16;
+	SU  T = 20 C = 216 N = color I = 16;
+	SU  T = 21 C = 216 N = color I = 16;
+	SU  T = 22 C = 216 N = color I = 16;
+	SU  T = 23 C = 216 N = color I = 16;
+	SU  T = 24 C = 216 N = color I = 16;
+	SU  T = 40 C = 216 N = color I = 0;
+
+	SU  T = 13 C = 217 N = color I = 16;
+	SU  T = 14 C = 217 N = color I = 16;
+	SU  T = 15 C = 217 N = color I = 16;
+	SU  T = 16 C = 217 N = color I = 16;
+	SU  T = 17 C = 217 N = color I = 16;
+	SU  T = 18 C = 217 N = color I = 16;
+	SU  T = 19 C = 217 N = color I = 16;
+	SU  T = 20 C = 217 N = color I = 16;
+	SU  T = 21 C = 217 N = color I = 16;
+	SU  T = 22 C = 217 N = color I = 16;
+	SU  T = 23 C = 217 N = color I = 16;
+	SU  T = 24 C = 217 N = color I = 16;
+	SU  T = 40 C = 217 N = color I = 0;
+
+	SU  C = 218 N = color I = 10;
+	SU  T = 13 C = 218 N = color I = 16;
+	SU  T = 14 C = 218 N = color I = 16;
+	SU  T = 15 C = 218 N = color I = 16;
+	SU  T = 16 C = 218 N = color I = 16;
+	SU  T = 17 C = 218 N = color I = 16;
+	SU  T = 18 C = 218 N = color I = 16;
+	SU  T = 19 C = 218 N = color I = 16;
+	SU  T = 20 C = 218 N = color I = 16;
+	SU  T = 21 C = 218 N = color I = 16;
+	SU  T = 22 C = 218 N = color I = 16;
+	SU  T = 23 C = 218 N = color I = 16;
+	SU  T = 24 C = 218 N = color I = 16;
+	SU  T = 40 C = 218 N = color I = 0;
+
+	SU  C = 219 N = color I = 16;
+	SU  T = 13 C = 219 N = color I = 16;
+	SU  T = 14 C = 219 N = color I = 16;
+	SU  T = 15 C = 219 N = color I = 16;
+	SU  T = 16 C = 219 N = color I = 16;
+	SU  T = 17 C = 219 N = color I = 16;
+	SU  T = 18 C = 219 N = color I = 16;
+	SU  T = 19 C = 219 N = color I = 16;
+	SU  T = 20 C = 219 N = color I = 16;
+	SU  T = 21 C = 219 N = color I = 16;
+	SU  T = 22 C = 219 N = color I = 16;
+	SU  T = 23 C = 219 N = color I = 16;
+	SU  T = 24 C = 219 N = color I = 16;
+
+	SU  C = 220 N = color I = 16;
+	SU  T = 13 C = 220 N = color I = 16;
+	SU  T = 14 C = 220 N = color I = 16;
+	SU  T = 15 C = 220 N = color I = 16;
+	SU  T = 16 C = 220 N = color I = 16;
+	SU  T = 17 C = 220 N = color I = 16;
+	SU  T = 18 C = 220 N = color I = 16;
+	SU  T = 19 C = 220 N = color I = 16;
+	SU  T = 20 C = 220 N = color I = 16;
+	SU  T = 21 C = 220 N = color I = 16;
+	SU  T = 22 C = 220 N = color I = 16;
+	SU  T = 23 C = 220 N = color I = 16;
+	SU  T = 24 C = 220 N = color I = 16;
+	SU  T = 40 C = 220 N = color I = 0;
+
+	SU  T = 13 C = 221 N = color I = 16;
+	SU  T = 14 C = 221 N = color I = 16;
+	SU  T = 15 C = 221 N = color I = 16;
+	SU  T = 16 C = 221 N = color I = 16;
+	SU  T = 17 C = 221 N = color I = 16;
+	SU  T = 18 C = 221 N = color I = 16;
+	SU  T = 19 C = 221 N = color I = 16;
+	SU  T = 20 C = 221 N = color I = 16;
+	SU  T = 21 C = 221 N = color I = 16;
+	SU  T = 22 C = 221 N = color I = 16;
+	SU  T = 23 C = 221 N = color I = 16;
+	SU  T = 24 C = 221 N = color I = 16;
+	SU  T = 40 C = 221 N = color I = 0;
+
+	SU  T = 13 C = 222 N = color I = 16;
+	SU  T = 14 C = 222 N = color I = 16;
+	SU  T = 15 C = 222 N = color I = 16;
+	SU  T = 16 C = 222 N = color I = 16;
+	SU  T = 17 C = 222 N = color I = 16;
+	SU  T = 18 C = 222 N = color I = 16;
+	SU  T = 19 C = 222 N = color I = 16;
+	SU  T = 20 C = 222 N = color I = 16;
+	SU  T = 21 C = 222 N = color I = 16;
+	SU  T = 22 C = 222 N = color I = 16;
+	SU  T = 23 C = 222 N = color I = 16;
+	SU  T = 24 C = 222 N = color I = 16;
+	SU  T = 40 C = 222 N = color I = 0;
+
+	SU  C = 223 N = color I = 2;
+	SU  T = 1 C = 223 N = color I = 0;
+	SU  T = 2 C = 223 N = color I = 0;
+	SU  T = 3 C = 223 N = color I = 0;
+	SU  T = 4 C = 223 N = color I = 0;
+	SU  T = 5 C = 223 N = color I = 0;
+	SU  T = 9 C = 223 N = color I = 0;
+	SU  T = 12 C = 223 N = color I = 0;
+	SU  T = 13 C = 223 N = color I = 16;
+	SU  T = 14 C = 223 N = color I = 16;
+	SU  T = 15 C = 223 N = color I = 16;
+	SU  T = 16 C = 223 N = color I = 16;
+	SU  T = 17 C = 223 N = color I = 16;
+	SU  T = 18 C = 223 N = color I = 16;
+	SU  T = 19 C = 223 N = color I = 16;
+	SU  T = 20 C = 223 N = color I = 16;
+	SU  T = 21 C = 223 N = color I = 16;
+	SU  T = 22 C = 223 N = color I = 16;
+	SU  T = 23 C = 223 N = color I = 16;
+	SU  T = 24 C = 223 N = color I = 16;
+	SU  T = 35 C = 223 N = color I = 0;
+	SU  T = 36 C = 223 N = color I = 0;
+	SU  T = 37 C = 223 N = color I = 0;
+	SU  T = 38 C = 223 N = color I = 0;
+	SU  T = 39 C = 223 N = color I = 0;
+	SU  T = 40 C = 223 N = color I = 0;
+	SU  T = 41 C = 223 N = color I = 0;
+	SU  T = 42 C = 223 N = color I = 0;
+	SU  T = 43 C = 223 N = color I = 0;
+	SU  T = 45 C = 223 N = color I = 0;
+	SU  T = 46 C = 223 N = color I = 0;
+	SU  T = 47 C = 223 N = color I = 0;
+	SU  T = 48 C = 223 N = color I = 0;
+	SU  T = 49 C = 223 N = color I = 0;
+	SU  T = 50 C = 223 N = color I = 0;
+	SU  T = 51 C = 223 N = color I = 0;
+	SU  T = 52 C = 223 N = color I = 0;
+	SU  T = 53 C = 223 N = color I = 0;
+	SU  T = 54 C = 223 N = color I = 0;
+	SU  T = 56 C = 223 N = color I = 0;
+	SU  T = 57 C = 223 N = color I = 0;
+	SU  T = 58 C = 223 N = color I = 0;
+	SU  T = 59 C = 223 N = color I = 0;
+	SU  T = 60 C = 223 N = color I = 0;
+	SU  T = 61 C = 223 N = color I = 0;
+	SU  T = 62 C = 223 N = color I = 0;
+	SU  T = 63 C = 223 N = color I = 0;
+	SU  T = 64 C = 223 N = color I = 0;
+	SU  T = 65 C = 223 N = color I = 0;
+	SU  T = 66 C = 223 N = color I = 0;
+	SU  T = 67 C = 223 N = color I = 0;
+	SU  T = 68 C = 223 N = color I = 0;
+	SU  T = 69 C = 223 N = color I = 0;
+	SU  T = 70 C = 223 N = color I = 0;
+	SU  T = 71 C = 223 N = color I = 0;
+	SU  T = 72 C = 223 N = color I = 0;
+	SU  T = 73 C = 223 N = color I = 0;
+	SU  T = 74 C = 223 N = color I = 0;
+	SU  T = 75 C = 223 N = color I = 0;
+	SU  T = 76 C = 223 N = color I = 0;
+	SU  T = 77 C = 223 N = color I = 0;
+	SU  T = 78 C = 223 N = color I = 0;
+	SU  T = 79 C = 223 N = color I = 0;
+	SU  T = 80 C = 223 N = color I = 0;
+	SU  T = 81 C = 223 N = color I = 0;
+	SU  T = 82 C = 223 N = color I = 0;
+	SU  T = 83 C = 223 N = color I = 0;
+	SU  T = 84 C = 223 N = color I = 0;
+	SU  T = 85 C = 223 N = color I = 0;
+	SU  T = 86 C = 223 N = color I = 0;
+	SU  T = 87 C = 223 N = color I = 0;
+	SU  T = 88 C = 223 N = color I = 0;
+	SU  T = 89 C = 223 N = color I = 0;
+	SU  T = 90 C = 223 N = color I = 0;
+	SU  T = 91 C = 223 N = color I = 0;
+	SU  T = 92 C = 223 N = color I = 0;
+	SU  T = 93 C = 223 N = color I = 0;
+	SU  T = 94 C = 223 N = color I = 0;
+	SU  T = 95 C = 223 N = color I = 0;
+	SU  T = 96 C = 223 N = color I = 0;
+
+	SU  C = 224 N = color I = 0;
+	SU  T = 1 C = 224 N = color I = 0;
+	SU  T = 2 C = 224 N = color I = 0;
+	SU  T = 3 C = 224 N = color I = 0;
+	SU  T = 4 C = 224 N = color I = 0;
+	SU  T = 5 C = 224 N = color I = 0;
+	SU  T = 9 C = 224 N = color I = 0;
+	SU  T = 12 C = 224 N = color I = 0;
+	SU  T = 13 C = 224 N = color I = 16;
+	SU  T = 14 C = 224 N = color I = 16;
+	SU  T = 15 C = 224 N = color I = 16;
+	SU  T = 16 C = 224 N = color I = 16;
+	SU  T = 17 C = 224 N = color I = 16;
+	SU  T = 18 C = 224 N = color I = 16;
+	SU  T = 19 C = 224 N = color I = 16;
+	SU  T = 20 C = 224 N = color I = 16;
+	SU  T = 21 C = 224 N = color I = 16;
+	SU  T = 22 C = 224 N = color I = 16;
+	SU  T = 23 C = 224 N = color I = 16;
+	SU  T = 24 C = 224 N = color I = 16;
+	SU  T = 35 C = 224 N = color I = 0;
+	SU  T = 36 C = 224 N = color I = 0;
+	SU  T = 37 C = 224 N = color I = 0;
+	SU  T = 38 C = 224 N = color I = 0;
+	SU  T = 39 C = 224 N = color I = 0;
+	SU  T = 40 C = 224 N = color I = 0;
+	SU  T = 41 C = 224 N = color I = 0;
+	SU  T = 42 C = 224 N = color I = 0;
+	SU  T = 43 C = 224 N = color I = 0;
+	SU  T = 45 C = 224 N = color I = 0;
+	SU  T = 46 C = 224 N = color I = 0;
+	SU  T = 47 C = 224 N = color I = 0;
+	SU  T = 48 C = 224 N = color I = 0;
+	SU  T = 49 C = 224 N = color I = 0;
+	SU  T = 50 C = 224 N = color I = 0;
+	SU  T = 51 C = 224 N = color I = 0;
+	SU  T = 52 C = 224 N = color I = 0;
+	SU  T = 53 C = 224 N = color I = 0;
+	SU  T = 54 C = 224 N = color I = 0;
+	SU  T = 56 C = 224 N = color I = 0;
+	SU  T = 57 C = 224 N = color I = 0;
+	SU  T = 58 C = 224 N = color I = 0;
+	SU  T = 59 C = 224 N = color I = 0;
+	SU  T = 60 C = 224 N = color I = 0;
+	SU  T = 61 C = 224 N = color I = 0;
+	SU  T = 62 C = 224 N = color I = 0;
+	SU  T = 63 C = 224 N = color I = 0;
+	SU  T = 64 C = 224 N = color I = 0;
+	SU  T = 65 C = 224 N = color I = 0;
+	SU  T = 66 C = 224 N = color I = 0;
+	SU  T = 67 C = 224 N = color I = 0;
+	SU  T = 68 C = 224 N = color I = 0;
+	SU  T = 69 C = 224 N = color I = 0;
+	SU  T = 70 C = 224 N = color I = 0;
+	SU  T = 71 C = 224 N = color I = 0;
+	SU  T = 72 C = 224 N = color I = 0;
+	SU  T = 73 C = 224 N = color I = 0;
+	SU  T = 74 C = 224 N = color I = 0;
+	SU  T = 75 C = 224 N = color I = 0;
+	SU  T = 76 C = 224 N = color I = 0;
+	SU  T = 77 C = 224 N = color I = 0;
+	SU  T = 78 C = 224 N = color I = 0;
+	SU  T = 79 C = 224 N = color I = 0;
+	SU  T = 80 C = 224 N = color I = 0;
+	SU  T = 81 C = 224 N = color I = 0;
+	SU  T = 82 C = 224 N = color I = 0;
+	SU  T = 83 C = 224 N = color I = 0;
+	SU  T = 84 C = 224 N = color I = 0;
+	SU  T = 85 C = 224 N = color I = 0;
+	SU  T = 86 C = 224 N = color I = 0;
+	SU  T = 87 C = 224 N = color I = 0;
+	SU  T = 88 C = 224 N = color I = 0;
+	SU  T = 89 C = 224 N = color I = 0;
+	SU  T = 90 C = 224 N = color I = 0;
+	SU  T = 91 C = 224 N = color I = 0;
+	SU  T = 92 C = 224 N = color I = 0;
+	SU  T = 93 C = 224 N = color I = 0;
+	SU  T = 94 C = 224 N = color I = 0;
+	SU  T = 95 C = 224 N = color I = 0;
+	SU  T = 96 C = 224 N = color I = 0;
+
+	SU  C = 225 N = color I = 0;
+	SU  T = 1 C = 225 N = color I = 0;
+	SU  T = 2 C = 225 N = color I = 0;
+	SU  T = 3 C = 225 N = color I = 0;
+	SU  T = 4 C = 225 N = color I = 0;
+	SU  T = 5 C = 225 N = color I = 0;
+	SU  T = 9 C = 225 N = color I = 0;
+	SU  T = 12 C = 225 N = color I = 0;
+	SU  T = 13 C = 225 N = color I = 16;
+	SU  T = 14 C = 225 N = color I = 16;
+	SU  T = 15 C = 225 N = color I = 16;
+	SU  T = 16 C = 225 N = color I = 16;
+	SU  T = 17 C = 225 N = color I = 16;
+	SU  T = 18 C = 225 N = color I = 16;
+	SU  T = 19 C = 225 N = color I = 16;
+	SU  T = 20 C = 225 N = color I = 16;
+	SU  T = 21 C = 225 N = color I = 16;
+	SU  T = 22 C = 225 N = color I = 16;
+	SU  T = 23 C = 225 N = color I = 16;
+	SU  T = 24 C = 225 N = color I = 16;
+	SU  T = 35 C = 225 N = color I = 0;
+	SU  T = 36 C = 225 N = color I = 0;
+	SU  T = 37 C = 225 N = color I = 0;
+	SU  T = 38 C = 225 N = color I = 0;
+	SU  T = 39 C = 225 N = color I = 0;
+	SU  T = 40 C = 225 N = color I = 0;
+	SU  T = 41 C = 225 N = color I = 0;
+	SU  T = 42 C = 225 N = color I = 0;
+	SU  T = 43 C = 225 N = color I = 0;
+	SU  T = 45 C = 225 N = color I = 0;
+	SU  T = 46 C = 225 N = color I = 0;
+	SU  T = 47 C = 225 N = color I = 0;
+	SU  T = 48 C = 225 N = color I = 0;
+	SU  T = 49 C = 225 N = color I = 0;
+	SU  T = 50 C = 225 N = color I = 0;
+	SU  T = 51 C = 225 N = color I = 0;
+	SU  T = 52 C = 225 N = color I = 0;
+	SU  T = 53 C = 225 N = color I = 0;
+	SU  T = 54 C = 225 N = color I = 0;
+	SU  T = 56 C = 225 N = color I = 0;
+	SU  T = 57 C = 225 N = color I = 0;
+	SU  T = 58 C = 225 N = color I = 0;
+	SU  T = 59 C = 225 N = color I = 0;
+	SU  T = 60 C = 225 N = color I = 0;
+	SU  T = 61 C = 225 N = color I = 0;
+	SU  T = 62 C = 225 N = color I = 0;
+	SU  T = 63 C = 225 N = color I = 0;
+	SU  T = 64 C = 225 N = color I = 0;
+	SU  T = 65 C = 225 N = color I = 0;
+	SU  T = 66 C = 225 N = color I = 0;
+	SU  T = 67 C = 225 N = color I = 0;
+	SU  T = 68 C = 225 N = color I = 0;
+	SU  T = 69 C = 225 N = color I = 0;
+	SU  T = 70 C = 225 N = color I = 0;
+	SU  T = 71 C = 225 N = color I = 0;
+	SU  T = 72 C = 225 N = color I = 0;
+	SU  T = 73 C = 225 N = color I = 0;
+	SU  T = 74 C = 225 N = color I = 0;
+	SU  T = 75 C = 225 N = color I = 0;
+	SU  T = 76 C = 225 N = color I = 0;
+	SU  T = 77 C = 225 N = color I = 0;
+	SU  T = 78 C = 225 N = color I = 0;
+	SU  T = 79 C = 225 N = color I = 0;
+	SU  T = 80 C = 225 N = color I = 0;
+	SU  T = 81 C = 225 N = color I = 0;
+	SU  T = 82 C = 225 N = color I = 0;
+	SU  T = 83 C = 225 N = color I = 0;
+	SU  T = 84 C = 225 N = color I = 0;
+	SU  T = 85 C = 225 N = color I = 0;
+	SU  T = 86 C = 225 N = color I = 0;
+	SU  T = 87 C = 225 N = color I = 0;
+	SU  T = 88 C = 225 N = color I = 0;
+	SU  T = 89 C = 225 N = color I = 0;
+	SU  T = 90 C = 225 N = color I = 0;
+	SU  T = 91 C = 225 N = color I = 0;
+	SU  T = 92 C = 225 N = color I = 0;
+	SU  T = 93 C = 225 N = color I = 0;
+	SU  T = 94 C = 225 N = color I = 0;
+	SU  T = 95 C = 225 N = color I = 0;
+	SU  T = 96 C = 225 N = color I = 0;
+
+	TEXT   TAXON = 10 CHARACTER = 226 TEXT = the_original_document_claimed_about_20_tentacles;
+	SU  T = 18 C = 226 N = color I = 0;
+	SU  T = 40 C = 226 N = color I = 0;
+	TEXT   TAXON = 60 CHARACTER = 226 TEXT = 'it''s difficult to calculate the number of hydra tentacle';
+
+	SU  T = 18 C = 227 N = color I = 0;
+	SU  T = 40 C = 227 N = color I = 0;
+
+	SU  C = 228 N = color I = 2;
+	SU  T = 1 C = 228 N = color I = 2;
+	SU  T = 2 C = 228 N = color I = 2;
+	SU  T = 3 C = 228 N = color I = 2;
+	SU  T = 4 C = 228 N = color I = 2;
+	SU  T = 5 C = 228 N = color I = 2;
+	SU  T = 9 C = 228 N = color I = 2;
+	SU  T = 12 C = 228 N = color I = 2;
+	SU  T = 14 C = 228 N = color I = 2;
+	SU  T = 15 C = 228 N = color I = 2;
+	SU  T = 16 C = 228 N = color I = 2;
+	SU  T = 18 C = 228 N = color I = 0;
+	SU  T = 19 C = 228 N = color I = 2;
+	SU  T = 20 C = 228 N = color I = 2;
+	SU  T = 21 C = 228 N = color I = 2;
+	SU  T = 22 C = 228 N = color I = 2;
+	SU  T = 23 C = 228 N = color I = 2;
+	SU  T = 24 C = 228 N = color I = 2;
+	SU  T = 35 C = 228 N = color I = 2;
+	SU  T = 36 C = 228 N = color I = 2;
+	SU  T = 37 C = 228 N = color I = 2;
+	SU  T = 38 C = 228 N = color I = 2;
+	SU  T = 39 C = 228 N = color I = 2;
+	SU  T = 40 C = 228 N = color I = 2;
+	SU  T = 41 C = 228 N = color I = 2;
+	SU  T = 42 C = 228 N = color I = 2;
+	SU  T = 43 C = 228 N = color I = 2;
+	SU  T = 45 C = 228 N = color I = 2;
+	SU  T = 46 C = 228 N = color I = 2;
+	SU  T = 47 C = 228 N = color I = 2;
+	SU  T = 48 C = 228 N = color I = 2;
+	SU  T = 49 C = 228 N = color I = 2;
+	SU  T = 50 C = 228 N = color I = 2;
+	SU  T = 51 C = 228 N = color I = 2;
+	SU  T = 52 C = 228 N = color I = 2;
+	SU  T = 53 C = 228 N = color I = 2;
+	SU  T = 54 C = 228 N = color I = 2;
+	SU  T = 56 C = 228 N = color I = 2;
+	SU  T = 57 C = 228 N = color I = 2;
+	SU  T = 58 C = 228 N = color I = 2;
+	SU  T = 59 C = 228 N = color I = 2;
+	SU  T = 60 C = 228 N = color I = 2;
+	SU  T = 61 C = 228 N = color I = 2;
+	SU  T = 62 C = 228 N = color I = 2;
+	SU  T = 63 C = 228 N = color I = 2;
+	SU  T = 64 C = 228 N = color I = 2;
+	SU  T = 65 C = 228 N = color I = 2;
+	SU  T = 66 C = 228 N = color I = 2;
+	SU  T = 67 C = 228 N = color I = 2;
+	SU  T = 68 C = 228 N = color I = 2;
+	SU  T = 69 C = 228 N = color I = 2;
+	SU  T = 70 C = 228 N = color I = 2;
+	SU  T = 71 C = 228 N = color I = 2;
+	SU  T = 72 C = 228 N = color I = 2;
+	SU  T = 73 C = 228 N = color I = 2;
+	SU  T = 74 C = 228 N = color I = 2;
+	SU  T = 75 C = 228 N = color I = 2;
+	SU  T = 76 C = 228 N = color I = 2;
+	SU  T = 77 C = 228 N = color I = 2;
+	SU  T = 78 C = 228 N = color I = 2;
+	SU  T = 79 C = 228 N = color I = 2;
+	SU  T = 80 C = 228 N = color I = 2;
+	SU  T = 81 C = 228 N = color I = 2;
+	SU  T = 82 C = 228 N = color I = 2;
+	SU  T = 83 C = 228 N = color I = 2;
+	SU  T = 84 C = 228 N = color I = 2;
+	SU  T = 85 C = 228 N = color I = 2;
+	SU  T = 86 C = 228 N = color I = 2;
+	SU  T = 87 C = 228 N = color I = 2;
+	SU  T = 88 C = 228 N = color I = 2;
+	SU  T = 89 C = 228 N = color I = 2;
+	SU  T = 90 C = 228 N = color I = 2;
+	SU  T = 91 C = 228 N = color I = 2;
+	SU  T = 92 C = 228 N = color I = 2;
+	SU  T = 93 C = 228 N = color I = 2;
+	SU  T = 94 C = 228 N = color I = 2;
+	SU  T = 95 C = 228 N = color I = 2;
+	SU  T = 96 C = 228 N = color I = 2;
+
+	SU  C = 229 N = color I = 0;
+	SU  T = 18 C = 229 N = color I = 0;
+	SU  T = 40 C = 229 N = color I = 0;
+
+	SU  T = 18 C = 230 N = color I = 0;
+	SU  T = 40 C = 230 N = color I = 0;
+
+	SU  T = 18 C = 231 N = color I = 0;
+	SU  T = 40 C = 231 N = color I = 0;
+
+	SU  T = 4 C = 232 N = color I = 16;
+	SU  T = 5 C = 232 N = color I = 16;
+	SU  T = 7 C = 232 N = color I = 16;
+	SU  T = 9 C = 232 N = color I = 16;
+	SU  T = 10 C = 232 N = color I = 16;
+	SU  T = 12 C = 232 N = color I = 16;
+	SU  T = 18 C = 232 N = color I = 0;
+	SU  T = 40 C = 232 N = color I = 0;
+
+	SU  T = 18 C = 233 N = color I = 0;
+	SU  T = 40 C = 233 N = color I = 0;
+
+	SU  T = 18 C = 234 N = color I = 0;
+	SU  T = 40 C = 234 N = color I = 0;
+
+	SU  T = 18 C = 235 N = color I = 0;
+	SU  T = 40 C = 235 N = color I = 0;
+
+	SU  T = 18 C = 236 N = color I = 0;
+	SU  T = 40 C = 236 N = color I = 0;
+
+	SU  T = 18 C = 237 N = color I = 0;
+	SU  T = 40 C = 237 N = color I = 0;
+
+	SU  T = 18 C = 238 N = color I = 0;
+	SU  T = 40 C = 238 N = color I = 0;
+
+	SU  T = 18 C = 239 N = color I = 0;
+	SU  T = 40 C = 239 N = color I = 0;
+
+	SU  T = 18 C = 240 N = color I = 0;
+	SU  T = 40 C = 240 N = color I = 0;
+
+	SU  T = 18 C = 241 N = color I = 0;
+	SU  T = 40 C = 241 N = color I = 0;
+
+	SU  T = 18 C = 242 N = color I = 0;
+	SU  T = 40 C = 242 N = color I = 0;
+
+	SU  T = 18 C = 243 N = color I = 0;
+	SU  T = 40 C = 243 N = color I = 0;
+
+	SU  T = 18 C = 244 N = color I = 0;
+	SU  T = 40 C = 244 N = color I = 0;
+
+	SU  T = 18 C = 245 N = color I = 0;
+	SU  T = 40 C = 245 N = color I = 0;
+
+	SU  C = 246 N = color I = 10;
+	SU  T = 18 C = 246 N = color I = 0;
+	SU  T = 40 C = 246 N = color I = 0;
+
+	SU  C = 247 N = color I = 10;
+	SU  T = 18 C = 247 N = color I = 0;
+	SU  T = 40 C = 247 N = color I = 0;
+
+	SU  T = 18 C = 248 N = color I = 0;
+	SU  T = 40 C = 248 N = color I = 0;
+
+	SU  T = 18 C = 249 N = color I = 0;
+	SU  T = 40 C = 249 N = color I = 0;
+
+	SU  C = 250 N = color I = 0;
+	SU  T = 18 C = 250 N = color I = 0;
+	SU  T = 40 C = 250 N = color I = 0;
+
+	SU  T = 18 C = 251 N = color I = 0;
+	SU  T = 40 C = 251 N = color I = 0;
+
+	SU  T = 18 C = 252 N = color I = 0;
+	SU  T = 40 C = 252 N = color I = 0;
+
+	SU  T = 18 C = 253 N = color I = 0;
+	SU  T = 40 C = 253 N = color I = 0;
+
+	SU  T = 18 C = 254 N = color I = 0;
+	SU  T = 40 C = 254 N = color I = 0;
+
+	SU  T = 18 C = 255 N = color I = 0;
+	SU  T = 40 C = 255 N = color I = 0;
+
+	SU  T = 18 C = 256 N = color I = 0;
+	SU  T = 40 C = 256 N = color I = 0;
+
+	SU  C = 257 N = color I = 16;
+	SU  T = 18 C = 257 N = color I = 0;
+	SU  T = 40 C = 257 N = color I = 0;
+
+	TEXT   CHARACTER = 258 TEXT = 'original name'' statocyst location''';
+	SU  C = 258 N = color I = 16;
+	SU  T = 18 C = 258 N = color I = 0;
+	SU  T = 40 C = 258 N = color I = 0;
+
+	SU  T = 18 C = 259 N = color I = 0;
+	SU  T = 40 C = 259 N = color I = 0;
+
+	SU  T = 18 C = 260 N = color I = 0;
+	SU  T = 40 C = 260 N = color I = 0;
+
+	SU  T = 18 C = 261 N = color I = 0;
+	SU  T = 40 C = 261 N = color I = 0;
+
+	SU  T = 18 C = 262 N = color I = 0;
+	SU  T = 40 C = 262 N = color I = 0;
+
+	SU  T = 18 C = 263 N = color I = 0;
+	SU  T = 40 C = 263 N = color I = 0;
+
+	SU  T = 18 C = 264 N = color I = 0;
+	SU  T = 40 C = 264 N = color I = 0;
+
+	SU  T = 18 C = 265 N = color I = 0;
+	SU  T = 40 C = 265 N = color I = 0;
+
+	SU  C = 266 N = color I = 10;
+	SU  T = 18 C = 266 N = color I = 0;
+	SU  T = 40 C = 266 N = color I = 0;
+
+	SU  T = 18 C = 267 N = color I = 0;
+	SU  T = 40 C = 267 N = color I = 0;
+
+	SU  C = 268 N = color I = 10;
+	SU  T = 18 C = 268 N = color I = 0;
+	SU  T = 40 C = 268 N = color I = 0;
+	SU  T = 70 C = 268 N = color I = 0;
+
+	SU  T = 18 C = 269 N = color I = 0;
+	SU  T = 40 C = 269 N = color I = 0;
+
+	SU  T = 18 C = 270 N = color I = 0;
+	SU  T = 40 C = 270 N = color I = 0;
+
+	SU  C = 271 N = color I = 10;
+	SU  T = 18 C = 271 N = color I = 0;
+	SU  T = 40 C = 271 N = color I = 0;
+
+	SU  T = 18 C = 272 N = color I = 0;
+	SU  T = 40 C = 272 N = color I = 0;
+	SU  T = 65 C = 272 N = color I = 5;
+
+	SU  C = 273 N = color I = 10;
+	SU  T = 18 C = 273 N = color I = 0;
+	SU  T = 40 C = 273 N = color I = 0;
+
+	SU  T = 18 C = 274 N = color I = 0;
+	SU  T = 40 C = 274 N = color I = 0;
+
+	SU  T = 18 C = 275 N = color I = 0;
+	SU  T = 40 C = 275 N = color I = 0;
+	SU  T = 63 C = 275 N = color I = 16;
+	SU  T = 65 C = 275 N = color I = 16;
+
+	SU  T = 18 C = 276 N = color I = 0;
+	SU  T = 40 C = 276 N = color I = 0;
+
+	SU  T = 18 C = 277 N = color I = 0;
+	SU  T = 40 C = 277 N = color I = 0;
+
+	SU  T = 18 C = 278 N = color I = 0;
+	SU  T = 40 C = 278 N = color I = 0;
+
+	SU  T = 18 C = 279 N = color I = 0;
+	SU  T = 40 C = 279 N = color I = 0;
+
+	SU  T = 18 C = 280 N = color I = 0;
+	SU  T = 40 C = 280 N = color I = 0;
+	SU  T = 70 C = 280 N = color I = 0;
+
+	SU  T = 18 C = 281 N = color I = 0;
+	SU  T = 40 C = 281 N = color I = 0;
+
+	SU  T = 18 C = 282 N = color I = 0;
+	SU  T = 40 C = 282 N = color I = 0;
+
+	SU  T = 18 C = 283 N = color I = 0;
+	SU  T = 40 C = 283 N = color I = 0;
+
+	SU  T = 18 C = 284 N = color I = 0;
+	SU  T = 40 C = 284 N = color I = 0;
+
+	SU  T = 18 C = 285 N = color I = 0;
+	SU  T = 40 C = 285 N = color I = 0;
+
+	SU  C = 286 N = color I = 0;
+	SU  T = 1 C = 286 N = color I = 0;
+	SU  T = 2 C = 286 N = color I = 0;
+	SU  T = 3 C = 286 N = color I = 0;
+	SU  T = 4 C = 286 N = color I = 0;
+	SU  T = 5 C = 286 N = color I = 0;
+	SU  T = 9 C = 286 N = color I = 0;
+	SU  T = 12 C = 286 N = color I = 0;
+	SU  T = 14 C = 286 N = color I = 0;
+	SU  T = 15 C = 286 N = color I = 0;
+	SU  T = 16 C = 286 N = color I = 0;
+	SU  T = 18 C = 286 N = color I = 0;
+	SU  T = 19 C = 286 N = color I = 0;
+	SU  T = 20 C = 286 N = color I = 0;
+	SU  T = 21 C = 286 N = color I = 0;
+	SU  T = 22 C = 286 N = color I = 0;
+	SU  T = 23 C = 286 N = color I = 0;
+	SU  T = 24 C = 286 N = color I = 0;
+	SU  T = 35 C = 286 N = color I = 0;
+	SU  T = 36 C = 286 N = color I = 0;
+	SU  T = 37 C = 286 N = color I = 0;
+	SU  T = 38 C = 286 N = color I = 0;
+	SU  T = 39 C = 286 N = color I = 0;
+	SU  T = 40 C = 286 N = color I = 0;
+	SU  T = 41 C = 286 N = color I = 0;
+	SU  T = 42 C = 286 N = color I = 0;
+	SU  T = 43 C = 286 N = color I = 0;
+	SU  T = 45 C = 286 N = color I = 0;
+	SU  T = 46 C = 286 N = color I = 0;
+	SU  T = 47 C = 286 N = color I = 0;
+	SU  T = 48 C = 286 N = color I = 0;
+	SU  T = 49 C = 286 N = color I = 0;
+	SU  T = 50 C = 286 N = color I = 0;
+	SU  T = 51 C = 286 N = color I = 0;
+	SU  T = 52 C = 286 N = color I = 0;
+	SU  T = 53 C = 286 N = color I = 0;
+	SU  T = 54 C = 286 N = color I = 0;
+	SU  T = 56 C = 286 N = color I = 0;
+	SU  T = 57 C = 286 N = color I = 0;
+	SU  T = 58 C = 286 N = color I = 0;
+	SU  T = 59 C = 286 N = color I = 0;
+	SU  T = 60 C = 286 N = color I = 0;
+	SU  T = 61 C = 286 N = color I = 0;
+	SU  T = 62 C = 286 N = color I = 0;
+	SU  T = 63 C = 286 N = color I = 0;
+	SU  T = 64 C = 286 N = color I = 0;
+	SU  T = 65 C = 286 N = color I = 0;
+	SU  T = 66 C = 286 N = color I = 0;
+	SU  T = 67 C = 286 N = color I = 0;
+	SU  T = 68 C = 286 N = color I = 0;
+	SU  T = 69 C = 286 N = color I = 0;
+	SU  T = 70 C = 286 N = color I = 0;
+	SU  T = 71 C = 286 N = color I = 0;
+	SU  T = 72 C = 286 N = color I = 0;
+	SU  T = 73 C = 286 N = color I = 0;
+	SU  T = 74 C = 286 N = color I = 0;
+	SU  T = 75 C = 286 N = color I = 0;
+	SU  T = 76 C = 286 N = color I = 0;
+	SU  T = 77 C = 286 N = color I = 0;
+	SU  T = 78 C = 286 N = color I = 0;
+	SU  T = 79 C = 286 N = color I = 0;
+	SU  T = 80 C = 286 N = color I = 0;
+	SU  T = 81 C = 286 N = color I = 0;
+	SU  T = 82 C = 286 N = color I = 0;
+	SU  T = 83 C = 286 N = color I = 0;
+	SU  T = 84 C = 286 N = color I = 0;
+	SU  T = 85 C = 286 N = color I = 0;
+	SU  T = 86 C = 286 N = color I = 0;
+	SU  T = 87 C = 286 N = color I = 0;
+	SU  T = 88 C = 286 N = color I = 0;
+	SU  T = 89 C = 286 N = color I = 0;
+	SU  T = 90 C = 286 N = color I = 0;
+	SU  T = 91 C = 286 N = color I = 0;
+	SU  T = 92 C = 286 N = color I = 0;
+	SU  T = 93 C = 286 N = color I = 0;
+	SU  T = 94 C = 286 N = color I = 0;
+	SU  T = 95 C = 286 N = color I = 0;
+	SU  T = 96 C = 286 N = color I = 0;
+
+	TEXT   CHARACTER = 287 TEXT = 'original name: peripheral system^n';
+	SU  T = 18 C = 287 N = color I = 0;
+	SU  T = 40 C = 287 N = color I = 0;
+	SU  T = 50 C = 287 N = color I = 0;
+
+	SU  T = 18 C = 288 N = color I = 0;
+	SU  T = 40 C = 288 N = color I = 0;
+
+	SU  T = 18 C = 289 N = color I = 0;
+	SU  T = 40 C = 289 N = color I = 0;
+
+	SU  T = 18 C = 290 N = color I = 0;
+	SU  T = 40 C = 290 N = color I = 0;
+
+	SU  T = 18 C = 291 N = color I = 0;
+	SU  T = 40 C = 291 N = color I = 0;
+
+	SU  T = 18 C = 292 N = color I = 0;
+	SU  T = 40 C = 292 N = color I = 0;
+
+	SU  T = 18 C = 293 N = color I = 0;
+	SU  T = 40 C = 293 N = color I = 0;
+
+	SU  T = 18 C = 294 N = color I = 0;
+	SU  T = 40 C = 294 N = color I = 0;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 294;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1778378217642;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1326284787020836767;
+			tell It;
+				setDefaultOrder  1 2 5 96 97 7 83 8 96 10 6 96 12 98 99 100 86 87 101 102 104 103 105 100 31 25 26 29 29 33 35 27 32 31 37 39 40 41 42 47 48 50 52 52 55 55 57 58 60 61 62 145 143 144 68 66 74 68 69 70 71 75 72 76 79 80 81 82 88 89 125 110 111 112 113 114 115 116 121 117 118 119 120 122 123 124 126 127 128 129 130 131 132 133 134 135;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5030600329187913160;
+			tell It;
+				setDefaultOrder  5 6 7 320 8 9 10 11 12 13 14 15 16 17 18 19 20 21 24 22 23 25 29 30 31 32 33 34 35 36 37 38 39 40 42 43 44 45 46 47 118 49 53 50 51 52 54 55 56 59 41 60 61 62 63 64 69 64 65 66 67 68 74 75 76 80 80 80 75 76 101 100 108 110 111 113 116 117 117 86 118 81 83 280 117 127 119 126 125 121 121 105 93 95 82 220 122 253 264 265 266 269 122 268 118 267 268 110 120 258 297 298 259 257 291 291 260 261 262 268 271 272 273 279 280 282 281 269 281 283 285 26 286 287 288 289 292 150 297 143 143 289 290 291 291 271 95 293 295 296 297 298 299 302 319 325 300 302 303 316 317 308 308 314 311 312 312 309 518 521 519 520 319 521 521 522 523 524 321 347 184 325 328 338 362 345 367 236 369 371 373 374 375 376 377 378 379 439 380 383 386 445 27 384 386 387 388 397 398 399 426 527 389 401 392 393 396 402 409 403 404 405 406 431 432 427 406 420 410 412 413 415 422 424 434 428 429 442 430 431 432 438 439 433 436 523 524 443 360 363 364 484 485 453 445 446 475 480 459 489 28 447 448 384 449 471 450 478 443 451 470 452 477 457 487 496 458 486 493 485 389 462 481 463 464 465 490 467 494 495 473 474 484 488;
+				attachments ;
+			endTell;
+			mqVersion 381;
+			checksumv 0 3 3141782246 null  getNumChars 294 numChars 294 getNumTaxa 96 numTaxa 96   short true   bits 2305843009213694015   states 63   sumSquaresStatesOnly 56383.0 sumSquares -9.2233720368547338E18 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1496 826;
+			setLocation 0 29;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #1326284787020836767 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #1326284787020836767;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					newAssistant  #mesquite.lists.NumForTaxaList.NumForTaxaList;
+				tell It;
+					suppress;
+					setValueTask  #mesquite.molec.PercentMissingInTaxon.PercentMissingInTaxon;
+					tell It;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #5030600329187913160;
+							endTell;
+						endTell;
+					endTell;
+					toggleShadeCells off;
+					desuppress;
+				endTell;
+					newAssistant  #mesquite.lists.NumForTaxaList.NumForTaxaList;
+				tell It;
+					suppress;
+					setValueTask  #mesquite.molec.PercentGapsInTaxon.PercentGapsInTaxon;
+					tell It;
+						getMatrixSource #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #5030600329187913160;
+							endTell;
+						endTell;
+						toggleEdges on;
+					endTell;
+					toggleShadeCells off;
+					desuppress;
+				endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1396 754;
+					setLocation 0 29;
+					setFont SanSerif;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5030600329187913160 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 209;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1396 754;
+					setLocation 0 29;
+					setFont SanSerif;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.NoColor.NoColor;
+					colorText  #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Magenta;
+					removeColor off;
+				endTell;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					setColumnWidth 16;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable off;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal off;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1396 754;
+						setLocation 0 29;
+						setFont Default;
+						setFontSize 12;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

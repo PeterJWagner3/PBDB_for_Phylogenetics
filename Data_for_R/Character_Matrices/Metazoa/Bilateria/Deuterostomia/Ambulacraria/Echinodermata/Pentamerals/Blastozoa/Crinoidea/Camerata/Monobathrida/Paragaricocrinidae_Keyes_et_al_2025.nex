@@ -1,0 +1,193 @@
+#NEXUS
+[written Sun Aug 17 15:39:09 CDT 2025 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.69.80.127]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=15;
+	TAXLABELS
+		Amphoracrinus_gilbertsoni Athabascacrinus_colemanensis Gennaeocrinus_kentuckiensis Pimlicocrinus_clitheroensis Iberocrinus_multibrachiatus Palenciacrinus_mudaensis Megaliocrinus_aplatus Megaliocrinus_bolli Megaliocrinus_exotericus Paramegaliocrinus_erlangeri Paragaricocrinus_mediterraneus Tuscumbiacrinus_madisonensis Wannericrinus_glans Nipponicrinus_hashimotoi Nipponicrinus_akiyoshiensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=41;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Amphoracrinus_gilbertsoni       (3 4)0014000011050501012010202111001220212150
+	Athabascacrinus_colemanensis    41001121111011400102010202(1 2)12010320401151
+	Gennaeocrinus_kentuckiensis     31012021011052510103001(1 2 3)03103011420??0161
+	Pimlicocrinus_clitheroensis     50010001011000301112010(0 1)02112011410212052
+	Iberocrinus_multibrachiatus     41020002100100101102110002112011420312061
+	Palenciacrinus_mudaensis        37020001400100201003100(0 1)01(1 2)03010321400061
+	Megaliocrinus_aplatus           42020001100100101(0 1)02100002102010211302161
+	Megaliocrinus_bolli             42003002200101100002110102112010410????61
+	Megaliocrinus_exotericus        40010001100100311(0 1)0311000(1 2)(1 2)13011420402161
+	Paramegaliocrinus_erlangeri     42020232400112200103110222113010420????60
+	Paragaricocrinus_mediterraneus  4100103240000120?002210002112010220400?61
+	Tuscumbiacrinus_madisonensis    51110002100000100102000002203130210332262
+	Wannericrinus_glans             41010001400010301102210(0 1)02112000110212061
+	Nipponicrinus_hashimotoi        4101013200012?20100100000(1 2 3)(1 2)1200?410412061
+	Nipponicrinus_akiyoshiensis     4101013200012?10?001010002?1200?1104021?1
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 41;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 6 TEXT = 'Iberocrinus multibrachiatus^nsensu Breimer, 1962';
+	TEXT  TAXON = 14 TEXT = Hashimoto_Gen._Type_B1;
+	TEXT  TAXON = 15 TEXT = Hashimoto_Gen._Type_B2;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 41;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1755463150247;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4724282908592791574;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3619841901525597203;
+			mqVersion 381;
+			checksumv 0 3 4183205183 null  getNumChars 41 numChars 41 getNumTaxa 15 numTaxa 15   short true   bits 255   states 255   sumSquaresStatesOnly 83373.0 sumSquares 83373.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1666 885;
+			setLocation 1855 -149;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3619841901525597203 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 239;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1566 813;
+					setLocation 1855 -149;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

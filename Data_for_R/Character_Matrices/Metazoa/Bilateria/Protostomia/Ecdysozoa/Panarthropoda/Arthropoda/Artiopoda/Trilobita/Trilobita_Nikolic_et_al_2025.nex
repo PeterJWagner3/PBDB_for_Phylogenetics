@@ -1,0 +1,538 @@
+#NEXUS
+[written Mon Sep 07 21:30:32 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/192.168.1.73]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=56;
+	TAXLABELS
+		Alokistocare_subcoronatum Aulacopleura_koninckii Baojingia_subquadrata Bathyurus_angelini Bathyurus_ingalli Bolaspidella_housensis Celmus_granulatus Changchowilla_riojana Cirriticeps_auranticum Cliffia_nicoleae Conocoryphe_sulzeri Coosella_kieri Cordania_falcata Crepicephalus_buttsi_montanaensis Cryptoderaspis_metisensis Cyclolorenzella_convexa Dimeropyge_speyeri Dimeropygiella_caudanodosa Ehmaniella_fronsplanata Ehmaniella_whitei Elrathia_kingii Elvinia_roemeri Gerastos_tuberculatus Glaphurus_pustulatus Glaphyraspis_ornata Hintzecurus_paragenalatus Holotrachelus_punctillosus Inouyops_latilimbatus Jiulongshania_longispina Kingstonia_peltata Lasarchopyge_benedettoi Lisania_paibiensis Maliminaspis_packardi Marjumia_typicalis Menomonia_sp. Modocia_kohli Norwoodia_boninoi Oopsites_hibernicus Papyriaspis_lanceola Parasolenopleura_gregaria Penarosa_retifera Pianaspis_sors Politicurus_politus Proetus_nemus Ptychoparella_lloydi Radnoria_bretti Rasettia_sp. Rorringtonia_kennedyi Rorringtonia_scanica Sao_hirsuta Scharyia_siceripotrix Tasmacephalus_platypus Telephina_problematica Tricrepicephalus_coria Tricrepicephalus_texanus Tropidocoryphe_bassei 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Trilobita_Nikolic_et_al_2025.nex"';
+	DIMENSIONS  NCHAR=254;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	CHARSTATELABELS 
+		1 Ventral_structure_of_cephalon /  'librigena separated by narrow (sag.) doublure cranidium (no ventral connection) (e.g., eodiscids)' 'librigena separated by medial extension of cranidial doublure (no ventral connection) (e.g., Hinzecurus sp., Adrain et al 2003)' 'librigena separated by ventrally directed pronged cranidial margin (no ventral connection) (e.g., Telephina species, Chatterton et al 1999)' rostral_plate_separates_librigena 'rostellum separates part of librigena, at least in smaller holaspids' central_median_suture_separates_librigena librigena_fused,
+		2 Ventral_rostral_projection /  Absent Present,
+		3 Width_of_rostral_plate /  'Wider than glabella (widest part)' 'Narrower than glabella (widest part)' 'As wide as glabella (widest part)',
+		4 'Shape of rostral plate (as defined by connective sutures)' /  parallel_or_weakly_barrel_shaped 'triangular or trapazoidal (rostral plate broadens or converges posteriorly/ventrally)' waisted_at_midlength_into_two_triangular_portions_or_hourglass_shape,
+		5 Rostral_flange /  Absent Present,
+		6 'Posterior margin of rostral plate continues into long-broad extension' /  Absent Present,
+		7 Terrace_lines_on_central_ventral_surface_of_cephalon /  Absent Present,
+		8 Hypostomal_attachment_in_holaspids /  natant 'conterminant, with functional hypostomal suture' 'conterminant, rostral plate fused to hypostome',
+		9 Orientation_of_hypostome /  horizontal_to_glabella tilted_dorsally_from_anterior_margin tilted_ventrally_from_anterior_margin,
+		10 Shape_of_hypostome /  elongate_oval 'elongate (sagittal), rectangular' 'transverse, rectangular' trapezoidal_to_triangular Subsquare 'elongate, waisted',
+		11 Anterior_border_of_hypostome /  'absent (undefined)' 'narrow (sag.)' 'wide (sag.)',
+		12 Anterior_margin_of_hypostome /  Transverse_to_smoothly_curved 'sinuously curved such that medial part of border forms apparent projection that extends as far or just beyond lateral margins (e.g., Dimeropyge speyeri & D. clintonensis, Chatteron 1994)',
+		13 Posterior_margin_of_hypostome /  'rounded/transverse' 'reentrant/median notch' forked angular entends_into_medial_node_or_spinose_node,
+		14 Maculae /  'absent (or poorly developed)' present,
+		15 Form_of_maculae /  'elevated, narrow ridges' 'elevated, subovate platforms' smooth_flat_area thin_slits_or_furrows indented_ovals_or_triangular_areas,
+		16 Position_of_maculae /  anterior_half_of_middle_body posterior_half_of_middle_body,
+		17 Shape_of_middle_body_of_hypostome /  elongated 'round (equally long as wide)' transverse 'divided into two oval areas (e.g., Remopleurides pattersoni, see Chatterton & Ludvigsen 1976)',
+		18 Middle_furrow_on_middle_body_of_hypostome /  absent present,
+		19 Expression_of_hypostomal_middle_furrow /  'Continuous (tr.) across middle body' 'Effaced medially/adaxially' 'isolated and U-shaped',
+		20 Rhynchos /  Absent Present,
+		21 'Ventrally-oriented protuberance/boss on posterior lobe of middle body' /  Absent 'Present (e.g., Holotrachelus punctillosus, Suzuki 2001)',
+		22 Granulation_on_middle_body /  Absent Present,
+		23 Terrace_lines_on_middle_body /  Absent Present,
+		24 Granulation_on_margins_of_hypostome /  Absent Present,
+		25 Terrace_lines_on_margins_of_hypostome /  Absent Present,
+		26 Anterior_wing /  Absent Present,
+		27 Anterior_wing_direction /  extended_dorsally_only 'extended laterally, may or may not extend dorsally',
+		28 Anterior_wing_process /  Absent Present,
+		29 Posterior_wings /  Absent Present,
+		30 Shape_of_posterior_wings /  'projecting inward (dorsally) only a short distance' 'prominently flexed inward (dorsally)' wide_and_flat_laterally,
+		31 Overall_expression_of_dorsal_suture /  Extends_from_anterior_border_to_lateral_or_posterior_margin 'Extends only across postero-lateral corner',
+		32 Size_of_frontal_area /  Wider_than_palpebral_lobes 'As wide as, or narrower than, palpebral lobes',
+		33 Point_where_anterior_part_of_dorsal_suture_meets_anterior_margin /  At_lateral_margin Abaxial_of_maximum_width_of_glabella Adaxial_of_maximum_width_of_glabella At_sagittal_axis 'Does not cross anterior border (entirely supramarginal)' Confluent_with_margin,
+		34 Posterior_part_of_dorsal_suture_from_palpebral_lobe /  'consistently laterally to postero-laterally directed to lateral margin (proparian type I)' 'laterally to anteriorly directed before curving back to lateral margin (proparian type II)' 'posterolaterally directed (opistoparian type I, also referred to as "divergent straight")' 'posterolaterally directed and meets genal angle (gonatoparian)' 'posteriorly directed before turning laterally/posterolaterally (opistoparian type IIa, comprises both angular and sinous bends)' 'laterally directed before turning posteriorly (opistoparian type IIb, comprises both sinuous and angular bends)' 'posteriorly directed (opistoparian type III)' 'laterally to posterolaterally directed before curving back and in (opistoparian type IV)',
+		35 'For opistoparian type IV, lateral extent of dorsal suture' /  curves_inward_before_crossing_lateral_border_furrow 'curves inward after crossing lateral border furrow (e.g., Scharyia, Cedaria)',
+		36 Ridge_adjacent_to_posterior_dorsal_suture /  Absent 'Present (e.g., Lasarchopyge bennedettoi, Chatterton et al 1998)',
+		37 'Presence of lateral, paired, light-sensing structures ("eyes")' /  Absent Present,
+		38 Convexity_of_surface_of_compound_lens /  'Eye mid-sized, visual surface not extending beyond palpebral lobe ("shaded by lobe")' 'Eyes large, globose, visual surface projecting beyond palpebral lobe',
+		39 'A-P position of posterior end of lateral, paired, light-sensing structures' /  At_anterior_margin_of_glabella_or_completely_anterior_to_glabella Anterior_to_junction_of_S1_and_axial_furrow Posterior_to_junction_of_S1_and_axial_furrow,
+		40 Shape_of_palpebral_or_ocular_lobe /  adaxial_edge_of_lobe_straight_to_moderately_curved adaxial_edge_of_lobe_strongly_curved,
+		41 'Association of light-sensing structure with glabella' /  In_contact_with_glabella 'Connected with glabella by eye (or palpebro-ocular) ridge (not necessarily confluent)' Unconnected_to_glabella,
+		42 Palpebral_furrow /  Absent Present,
+		43 Confluence_of_palpebral_lobe_and_glabella /  confluent axial_furrow_separates_lobe_and_glabella,
+		44 'Differentiation of eye ridge from light-sensing structure' /  'continuous, undifferentiated (e.g., Ehmaniella whitei, Robison et al 2015 fig. 83)' 'distinctly differentiated, based on relative width and/or relief',
+		45 Furrows_adjacent_to_eye_ridge /  'undefined to shallow (may also be defined by row of pits of change in slope)' 'defined, deep' 'transitions from defined to undefined (e.g., Hintzeia parafirmimarginis)',
+		46 Tubercles_on_eye_ridge /  Absent Present,
+		47 Parafrontal_band /  absent present,
+		48 Insertion_of_eye_into_cephalic_shield /  Eye_insertion_confluent_with_cephalic_shield_surface Eye_insertion_borne_on_stalk,
+		49 Eye_socle /  Absent Present,
+		50 'Tubercles or spines (spinose tubercles?) on palpebral lobe' /  absent present,
+		51 Furrow_within_palpebral_lobe /  Absent Present,
+		52 Circumocular_tubercles /  Absent Present,
+		53 Development_of_axial_furrow /  clearly_impressed shallow_but_evenly_impressed partially_impressed_with_posterior_end_deeper partially_impressed_with_anterior_end_deeper effaced,
+		54 Fossulae_expressed_on_dorsal_surface /  absent 'present, as small, discrete pits',
+		55 Anterolateral_lobes /  Absent Present,
+		56 Preoccipital_glabellar_shape_in_holaspids /  'Cone-shaped [smoothly convergent forward]' 'Cylinder-shaped [parallel-sided]' 'Hourglass-shaped [narrower at midpoint than anterior or posterior ends]' 'Funnel-shaped [smoothly divergent forward]' 'Elliptical [widest at midpoint compared to anterior and posterior ends]' 'Constricted [narrow L1, L2, L3 with enlarged frontal lobe]' 'Flask- or bell-shaped [relatively inflated L1]' 'Wide, rectangular with expanded/widened area (tr.) in front of palpebral lobes (e.g. Nileus)',
+		57 'Expression of S0 (depth)' /  Deep_laterally_and_shallow_medially subequal_across_glabellar_width deep_medially_and_shallow_laterally effaced,
+		58 'Expression of S0 (width)' /  Equal_in_width 'Expanded in width laterally (may be smooth transition or as "dent")',
+		59 Expression_of_S1 /  absent_or_highly_effaced_in_testaceous_and_exfoliated_material confined_laterally_and_connected_to_axial_furrow transglabellar 'pits (isolated from axial furrow); connected to medial furrow' 'isolated from axial furrow, abaxially curved furrows (sinuous or cresectric?)' 'expressed from axial furrow, intersects with S2 or longitudinal furrow' 'expressed from axial furrow, intersects with occipital furrow' apodomal_pits_sitting_in_axial_furrow,
+		60 Shape_of_S1_when_laterally_defined /  straight_to_concave 'convex (curves smoothly posteriorly)' 'geniculate (bends posteriorly at angle)' 'bigeniculate (two bends at angles)',
+		61 S1_bifurcates_adaxially /  absent present,
+		62 Expression_of_S2 /  absent_or_highly_effaced_in_testaceous_and_exfoliated_material confined_laterally_and_connected_to_axial_furrow transglabellar isolated_pits_connected_by_medial_furrow 'isolated slits (L2 and L3 connected)' present_as_indent_along_longitudinal_furrow 'isolated, abaxially curved furrows (sinuous or cresectric?)' apodomal_pits_sitting_in_axial_furrow,
+		63 Shape_of_S2_when_laterally_confined /  straight_or_weakly_convex strongly_convex_anteriorly,
+		64 Expression_of_S3 /  absent_or_highly_effaced_in_testaceous_and_exfoliated_material confined_laterally_and_connected_to_axial_furrow 'furrows/slits not connected to axial furrow' transglabellar isolated_pits_connected_by_medial_furrow confluent_with_anterior_end_of_longitudinal_furrow 'isolated, abaxially curved furrows (sinuous or cresectric?)' apodomal_pits_sitting_in_axial_furrow,
+		65 Shape_of_S3_when_laterally_confined /  straight_or_weakly_convex strongly_convex_anteriorly isolated_slots bipartite,
+		66 Orientation_of_S3_when_laterally_confined /  'directed forwards adaxially (from axial furrow)' 'directed backwards adaxially (from axial furrow)' transverse,
+		67 Expression_of_S4 /  absent present,
+		68 Expression_of_S5 /  absent present,
+		69 Sagittal_glabellar_furrow /  absent 'present, connecting S1, S2, S3' 'present, not connecting furrows',
+		70 'Sagittal glabellar ridge (carina)' /  Absent Present,
+		71 Medial_sulcus_in_anterior_margin_of_frontal_lobe_of_glabella /  absent present,
+		72 'Longitudinal glabellar furrow (exsagital)' /  Absent Present,
+		73 Expression_of_longitudinal_glabellar_furrow /  Shallow Deep_along_entire_length 'Deep posteriorly, shallowing anteriorly' 'Connected or marked apodomal pits [ = pulvinar furrow]',
+		74 Relationship_of_L1_to_occipital_ring /  Occipital_ring_not_abaxially_incised_by_L1 Occipital_ring_abaxially_incised_by_L1,
+		75 'Division of L1 into sublobes (L1a, L1b)' /  absent present,
+		76 L3_expanded_in_anterolateral_lobe /  Absent Present,
+		77 Tubercles_on_glabella /  Absent Present,
+		78 Arrangement_of_tubercles_on_glabella_when_present /  Erratic Series_along_sagittal_axis Paired_lateral_tubercles,
+		79 Granulation_on_glabella /  Absent Present,
+		80 Expression_of_glabellar_granulation /  Hemispherical 'Elongate and aligned (may also look "wrinkled")',
+		81 Pitting_on_glabella /  Absent Present,
+		82 Terrace_lines_on_glabella /  Absent Present,
+		83 Medial_glabellar_muscle_scars /  Absent Present,
+		84 Expression_of_medial_glabellar_muscle_scars /  Apodemes Smooth_area_in_sculpture Lateral_ridges_on_margins Raised_area_on_dorsal_surface Rough_or_darkened_area 'Area of low bumps, increasing in width anteriorly (e.g., FAI of Lerosy-Aubril and Peel 2018)',
+		85 Posterolateral_glabellar_muscle_scars /  Absent Present,
+		86 Expression_of_posterolateral_glabellar_muscle_scars /  Apodomes Smooth_or_darkened_area,
+		87 'Expanded area in posterior part of glabella (L1)' /  Absent Present,
+		88 Course_of_posterior_margin_of_occipital_ring /  'convex [= much wider medially]' transverse concave,
+		89 'Anterior median tubercle on L0 (=occipital ring)' /  absent present,
+		90 Tubercle_pair_on_anterior_edge_of_occipital_ring /  Absent Present,
+		91 Medial_posterior_occipital_spine /  absent present,
+		92 Expression_of_medial_occipital_spine /  'Short, thin or node-like' 'Long, robust' 'Large with base as wide as entire occipital ring (e.g., Inouyops latilimbata, Zhang and Yuan 1981)',
+		93 Scattered_or_erratic_granulation_on_occipital_ring /  Absent Present,
+		94 Scattered_or_erratic_tubercles_on_occipital_ring /  Absent Present,
+		95 Terrace_lines_on_occipital_ring /  Absent Present,
+		96 Cephalic_Median_Organ /  Absent Present,
+		97 Medial_lengthening_of_anterior_cephalic_border /  'border of equal length (sagittaly/exsagitally)' border_longer_medially_than_abaxially border_shorter_medially_than_abaxially 'border extremely longer medially than abaxially (e.g., Megistaspis, Tasmacephallus)',
+		98 Row_of_spinose_tubercles_running_along_posterior_margin_of_cephalon /  Absent 'Present (e.g., Hintzecurus paragenalatus, Adrain et al 2003)' 'Only on occipital ring (e.g., Changchowilla riojana, Waisfeld et al 2001)',
+		99 Granulation_on_anterior_cephalic_border /  Absent Present,
+		100 Terrace_lines_on_anterior_cephalic_border /  Absent Present,
+		101 'Cephalic border furrow with elongate (tr.) median pits' /  absent present,
+		102 Tropidium /  Absent Present,
+		103 Continuity_of_tropidium /  single_continuous_ridge 'multiple discontinous ridges (= tropidial ridge of Owens 1973)',
+		104 Genal_ridge /  Absent Present,
+		105 'Shape of anterior-most part of cephalon in dorsal view' /  sagittaly_pointed straight_or_transverse curved_into_three_convex_forward_lobes evenly_curved convex_forward_or_curved_posteriorly_medially,
+		106 Preglabellar_field /  absent present,
+		107 Sagittal_length_of_preglabellar_field_compared_to_anterior_cephalic_border /  preglabellar_field_longer_than_anterior_border preglabellar_field_equal_in_length_to_anterior_border preglabellar_field_shorter_than_anterior_border,
+		108 'Plectrum on dorsal surface (expressed on preglabellar field)' /  absent present,
+		109 'Medial swelling in preglabellar field (= preglabellar boss)' /  absent present,
+		110 Shape_of_preglabellar_boss /  'narrow (tr) long (sag) swelling' 'broad (tr) swelling that merges with anterior border' 'Broad (tr) but restricted sagittally (does not merge onto border; e.g., Conocoryphe sulzeri)',
+		111 Anteriorly_divergent_furrows_on_preglabellar_field_emanating_from_axial_furrow /  absent present,
+		112 Extent_of_anteriorly_divergent_furrows_on_preglabellar_field /  'extending to, and connecting with, anterior border' not_extending_to_anterior_border,
+		113 Genal_caeca /  Absent Present,
+		114 Scuplture_on_glabella_or_fixigena_extends_onto_frontal_area /  Absent Present,
+		115 Radiating_grooves_on_frontal_area /  absent present,
+		116 Expression_of_preglabellar_furrow /  distinctly_incised_medially_and_abaxially 'sharply incised abaxially, abruptly shallowing adaxially, weak medially' shallow_medially_and_abaxially entirely_indistinct_or_effaced more_deeply_incised_medially_than_abaxially,
+		117 Course_of_preglabellar_furrow /  transverse 'rounded, convex forward' angular_and_convex_forward angular_and_concave_forward,
+		118 'Orientation of glabella and/or preglabellar field in front of palpebral lobes (or mid-glabellar region if eyeless)' /  'flattened, gently sloping' 'convex, steeping sloping' concave,
+		119 Glabellar_convexity /  'strongly inflated (>1.5)' 'inflated (above fixigena but < 1.5)' 'not inflated, equal in height' depressed_relative_to_cheeks,
+		120 Posterior_glabella_strongly_inflated_and_overhanging_occipital_ring /  Absent 'Present (e.g. Cryptoderaspis metisensis, Rasetti 1946)',
+		121 Bacculae /  absent present,
+		122 Intergenal_spine /  absent present,
+		123 'Pitting on fixigena/librigena' /  Absent Present,
+		124 'Terrace lines on fixigena/librigena' /  Absent Present,
+		125 'Granulation on fixigena/librigena' /  Absent Present,
+		126 'Expression of fixigenal/librigenal granulation' /  Hemispherical 'Elongate and aligned (may also look "wrinkled")',
+		127 'Tubercles on fixigena/librigena' /  Absent Present,
+		128 'Arrangement of tubercles on fixigena/librigena if present' /  Erratic In_rows_or_pairs 'Dominated by A1, A2, A3',
+		129 Swelling_on_posterior_border_just_adjacent_to_axial_furrow_with_multiple_granules /  Absent Present,
+		130 Articulating_features_on_posterior_border /  Inconspicuous Fulcrum Hooked_distal_end Articulating_process_or_flange,
+		131 Genal_spine /  absent present,
+		132 Shape_of_genal_spine /  tapering 'bulbous (includes bulging or swollen angle?)' 'stout (knobs)',
+		133 Curvature_of_genal_spine /  straight incurved_posteriorly outcurved_posteriorly,
+		134 Nature_of_lateral_border_of_genal_spine /  follows_curvature_of_lateral_border_of_cephalon bends_outward_from_lateral_border bends_inward_from_lateral_border,
+		135 Tip_of_genal_spine /  straight hooked,
+		136 Length_of_genal_spines /  no_longer_than_first_thoracic_segment extends_past_first_thoracic_segment_but_no_further_than_halfway_down_thorax extends_past_halfway_down_thorax_but_not_to_pygidium extends_to_pygidium extends_beyond_pygidium,
+		137 Granulation_on_genal_spine /  Absent Present,
+		138 Spines_on_genal_spines /  Absent Present,
+		139 Ridge_on_genal_spine /  Absent Present,
+		140 Terrace_lines_on_genal_spine /  Absent Present,
+		141 Intergenal_angle /  Absent Present,
+		142 'Strong, coarsely reticulated (honeycomb-like) ornament' /  absent present,
+		143 Shape_of_cephalic_doublure /  tubular flattened 'flattened abaxially beneath lateral border, curving up adaxially to lie close beneath dorsal surface of librigena' 'flattened posteriorly, becoming more tubular anteriorly' angular 'flattened anteriorly, becoming more tubular posteriorly',
+		144 'Ventrally-extending ridge on doublure' /  Absent Present,
+		145 Shape_of_anterior_and_lateral_border /  'convex, including continuing convexity of frontal area (e.g., Kingstonia)' bevelled flattened concave,
+		146 Anterior_border_furrow_on_cephalon /  Absent Present,
+		147 Course_of_anterior_border_furrow /  'Continuously, evenly curved' 'Sinuous/w shaped (e.g. Baojingia subquadrata)' 'Expressed only on lateral sides of frontal area (e.g., Bavarilla zemmourensis)' 'angular medially (but not extending into plectrum)',
+		148 Width_of_anterior_border_furrow_on_cephalon /  Narrow Wide,
+		149 Lateral_border_furrow_on_cephalon /  Absent Present,
+		150 Width_of_lateral_border_furrow /  narrow wide,
+		151 Posterior_extent_of_lateral_border_furrow /  Does_not_reach_posterior_border Reaches_posterior_border 'Extend onto posterior border to margin and/or genal angle and/or genal spine',
+		152 Posterior_border_furrow /  Absent Present,
+		153 Depth_of_posterior_border_furrow /  Shallow Deeply_excised,
+		154 Extent_of_posterior_border_furrow /  Does_not_reach_lateral_border Reaches_lateral_border 'Extends onto lateral border, clearly curving posteriorly to genal angle and/or onto genal spine (e.g., Rorringtonia scanica, Owens 2004))',
+		155 Opisthopleural_ridge_with_lateral_swelling /  Absent Present,
+		156 Epiborder_furrow /  Absent Present,
+		157 'Border spines/tubercles anterior to genal spine/genal angle' /  Absent Present,
+		158 'Expression of pre-genal-spine projections' /  'one or two just anterior to genal spine, short and tubercular' 'many, short and tubercular' 'many, long and spinose' frontal_spine frontal_process,
+		159 'Marginal extent of pre-genal-spine projections' /  'Restricted to librigena (e.g., many odontopleurids)' 'Across lateral and anterior cephalic margin (e.g., Dimeropyge, Glaphurus, some odontopleurids?)',
+		160 Anterior_projection_on_doublure /  Absent Present,
+		161 Vincular_structures /  Absent Present,
+		162 'Panderian opening/notch' /  Absent Present,
+		163 'Macropleural thoracic spine(s)' /  absent present,
+		164 Shape_of_anteriormost_thoracic_pleural_tips /  'falcate/sentate spines (pleural margins continuous onto spines)' '"thorn"-like spines (base of spine much narrower (exsag) than pleural region' 'spatulate (non-spinose)',
+		165 Nature_of_shift_in_expression_of_thoracic_pleural_tips_across_the_thorax /  Absent Present,
+		166 Position_of_the_transition_from_one_thoracic_pleural_tip_type_to_another /  after_second_thoracic_tergite after_third_thoracic_tergite after_fourth_thoracic_tergite after_fifth_thoracic_tergite after_sixth_thoracic_tergite after_seventh_thoracic_tergite after_tenth_thoracic_tergite after_eleventh_thoracic_tergite,
+		167 Length_of_pleural_spines_on_thorax /  of_equal_length_or_slightly_increasing_or_decreasing_posteriorly strongly_increasing_posteriorly,
+		168 Fringing_of_lateral_thoracic_pleural_margin_with_short_spines /  Absent 'Present (e.g., Glaphurus pustulosus, Ulrich 1930)',
+		169 'A-P location of maximum width of thorax' /  At_anteriormost_thoracic_tergite In_middle_of_thorax Constant_width_along_thorax,
+		170 Divided_axial_ring /  Absent 'Present (equivalent to the presence of pre- and postannulus)',
+		171 Apodemal_pits_on_thoracic_tergites /  Absent Present,
+		172 Axial_thoracic_spines /  Absent Single_spine_or_tubercles_present_on_one_or_more_segments Paired_spines_or_tubercles_present_on_one_or_more_segments Row_of_spines_or_tubercles_present_on_one_or_more_segments,
+		173 'Macroaxial spine [=hypertrophied thoracic axial spine of Paterson et al]' /  Absent Present,
+		174 Position_of_macroaxial_spine_on_thorax /  'early to develop (anterior half of thorax)' 'late to develop (posterior half of thorax)',
+		175 Granulation_on_axial_rings_of_thorax /  Absent Present,
+		176 Expression_of_thoracic_axial_ring_granulation /  Granules_only Erratic_tubercles_dominant Paired_tubercles_dominant,
+		177 Terrace_lines_on_thoracic_axial_ring /  Absent Present,
+		178 Thoracic_facets /  Absent Present,
+		179 Position_of_pleural_furrow_relative_to_facet /  Ends_at_or_before_facet_or_fulcrum 'Postfacetal [continues posteriorly of facet] (e.g., Isotelus, Proetus, dalmanitids)' 'Epifacetal [continues onto facet] (e.g., phacopids, calymenids)',
+		180 Articulating_process_and_socket_or_flange_in_thorax /  Absent Present,
+		181 'Panderian protuberance/notch/opening in thorax' /  Absent Present,
+		182 Thoracic_pleural_furrow /  Absent Present,
+		183 Path_of_thoracic_pleural_furrows /  Transverse Oblique,
+		184 Width_of_thoracic_pleural_furrows /  'Narrow (comprises less than half of the pleural field)' 'Wide (comprises half or more of the pleural field) (e.g., Aulacopleura koninckii)',
+		185 Bands_on_thoracic_plurae /  Evenly_inflated Posterior_band_strong Anterior_band_inflated,
+		186 Granulation_of_pleurae /  Absent Present,
+		187 Expression_of_pleural_granulation /  Granules Tubercles Spinose,
+		188 'Pustule, large tubercle, or spine on pleurae' /  Absent Present,
+		189 Differentiation_between_pygidium_and_thorax_in_late_holaspids /  'anteriormost pleural segment resembles unreleased thoracic segment in similar orientation and expression of pleural and interpleural furrows and distal tips, such that the thoracic-pygidial boundary is indistinct' 'anteriormost pleura (or pleural region) differs from thoracic pleural morphology in the orientation and/or expression of pleural and interpleural furrows and distal tips; includes taxa with distinct pygidial border' 'anteriormost pleural segment is macropleural, differing significantly from thoracic segments and more posterior pygidial segments',
+		190 'Shape of pygidium (generally, excluding spines)' /  Subtriangular Subquadrate Semicircular 'Shield-shaped [consolidate with subquadrate?]',
+		191 'Pygidial articulation feature (as visible in dorsal view)' /  Absent Present,
+		192 Form_of_articulation_feature /  'Angular margin (i.e. fulcrum)' 'Tubercle, distinct swelling, or articulating process' Flange Start_of_facet,
+		193 Pygidial_pleural_furrows /  'Absent/effaced' Present,
+		194 Number_of_pygidial_pleural_furrows /  Only_on_a_single_segment On_multiple_segments,
+		195 Expression_of_pygidial_pleural_furrows /  Well_impressed_from_axial_furrow_to_pygidial_margin 'Well impressed near axial furrow, but become shallower or effaced near pygidial margin, including termination at border furrow' 'Well impressed at border, becomes shallower closer to axial furrow' Only_shallow_furrows,
+		196 Preannulus_on_at_least_one_axial_furrow_of_pygidium /  Absent Present,
+		197 'Curvature of pygidial pleural furrows before border (may be expressed on internal mould)' /  Curved_backwards Approximately_straight Concave_forward,
+		198 Pygidial_interpleural_furrows /  Absent Present,
+		199 Expression_of_pygidial_interpleural_furrows /  Consistently_as_strong_as_pleural_furrows Consistently_shallower_than_pleural_furrows Consistently_stronger_than_pleural_furrows Stronger_on_border_but_shallower_on_pleural_area_than_pleural_furrows,
+		200 Height_of_anterior_band_of_pygidial_pleurae /  No_distinction 'Gently raised above posterior band (imbricate cross-section)' 'Crest-like elevation above posterior band' 'Posterior band expanded or raised relative to anterior band (but not rib)' 'Posterior band above anterior band (i.e., inflated into strong rib)' Posterior_band_expanded_into_lobes,
+		201 Terminal_piece /  'Distinct, rounded' 'Distinct, pointed/tapered' 'Tapers into band/ridge (correlates with a present postaxial ridge)' Bilobate Indistinct Extends_into_axial_spine,
+		202 Pygidial_postaxial_structure /  Absent Present,
+		203 Form_of_pygidial_postaxial_structure /  Band 'Ridge/carina' Furrow Node,
+		204 Sagittal_band_or_furrow_on_posterior_portion_of_pygidial_axis /  'Absent/indistinct' 'Present/distinct',
+		205 'Pygidial axial spines/nodes on holaspid' /  Absent Present,
+		206 'Expression of pygidial axial spines/nodes' /  Sagittal Paired Adjacent_to_axial_furrow 'Macroaxial spine (e.g. Bathyurus (Raymondites) ingalli)',
+		207 'Paired muscle scars on axis of pygidium (expressed as smooth, raised, grooves, pitted or dark areas on dorsal surface)' /  Absent Present,
+		208 'Posteromedial margin of pygidium immediately behind axis (in dorsal view)' /  'smooth (non-spinose), continuously rounded' 'smooth (non-spinose), with shallow, rounded concavity' 'with deep, acutely v-shaped notch' 'extends into single, large axial spine',
+		209 'Macropleural spine associated with posterior (but not necessarily posterior-most) segment of pygidium' /  absent present,
+		210 'Paired (non macropleural) marginal pygidial spines' /  Absent Present,
+		211 General_expression_of_pygidial_marginal_spines /  Single_anterior_pair 'Multiple pairs of similar form, conjoined at base' Multiple_pairs_of_variable_form,
+		212 Nature_of_pleural_spine_formation /  'From posterior band of the pleura (e.g., odontopleurids)' 'From the pleural rib (e.g., scutelluids)' From_anterior_and_posterior_bands,
+		213 Supramarginal_spines_or_nodes /  Absent Present_some_distance_above_margin,
+		214 Slope_of_pygidial_border /  Flattened_to_concave 'Similar to, or of same trajectory, as pleural profile' Steeper_than_profile Almost_vertical 'Curved under (anteriorly)',
+		215 Pygidial_border_furrow /  Absent Present,
+		216 Depth_of_pygidial_border_furrow /  Shallow Deep,
+		217 Width_of_pygidial_border_in_dorsal_view /  Narrower_than_pleural_area As_wide_as_or_wider_than_pleural_area,
+		218 'Distance from posterior margin of pygidial axis (before tapering to ridge) to posterior margin of pygidium, in dorsal view' /  Less_than_length_of_pygidial_axis Equal_to_or_more_than_length_of_pygidial_axis 'Axis only separated from posterior margin by narrow furrow, spine, or break in slope' None,
+		219 Ventral_side_of_pygidial_doublure /  Smooth_with_no_change_in_slope 'Median arch (posterior view)/depression (ventral view), with rounded projection' 'Median arch (posterior view)/depression (ventral view), no rounded projection' 'Median projection (posterior view)/depression (dorsal view)',
+		220 Width_of_pygidial_doublure /  Narrower_than_border As_wide_as_border Wider_than_border,
+		221 Continuity_of_doublure /  Continuous Interrupted_by_furrow_or_groove_that_extends_interpleural_furrow_onto_ventral_side 'Only present on marginal spines (e.g., Telephina problematica, Chatterton et al 1999)',
+		222 Granulation_on_pygidium /  Absent Present,
+		223 Proportion_of_granules_to_tubercles /  'Granules and tubercles, but granules dominant' 'Granules and tubercles, but tubercles dominant' Granules_and_paired_tubercles Granules_only Pair_of_tubercles_only,
+		224 Terrace_lines_on_on_dorsal_surface_of_pygidium /  Absent Present,
+		225 Expression_of_pygidial_terrace_lines_on_dorsal_surface /  'Along margin of border only and/or spines' Across_border Across_border_and_onto_pleural_and_possibly_axial_areas On_axis_only On_border_only,
+		226 Terrace_lines_on_doublure_of_pygidium /  Absent Present,
+		227 Pitting_on_pygidium /  Absent Present Present_on_internal_mould_only,
+		228 'Vertical, wall-like distal pygidial pleural area' /  absent present,
+		229 Pygidial_caeca /  Absent Present,
+		230 'At least one globular non-adultlike protaspid stage' /  Absent Present,
+		231 Longitudinal_medial_glabellar_furrow_in_protaspids /  Absent Present,
+		232 'Protaspids with prominent protoaxial ring/node' /  Absent Present,
+		233 'Protaspids and/or meraspids with paired spines or tubercles' /  Absent Present,
+		234 'Anterior cranidial/cephalic border in protaspides and/or early meraspids' /  Absent Present,
+		235 Procranidial_spines_in_early_meraspids /  Absent Present,
+		236 'Form of frontal lobe of glabella in protaspids and/or meraspids' /  'bulbous and distinctly wider (tr.) than posterior portion of glabella' 'lateral margins contiguous with remainder of glabella, typically with slight taper or expansion anteriorly' 'strongly expanding anteriorly, as defind by diverging axial furrows',
+		237 'Intergenal/fixigenal spine in protaspids and/or early meraspids' /  Absent Present,
+		238 Rostral_plate_and_librigena_fused_in_early_meraspids /  Absent Present,
+		239 a /  0 1 2 3 4 5 6 7,
+		240 b /  0 1 2 3 4 5 6 7,
+		241 c /  0 1 2 3 4 5 6 7,
+		242 d /  0 1 2 3 4 5 6 7,
+		243 e /  0 1 2 3 4 5 6 7,
+		244 f /  0 1 2 3 4 5 6 7,
+		245 g /  0 1 2 3 4 5 6 7,
+		246 h /  0 1 2 3 4 5 6 7,
+		247 i /  0 1 2 3 4 5 6 7,
+		248 j /  0 1 2 3 4 5 6 7,
+		249 k /  0 1 2 3 4 5 6 7,
+		250 l /  0 1 2 3 4 5 6 7,
+		251 m /  0 1 2 3 4 5 6 7,
+		252 n /  0 1 2 3 4 5 6 7,
+		253 o /  0 1 2 3 4 5 6 7,
+		254 p /  0 1 2 3 4 5 6 7 ; 
+	MATRIX
+	Alokistocare_subcoronatum          3001001??000013001000000011?110012-0101011-00000000000000010110101000000-0000-0-000-0-00000-0000001000-03110110-110000100000100-01100001001000212100101101010--000000-?0?????????110?1000100110-1110011000-00-0000--020-000?0130-?000?????????1?36?104240???33
+	Aulacopleura_koninckii             ?????????110013001100101011?0-0112-0101011-10000100000000?6-0100--000000-0000-10000-0-11000-1001001000-031000-0-110001100010100-00100101000000??2100101101000--0??020--010000-10011??1010100120-1100012000-00-0000--010-00??0??0-??0??????01001037110723712333
+	Baojingia_subquadrata              ??????????????????????????????0122-0102011-11000100000012?4--10101110000-0000-10000-0-0010101000001100-030------010000100001100-00100001100100??211?102111000--????0??????0??????11??10100-01210111010-000-00-0000--0011002??1311?00??????????1?624205330???43
+	Bathyurus_angelini                 ?????????10001310110010100--?00115-01021011---00100020010?100100--000000-0000-10000-0-01100-1000000100-030------010010100000100-01100001000100000100102100000--00?020--020000-0-010??10000-010100--0-12000-00-0000--010-000100-0-100??????????2?524304320?0033
+	Bathyurus_ingalli                  ??????????????????????????????0115-01021011---00100000010?100100--000000-000100-000-0-0000110100000000-030------0000101000000-10001000030000001?2101112100000--0??000-0000020-11010??10100-010131110113010-0130000--000-?0??00-12?00??????????2252530432140033
+	Bolaspidella_housensis             30?2000??010013000-000000110100115-010{1 2}011-10000000000011?10010102000000-0000-10000-0-0000101000001000-031100-0-010010100000101101100001100000000100101111000--000020--000010-1001-001000100120-111000-010-00-0100--010-00???13???00?1001?01??1154130645412222
+	Celmus_granulatus                  30110000?10000--01000000010?100152-01010000---00010000001?6-0100--000000-0001010000-0-11000-1100201000-030------0100010000000-10000---------00??2100101111000--0??000-00?0000-1100-1?0---11011100--0-0-040-00-0000--010-????00-0-?00??????????3341?205022??1??
+	Changchowilla_riojana              60----0???????????????????????1----00---------0-----00051?0--0-0--00000100010-10000-0-01100-10000200-0-040------010011100010101100100000?00?000000--0--100000--00010???0?0010-1001000100010013100--0-12000-0110100--120-020?0120-111?100100?0?7222????673???54
+	Cirriticeps_auranticum             ??????????????????????????????0012-01020001---00100000041?110100--00000110000-10010-0-01100-10100001011031100-0-1010202-0011100-00100001000100??0101111112010--0??00?-?0??000-10?11??10000-012101110111101100-0000--000-001201312?00??????????0?36?206011???77
+	Cliffia_nicoleae                   ??????????????????????????????0112-0100011-100000000000010110100--000000-0000-10000-0-01000-1000000000-041000-0-100000100000100-01100000000000??0130111111000--???010-0000010-1000-??100010002??1110111000-0100000--011100???130-?000?????????103421??11100155
+	Conocoryphe_sulzeri                3?0100?0?????????????????1????1----00---------0-----00101?4--10102000000-0001210000-0-01100-?000001000-1311012101100102-0000101001100000????00??1100100110000--0??020--000000-0-0110010100-0120-0--0-12000-00-0000--010-02???130-100??????????1?342???77411233
+	Coosella_kieri                     ??????????????????????????????0115-0101011-10000?00000000?6-011102000000-0000-0-000-0-01000-0000000100-031200-0-000010?000000-0-00100000000000??010?101111000--???000-0000000-0-0100?10000-0130-111000-000-00-0200--001010??00-0-?00??????????1133330521100123
+	Cordania_falcata                   30010010?0100???0??00????11?110012-0102020----00000000010?6-00-0--000000-000100-100-0-11110-0000000100-030------0100111000100-1000101003101000??0100101101010--000020--010030-0-011??100111002?31110013340-00-0000--0010000?0100-110??????????23434205232??076
+	Crepicephalus_buttsi_montanaensis  ?????????0?000--01100000010???0?12-0101011-10000000000000?10010101000000-0000-10000-0-00100-1000001100-031100-0-010010100000100-01100001100000?00100101111000--0???0??00??????100????10??10?110-1130012000-00-0110--011010??01314?00?1111101001?43?306221???33
+	Cryptoderaspis_metisensis          ??????????????????????????????0112-01?1010-10000?00?00041?0--0-0--000000-0000-0-000-0-0??????????000-0-031000-0-0000110100000-0-00???????????0???0--0--11?00????????????????????????????????????????????????????????????????????????????????????51?10723??????
+	Cyclolorenzella_convexa            5-----0???????????????????????0125-0102021----00010000001?0--0-0--000000-0001010000-0-00001111000110-0-0310011100100100000001010001011011100003000--0--11000111000?2???0?0031?100110?1000110130-0--0-0-040-00-0100--011002210130-100??0010110?1?43?206542???33
+	Dimeropyge_speyeri                 31010000?30100--10-001???1??0-0155-1101021----00000000041?0--0-0--000000-0001010000-0-00100-1100201000-031200-0-010011000000101013101013100000000?00100111001111??000-00000311110101?100011112101130?12000-1120200--1311?2000110-101?1001101012?32420733320022
+	Dimeropygiella_caudanodosa         3101?010?30000--00-00011010?0-0152-0101011-10100010100041?0--0-0--000000-000100-000-0-00000-0100000100-030------0100110000000-110012000000000000010010110100111101?2??-0?003??110101?100011112100--0-12430-0120100--130-00210110-?01????1??1?11?53?207231???44
+	Ehmaniella_fronsplanata            30?100?2000000--01100101011?0-0112-0102011-10000100001000?1011010000001100000-0-000-0-00100-0000000000-031200-0-1102001000000-1101100001000000100100101111000--000?20--??????????????1000???120-1110110000-00-0000--000-00??00-0-?00????1?????1?74?207343???33
+	Ehmaniella_whitei                  ??????????????????????????????0115-0101011-01000?00000001?1000-0--000000-0000-0-000-0-0000100000000100-031100-0-000010?00000110-01101001000000??0100101111000--???020--010010-100??0010000-0120-1110011000-00-0000--010-00??00-0-?00??????????1144320634321132
+	Elrathia_kingii                    30020010001000--00-0000001110-0115-0101011-10000?0000000104--4-0--000000-0000-10000-0-00100-1000000000-031100-0-110010100000100-0110000{0 1}000000002100101101000--00?000-0000000-10011??101010012??1110111000-00-0100--011000??013???00?0??01010?1144120623320133
+	Elvinia_roemeri                    300000?000?000--1?-?0?0?011?0-0112-?102011-10000?00000001?2--10101000000-0000-0-000-0-01000-0000100?00-031100-0-0000001000000-0-00100101000000??0100101111000--000000-1010000-0-0110010100-012101110011000-00-0000--011000???0-???00??????????0133430632211122
+	Gerastos_tuberculatus              30110010001000--011100101100100125-01021001---00111100041?11010101000000-000100-000-0-01100-0100001100-130------010011000001101001100000000100002100101111000--0??020--001000-100101?100110012101110011000-00-1000--011000??01210?00??????????2232740632310165
+	Glaphurus_pustulatus               6?----00?00000--010?0?0??1??0-0112-010101?-10000000000041?4--4-0--000000-0001210000-0-10000-1100001000-031000-0-01001110000011100010110101001000010010111100121???01130100?30-110????1010110120-1030?0-000-00-0000--010-00??0100-?00??????????1333620?431?112?
+	Glaphyraspis_ornata                301100????????????????????????0122-0101011-10000000000001?4--4-0--000000-0001010000-0-00000-1100001100-031100-0-0100011000001010010---------00000100100110000--0???2??-?????????????????????10??111010-040-00-0000--110-02???10???00??????????1?43?206342???44
+	Hintzecurus_paragenalatus          1-----????????????????????????0115-0102021----00110?00001?100100--000000-000100-000-1100000-0100010000-031000-0-01001010000010100010110{1 3}110100000100100111001100??000-001?1311110????10001101311113100-010-00-0000--011002210100-100??????????1?43420?343?0011
+	Holotrachelus_punctillosus         30?1101125004131310010000100110112-010111?-1?000000001043?0--0-0--000000-0000-0-00141100100-0000001000-031200-0-1??011000010100-000---------00302100101111000--000000-0000000-1001{0 1}1011001000211111?012011200-1000--010-10?211-0-100??????????56327207231??033
+	Inouyops_latilimbatus              ??????????????????????????????0112-?102011-10000?00?10010?1111010?100000-0000-0-000-0-0?00120000?00000-03100120-110010100?000-0-?????????????0??010010????000--???????????????????????????????????????????????????????????????????????????????1?35?20533??????
+	Jiulongshania_longispina           60----00??????????????????????0112-0101010-10000?00000000?10010102000000-0000-0-000-0-00100-00000000-0-031000-111100001000000-0-00101103000010??0100100100000--0????????????????????????????120-111010-000-00-0000--010-02???0-0-?00??????????1553?206232???33
+	Kingstonia_peltata                 ?????0????????????????????????0112-0101020----00?00?40043?0--0-0--000000-0000-0-000-0-01000-0000?001-0-030------0003-11000000-0-00???????????03?00--0--0--000--010??????????????????????????120-0--0-0-040-00-0000--010-02???0-0-100??????????7?22?207240???73
+	Lasarchopyge_benedettoi            60----0???????????????????????0115-1102021----00010000001?100100--000000-0001010000-0-01000-1000001100-031000-0-0100112-0000100-01100000100000000100101100000--011020--0?0000-1000?11100010012111110010000-00-0000--010-00010130-100?10111010?0??3?407432???22
+	Lisania_paibiensis                 3??????1?010010101100000011???0111-01?2011-11000?000010101101102--100000-0100-0-000-110010100000100000-031200-0-0102002-01000-0-011000??000100200100???11?000--000???????????????????????????2101100111000-00-000100001100???0-0-?000?????????1?67?30?011???41
+	Maliminaspis_packardi              3011001??01000--01000000111?0-0114-0102011-00000100000000?6-010101000000-000100-000-0-11100-0000000000-031100-0-110011100011101000100001000100300100101112000--1??020--011?30-11011?110000-012101110010040-00-0000--010-000?0130-100??????????1120320632210243
+	Marjumia_typicalis                 ??????????????????????????????0015-0101011-10000?00000001?0--0-0--000000-0000-10000-0-01000-1000000000-031000-0-110010100000110-00100001000000??0100101101000--0??00171000000-0-011??10100-0120-111010-000-00-0000--010-00??00-0-?00??????????11?0330623321133
+	Menomonia_sp.                      3012000???????????????????????0113-01010001---01000000011?0--0-0--000000-0000-??000-0-01000-?00010?000-030------0?00112-0000??0-010---------00300110100110000--000020--000000-???????1??????020-????????40-?0-??00--0??????????????????????????13?3277??0?7700
+	Modocia_kohli                      ??????????????????????????????0015-0102011-10000?00000000?110100--000000-0000-10000-0-00000-1000001000-031000-0-100010100000110-03100003100000??2100101111000--???000-0010000-10011??10100-0120-1110011000-00-0000--010-00??00-0-?00??????????1245420623331122
+	Norwoodia_boninoi                  40----10?4?00???0???????????0-0010-0101010-10000000000003?110100--000000-0000-0-000-0-0010110000000000-031200-0-0000001000000-0-00101003000000102101111111000--0000011001000100-0????10000-0120-113010-040-00-0100--010-0??100-0-?00??????????1147310714751011
+	Oopsites_hibernicus                2-----0???????????????????????0122-0112120----00010000001?0--0-0--000000-000100-00100-00000-0100200000-040------0100110000000-0-00100101000010000100100111000--110001?0010000-0-0????10000-010??103010-000-00-0000--021000??00-0-?00??????????1?31?704621???10
+	Papyriaspis_lanceola               ??????????????????????????????0112-0102011-11010001001001?4--4-2--100000-0000-11000-1001100-1000000000-031010-0-1000101000000-0-00100100000001???100101111100--???00100000000-0-00-0010100-0020-111?011000-00-0000--000-00???0-0-?001?????????1?45110635301344
+	Parasolenopleura_gregaria          30?1001???????????????????????0115-0101011-10000100000001?11010101100000-0000-0-000-0-00100-0000001100-031200-0-110212000000100-011201000??100000100101101000--010000-0000010-0-11???10001001012111000-000-00-0000--010-00??0130-?00????01?1??1?434206341??232
+	Penarosa_retifera                  ?????0????????????????????????011710102011-10000?00000000?11010100000110-0000-10000-0-0100101000101000-03100100-110001101000100-01101001000000??3100102110000--0??020--000100-100????1000100??????????????????????????????????????????????????1?37120546???5??
+	Pianaspis_sors                     ?????0???00000--00-00000011?0-0112-0102011-01000?00030010?121102--000000-0000-0-000-0-01100-0000000000-031010-0-11001?1000000-0-00100001000000??010010111?000--0??010-0000?10-0-00-1011000-0??????????????????????????????????????????????????1044?2055510?411
+	Politicurus_politus                1-----0???????????????????????0115-0102011-10000100000001?100100--000000-0000-0-000-0-0000110000000100-011000-0-010011100000101001101103100100000100100111000--000000-001000110-011??1010111120-1111110000-00-0000--0110002101114?00??????????1?43520633120122
+	Proetus_nemus                      301100?0?01030--0110001??100110122-0102000?---00100000001?101100--000000-1001010000-0-01100-0100000100-130------010010100000101000100001000100000101111112000--00002??-0?1000-11010?1100010012101110011000-00-0000--011000000130-100??????????0?52?307111???64
+	Ptychoparella_lloydi               3022000??010011001000?0?011?100122-0101011-1000010000001101000-0--000000-0000-10000-1100100-1000101000-031200-0-010011100000100-01100100?00000100130111111000--000010-0010010-1000-001000100000-1110111000-00-0100--010-02210130-000000011021?1253320735414300
+	Radnoria_bretti                    3002001??0?00???0???00000???0-0012-0102021----00000030010?1000-0--000000-0000-0-000-0-11000-0000000100-031200-0-0-01101000010-0-0110000{1 3}000000102101111101010--0??000-0010100-0-010??10000-012101130011340-00-0000--001010??00-0-?00??????????124452071102?042
+	Rasettia_sp.                       ??????????????????????????????0127001011010---00?00000001?1000-0--000000-0000-0-000-0-01000-0000000100-011200-0-0000002-00000-0-00100001000000???10010?10?000--????????0?????????????1??????120-0--0-12000-00-0000--010-?0??00-0-?00??????????0?42?206211???10
+	Rorringtonia_kennedyi              ??????????????????????????????0112-01010001---00000000001?11010122000000-0000-10000-0-00100-1000001000-031000-0-010010100000100-0010000010??00?0?100101112000--000000-0000000-10010??1010100120-1110010040-00-0000--010-00?100-0-?00??????????2124420622320076
+	Rorringtonia_scanica               ??????????????????????????????0112-01020001---00?00000001?10110102000000-0000-0-000-0-11100-0000000000-031100-0-0000101000000-0-00100000000000?00100101112000--?????????????????????????????120-1110013000-00-0000--010-00??00-0-?00??????????2?53?105112???76
+	Sao_hirsuta                        301100?0010000--01000?0?010?0-0115-0101011-10100?01?00001?10010102001000-000100-000-0-0100100100001000-031000-0-0000121000001011010---------00003101111111000--0??020--01?130-0-010??101011012??1010010000-00-0000--011002000130-?00?1001002001243320634304200
+	Scharyia_siceripotrix              ??????????????????????????????001710102021----00?00000001?0--0-0--000000-0000-10000-0-00100-1000001000-031000-0-0100212-0000100-00100001100000302100101112000--0??000-00?00???100101?101010112101110010000-00-0000--010-00??0140-100??01?101??0?45?106120???66
+	Tasmacephalus_platypus             30220100?010013100-00000111?0-0112-0102011-10000?00010011?111101011001?0-0000-0-000-0-01000-0000300000-031210-0-000200?000000-0-0010110400000000010111?11?000--000020--010000-0-0110010100-0120-113010-000-00-0000--010-02?100-0-100??????????077652052354?111
+	Telephina_problematica             2-----00?40000--10-001000100110120-0112121----00000020061?1000-0--000000-0000-0-010-0-10000-0010000100-040------0100110000010-0-001001000001110001011110--000--10??10-?0?002110-0111?11000-0130-103010-000-013000112010-?00020-0-?00?10011011-3?23?705310???1?
+	Tricrepicephalus_coria             ??????????????????????????????0115-0102011-10100?10000000?1100-0--000000-000100-000-0-00100-?100101010-031200-0-0100101000001110011011?1100000??0100101111000--?????????????????????????????03131000011000-00-0010--010-02??0110-?00??????????1?45?206231???20
+	Tricrepicephalus_texanus           ??????????????????????????????0115-0102011-10000?00000000?1100-0--000000-0000-0-000-0-00000-0000001010-031200-0-010010100000110-01101111000000??0100101101000--???000-0000000-0-011??10000-003131000011000-00-0010--010-00??00-0-?00??????????0144230623?20120
+	Tropidocoryphe_bassei              ??????????????????????????????0022-01020001---00000000042?110100--000000-0000-0-01110-01101000100001010031000-0-1010102-0001100-00100001000100??2101111112010--0??000-0010010-0-1????10000-0120-0--0-12101100-0000--010-01??00-???00??????????0126330611110065
+
+;
+
+END;
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = 'Sundberg 1999; Esteve et al. 2012';
+	TEXT  TAXON = 2 TEXT = Hong_et_al._2014;
+	TEXT  TAXON = 3 TEXT = Peng_et_al._2005;
+	TEXT  TAXON = 4 TEXT = Hoffman_and_Bolton_1998;
+	TEXT  TAXON = 5 TEXT = Swisher_et_al._2015;
+	TEXT  TAXON = 6 TEXT = 'Robison 1964; Lee and Chatterton 2005; AMNH FI 116726';
+	TEXT  TAXON = 7 TEXT = 'Treatise 1959; Jaanusson 1956';
+	TEXT  TAXON = 8 TEXT = Waisfeld_et_al._2001;
+	TEXT  TAXON = 9 TEXT = Holloway_2013;
+	TEXT  TAXON = 10 TEXT = Chatterton_2020;
+	TEXT  TAXON = 11 TEXT = 'Snajdr 1990; Cotton 2001; Fatka et al. 2005';
+	TEXT  TAXON = 12 TEXT = Robison_and_Babcock_2011;
+	TEXT  TAXON = 13 TEXT = 'Whittington 1960; Adrain and Kloc 1997';
+	TEXT  TAXON = 14 TEXT = 'Stitt and Perfetta 2000; Lochman 1950; Lamsdell and Selden 2015; Hu 1968';
+	TEXT  TAXON = 15 TEXT = 'Rasetti 1946; Palmer 1981; Bentley et al. 2009';
+	TEXT  TAXON = 16 TEXT = 'Park et al. 2008; Park and Choi 2010';
+	TEXT  TAXON = 17 TEXT = Chatterton_1994;
+	TEXT  TAXON = 18 TEXT = Adrain_et_al._2001;
+	TEXT  TAXON = 19 TEXT = 'Sundberg 1994; Esteve et al. 2012';
+	TEXT  TAXON = 20 TEXT = Robison_and_Babcock_2011;
+	TEXT  TAXON = 21 TEXT = Hopkins_2021;
+	TEXT  TAXON = 22 TEXT = 'Palmer 1965b; Chatterton and Ludvigsen 1998';
+	TEXT  TAXON = 23 TEXT = Chatterton_et_al._2006;
+	TEXT  TAXON = 24 TEXT = 'Ulrich 1930; Treatise 1959';
+	TEXT  TAXON = 25 TEXT = 'Palmer 1965b; Lochman 1968';
+	TEXT  TAXON = 26 TEXT = Adrain_et_al._2003;
+	TEXT  TAXON = 27 TEXT = 'Suzuki 2001; Warburg 1925';
+	TEXT  TAXON = 28 TEXT = 'Zhang and Yuan 1981; Resser 1942';
+	TEXT  TAXON = 29 TEXT = 'Park et al. 2008; Park et al. 2013';
+	TEXT  TAXON = 30 TEXT = 'Palmer and Peel 1981; Westrop 1992';
+	TEXT  TAXON = 31 TEXT = 'Chatterton et al. 1998; Owens and Fortey 2009';
+	TEXT  TAXON = 32 TEXT = Peng_et_al._2004;
+	TEXT  TAXON = 33 TEXT = 'Adrain and Chatterton 1993; Adrain and Edgecombe 1996';
+	TEXT  TAXON = 34 TEXT = 'Levi-Setti 1993; Sundberg 2000; Bicknell et al. 2020';
+	TEXT  TAXON = 35 TEXT = 'Lochman 1940; Robison and Babcock 2011; AMNH FI #';
+	TEXT  TAXON = 36 TEXT = Robison_and_Babcock_2011;
+	TEXT  TAXON = 37 TEXT = 'Robison and Babcock 2011; NHMU 10.1';
+	TEXT  TAXON = 38 TEXT = Fortey_1975;
+	TEXT  TAXON = 39 TEXT = 'Öpik 1961; CPC specimens (figured and unregistered)';
+	TEXT  TAXON = 40 TEXT = Fletcher_2005;
+	TEXT  TAXON = 41 TEXT = Paterson_2005;
+	TEXT  TAXON = 42 TEXT = 'Jago 1974; Bentley and Jago 2014';
+	TEXT  TAXON = 43 TEXT = Adrain_et_al._2003;
+	TEXT  TAXON = 44 TEXT = Edgecombe_and_Wright_2004;
+	TEXT  TAXON = 45 TEXT = Robison_and_Babcock_2011;
+	TEXT  TAXON = 46 TEXT = Adrain_and_Tetreault_2005;
+	TEXT  TAXON = 47 TEXT = 'Treatise 1959; Bell and Ellinwood 1962';
+	TEXT  TAXON = 48 TEXT = 'Owens 1981; Adrain and Chatterton 1993';
+	TEXT  TAXON = 49 TEXT = Owens_2004;
+	TEXT  TAXON = 50 TEXT = 'Whittington 1957; Whittington 1988; Laibl 2014';
+	TEXT  TAXON = 51 TEXT = Owens_1974;
+	TEXT  TAXON = 52 TEXT = Bentley_and_Jago_2004;
+	TEXT  TAXON = 53 TEXT = Chatterton_1999;
+	TEXT  TAXON = 54 TEXT = 'Palmer 1954; Stitt 1998; Stitt and Perfetta 2000';
+	TEXT  TAXON = 55 TEXT = 'Robison et al. 2015; Palmer 1954';
+	TEXT  TAXON = 56 TEXT = 'Van Viersen et al. 2009; Holloway 2013';
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 254;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 254;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1788834632565;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 185399364406061889;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5551952397067532945;
+			mqVersion 381;
+			checksumv 0 3 3549622504 null  getNumChars 254 numChars 254 getNumTaxa 56 numTaxa 56   short true   bits 2305843009213694207   states 255   sumSquaresStatesOnly 1077921.0 sumSquares -3.6893488147418137E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1107 630;
+			setLocation 8 29;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5551952397067532945 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1007 558;
+					setLocation 8 29;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

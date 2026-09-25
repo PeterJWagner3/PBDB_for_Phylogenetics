@@ -1,0 +1,278 @@
+#NEXUS
+[written Thu Sep 10 10:57:17 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.73.188.34]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=40;
+	TAXLABELS
+		Parapilekia_olesnaensis Krattaspis_popovi Krattaspis_viridatus Cyrtometopus_affinis Cyrtometopus_clavifrons Cyrtometopus_priscus Reraspis_plautini Actinopeltis_completa Actinopeltis_globosa Hemisphaerocoryphe_pseudohemicranium Ellipsocoryphe_elliptica Mainbrookia_becki Sphaerocoryphe_gemina Sphaerocoryphe_robustus Sphaerocoryphe_thomsoni Apollonaspis_arga Sycophantia_seminosa Laneites_polydorus Lehua_vinculum Cerauropeltis_ruedemanni Ceraurinella_magnilobata Ceraurinella_typa Arcticeraurinella_arctica Ceraurinella_nahanniensis Xylabion_kirkdandiensis Gabriceraurus_proicens Gabriceraurus_gabrielsi Gabriceraurus_hirsuitus Ceraurus_pleurexanthemus Ceraurus_mackenziensis Paraceraurus_aculeatus Bufoceraurus_bispinosus Leviceraurus_mammilloides Whittakerites_planatus Borealaspis_whittakerensis Ceraurinus_marginatus Ceraurinus_icarus Ceraurinium_intermedium Hadromeros_subulatus Parisoceraurus_rectangulus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Cheiruridae_Perez-Peris_et_al_2024.nex"';
+	DIMENSIONS  NCHAR=64;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 Direction_of_the_glabellar_sides_from_the_occipital_furrow_to_S3 /  Narrowing_anteriorly 'Parallel-sided' Expanding_anteriorly Laterally_convex,
+		2 Size_of_the_anterior_glabellar_lobe /  Similar_size_to_the_rest_of_the_glabellar_lobes 'Greatly enlarged, clearly distinct from the rest of glabellar lobes',
+		3 Shape_of_the_anterior_glabellar_lobe /  'Sub-oval with anterior margin transverse or almost transverse in medial area, anterolateral corners rounded' 'Semi-circular with anterior margin greatly bowed anteriorly' 'Sub-rectangular, with anterior margin transversal and anterolateral corners relatively pointed' 'Sub-trapezoidal, with medial part of the anterior margin transversal, anterolateral corners slightly rounded and lateral side of the anterior margin sloping posterolaterally',
+		4 Degree_of_inflation_of_the_glabella /  From_flat_to_slightly_inflated Moderately_inflated Dramatically_inflated,
+		5 Glabella_dorsally_overlap_anterior_border_of_the_cranidium_ /  Absent Present,
+		6 Glabellar_sculpture /  Smooth_or_tiny_granulated Granulated Bearing_coarse_tubercles,
+		7 Distribution_of_the_ornamentation /  Sparse_arranged Densely_arranged,
+		8 Glabellar_tubercles_simetrically_organised_in_hopaspid /  Equally_distributed_overall_the_surface Tubercles_organised_simetrically_by_pairs,
+		9 Three_pits_in_the_anterior_glabellar_lobe /  Absent Present,
+		10 Slope_of_the_anterior_border_from_the_horizontal /  Transverse Downturned_anteriorly_,
+		11 'Definition of the anterior border furrow laterally, separating the anterior border of the cranidium from the fixigena' /  'Present, well defined' Highly_effaced,
+		12 Expression_of_glabellar_furrows_S2_and_S3 /  Present Absent_or_highly_effaced,
+		13 Orientation_of_glabellar_furrows_S2_and_S3_ /  Backwards Transversal,
+		14 'Width (tr.) S2 and S3' /  'Wide (tr.) at least one quarter of the glabellar width' 'Narrow (tr.), reduced to the glabellar margin',
+		15 'S1 transglabellar, connected across the glabella' /  Absent Present,
+		16 Depth_of_the_transglabellar_S1 /  'Shallow, expressed as a faint depression' 'Deeply incised, well defined',
+		17 Orientation_of_S1_at_the_distal_part_adjacent_to_the_axial_furrow /  Posteriorly_directed Transversal,
+		18 Orientation_of_S1_proximally /  S1_bending_posteriorly_running_oblique_downwards_and_inwards 'S1 bending posteriorly, running parallel to the anteroposterior axis',
+		19 Width_of_S2_and_S3_respect_S1 /  'S3 and S2 same width (tr.) than S1' 'S3 and S2 narrower (tr.) S1' 'S3 and S2 wider (tr.) than S1',
+		20 Shape_of_the_posterior_margin_of_the_glabella_ /  Bowed_anteriorly_at_medial_part Transverse,
+		21 Shape_of_the_occipital_ring_ /  Rectangular_ 'Sub-trapezoidal, with anterior margin anteriorly convex' Bowed_anteriorly_,
+		22 Position_of_the_eye /  'Anterior (Ratio of distance from the posterior tip of the palpebral lobe to the posterior cephalic margin / cranidial sagittal length ≥ 0.45)' 'Medial (Ratio < 0.45 and > 0.25)' 'Posterior (Ratio ≤ 0.25)',
+		23 'Length (exsag.) of the palpebral lobe' /  'Short (Length exsag. of the palpebral lobe/length exsag. of the fixigena ≤ 0.35)' 'Relatively long (Length exsag. of the palpebral lobe/length exsag. of the fixigena > 0.35)',
+		24 'C-Shaped palpebral lobe' /  Absent 'C shaped, intewards and outwards margins broadly bowed outwardly',
+		25 Definition_of_the_eye_ridge_in_holaspid /  Well_defined_by_an_eye_ridge_furrow Absent_or_not_well_defined_by_an_eye_ridge_furrow_,
+		26 'Presence of sutural ridge along the anterior section of the facial suture, being continuous with the anterior border of the cranidium' /  Absent Present,
+		27 Eye_ridge_cross_the_fixigena /  Absent Present,
+		28 'Genal spine elongated, with a stout base at the genal angle' /  Absent Present,
+		29 Prefixigenal_spines /  Absent Present,
+		30 Number_of_prefixigenal_spines /  1 2,
+		31 Fixigena_tuberculated /  Fixigena_without_tubercles Fixigena_with_tubercles,
+		32 'Pair of tubercles alienated in the fixigen, posterior to the palpebral lobe ' /  Absent Present,
+		33 Direction_of_the_posterior_branch_of_the_facial_suture_from_the_palpebral_lobe_to_the_lateral_border_furrow /  Sloping_posteriorly Transversal Sloping_anteriorly,
+		34 Rostral_plate_bearing_a_pair_of_spines /  Absent Present,
+		35 Anterior_lobe_of_the_middle_body_of_the_hypostome_overlap_the_hypostome_anterior_border /  Absent Present,
+		36 Shape_of_the_anterior_border_of_the_hypostome /  'Slightly bowed anteriorly, abaxially anterior wings from almost transversal to slightly turned posteriorly  ' 'Greatly bowed anteriorly, abaxially anterior wings turned posteriorly ' 'Transversal adaxially, anterior wings turning forward abaxially',
+		37 Definition_of_the_maculae_ /  Well_defined Not_well_defined,
+		38 Shape_of_the_posterior_border_of_the_hypostome /  Posteriorly_bowed_broadly Transverse Slightly_anteriorly_bowed,
+		39 Pair_of_posteriorly_directed_spines_in_the_posterior_border_of_the_hypostome /  Absent Present,
+		40 Length_of_the_hypostome_middle_body /  'Elongated (Sagittal length / Maximum width > 1.2)' 'Non elongated (Sagittal length / Maximum width > 1.2)',
+		41 Anteroposterior_exsagittal_constriction_of_the_thoracic_pleura /  Absent Present,
+		42 Width_proximal_part_of_the_thoracic_pleura /  'Long (≥0.75)' 'Medium (≥0.4 <0.75)' 'Short (width of proximal part of the thoracic pleura/width of axial ring <0.4)',
+		43 Orientation_of_the_pleural_furrow /  'Running slightly oblique from the anterior corner of the pleura, straight all along the furrow' Transversal Oblique_adaxially_and_transversal_abaxially_ Oblique_slightly_curved_abaxially,
+		44 Type_of_pleural_furrow /  Continuous_furrow Line_of_pits,
+		45 'Pleural furrow turns forwards abaxially (exsag.) at the fulcrum' /  Absent 'Shallow, as a small depression ' Well_defined,
+		46 Thoracic_axial_ring_bear_pair_of_tubercles /  Absent Present,
+		47 Maximum_number_of_thoracic_segments_in_late_holaspid /  14 11 10 9,
+		48 First_pygidial_segment_furrowed /  Present Absent,
+		49 Dorsal_inflation_of_the_pygidial_axial_rings /  'Axial rings inflated dorsally, being the first the most inflated, and decreasing in inflation gradually posteriorly' 'First axial ring inflated, second and third flat and extremely reduced, creating flat depression between the first axial ring and the pygidial rim',
+		50 Second_most_posterior_axial_ring_differentiated_by_axial_furrow_from_the_pleural_field /  Differentiated Not_differentiated,
+		51 First_pygidial_segment_is_a_thoracic_segment_not_detached_ /  Absent Present,
+		52 Size_of_the_anterior_pygidial_flange /  'From small to medium size, never exceeding the maximum pygidial width (tr.) ' 'Strongly developed, laterally prominent',
+		53 Macropleural_pygidial_spines /  Absent Present,
+		54 First_pair_of_pygidial_pleural_spine_carinated /  Absent Present,
+		55 'Pygidial pleural field fused forming a pygidial margin, with the posterior pleural spines absent or highly reduced' /  Absent Present,
+		56 Size_of_second_pygidial_pleural_spine /  'Long, well differentiated from the pygidial margin' 'Short, as a small triangular notch in the pygidial margin' 'Absent, no pleural spine',
+		57 Size_of_last_pair_of_pygidial_spines /  'Long, well developed' 'Short, as triangular notches' Absent,
+		58 Posterior_margin_of_the_pygidium_between_the_last_pair_of_pygidial_spines_curved_posteriorly /  Absent Present Extended_in_a_small_spine,
+		59 Most_posterior_pleural_spines_fused /  Absent Present,
+		60 Degree_of_fusion_of_the_posterior_pair_of_pygidial_pleural_spines_ /  'Partially fused, with the tip of the spine visible' Completely_fused,
+		61 Degree_of_differentiation_of_the_terminal_piece_ /  Well_differentiated Almost_not_differentiated_or_absent,
+		62 Pair_of_ventral_projection_in_the_pygidial_rim /  Absent Present,
+		63 Maximum_number_of_axial_rings_in_the_pygidium_in_late_holaspides /  5 4 3,
+		64 Number_of_segments_in_the_trunk_in_late_holaspid /  19 15 14 13 ; 
+	MATRIX
+	Parapilekia_olesnaensis               000000--0000000-0000000000000-000000000?0000-00000000-00000-0000
+	Krattaspis_popovi                     101111-0011011?-0010011110-00-0020000001112000100?001001100-1022
+	Krattaspis_viridatus                  201111-0011011100-110??100000-00200000011??????00?001001100-102?
+	Cyrtometopus_affinis                  101110--0110100-0010000011-00-0001??????1120001001001000100-1022
+	Cyrtometopus_clavifrons               101110--0110100-0010000011-00-00110001011120001001001000100-1022
+	Cyrtometopus_priscus                  101010--0100100-0011000000000-001000010????????001001001200-102?
+	Reraspis_plautini                     200011-00110100-0010111000000-00000010011110002101000000000-1023
+	Actinopeltis_completa                 301110--0??0?00-00110100?0?00-00?00010011111001101000000000-1011
+	Actinopeltis_globosa                  301210--0?00110-0011010010-00-00100010011111001101000000000-1011
+	Hemisphaerocoryphe_pseudohemicranium  301211-00111--110011200011-00-00000011111110002101001010200-1023
+	Ellipsocoryphe_elliptica              301211-00111--11001??000??-00-00?0??????001000110?001011100-1?22
+	Mainbrookia_becki                     301211-00111--110-11010010-0101010???????????-?101001011100-112?
+	Sphaerocoryphe_gemina                 301211-00111--110-1?200010-01010?000?1001?100031011-1012200-1113
+	Sphaerocoryphe_robustus               301211-00111--110-10210010-010102002110111??0031111-1012200-1113
+	Sphaerocoryphe_thomsoni               301211-00111--110-10211010-011002002010110100031011-1012200-1113
+	Apollonaspis_arga                     100001-00000000-0000000000000-1000??????????????????????????????
+	Sycophantia_seminosa                  102000--0000000-0101000000100-0010?????????????000001001100-002?
+	Laneites_polydorus                    100000--0000000-00010100001?0-00?0100010103010?001001001100-102?
+	Lehua_vinculum                        2000?0--00?0000-00010???1??00-00?0??????0130001000000000000-1022
+	Cerauropeltis_ruedemanni              103001-00000100-1100110100100-00201101101?30?0?0000010001?0-002?
+	Ceraurinella_magnilobata              101000--00?0100-000011?100?00-00001?0100123020?0000110001010102?
+	Ceraurinella_typa                     100001-00000100-0010111100100-1010110110123010100100100010101022
+	Arcticeraurinella_arctica             103000--0000100-0000121100100-0020110101123010100100100010111022
+	Ceraurinella_nahanniensis             101000--0010100-0000111100100-0020110100123010100100100010101022
+	Xylabion_kirkdandiensis               100000--00?0100-0000??1100100-00?01101001?3010?000011000100-102?
+	Gabriceraurus_proicens                200001-00000100-11010??1???00-10001100101?3010?000001001110-102?
+	Gabriceraurus_gabrielsi               200001-01000100-1101110100100-1020111000113010?000001001110-102?
+	Gabriceraurus_hirsuitus               200001-01000100-1101110100110-1020??????1130101000001001110-1022
+	Ceraurus_pleurexanthemus              200002011000110-0110110100110-11101110001130111101001012200-1022
+	Ceraurus_mackenziensis                200002011000110-1100120100110-1120011001???????110001012200-102?
+	Paraceraurus_aculeatus                103001-00000100-0000110100110-102000?0011130101000001000020-0022
+	Bufoceraurus_bispinosus               200002110000100-1100100100?10-10201110001030201000001000020-1022
+	Leviceraurus_mammilloides             103002011000110-1110110100110-01201010011130111000001012200-1022
+	Whittakerites_planatus                201000--1000110-1100120100110-0020010001113010?110001012200-102?
+	Borealaspis_whittakerensis            201002010000110-1111?10100?10-1??0?????????????000001011110-102?
+	Ceraurinus_marginatus                 102000--0010100-1-00110100100-0020??????1130101000001100100-1022
+	Ceraurinus_icarus                     102000--0010100-1100110100100-00100001011230101000000100100-1022
+	Ceraurinium_intermedium               111010--0000100-0000110110-00-00201101001230201000011002200-1022
+	Hadromeros_subulatus                  211010--0000100-0020110100100-00101101001130201000001000100-0022
+	Parisoceraurus_rectangulus            211000--0000100-0000100100100-0010??????1230201000001001100-0022
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 64;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 64;
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 25 TEXT = misspelled_Xylabion_kirklandiensis_in_original_matrix;
+	TEXT  TAXON = 30 TEXT = misspelled_Ceraurus_mackensiensis;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1789055837158;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4282622738278269732;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3442725975804674379;
+			mqVersion 381;
+			checksumv 0 3 3448806178 null  getNumChars 64 numChars 64 getNumTaxa 40 numTaxa 40   short true   bits 15   states 15   sumSquaresStatesOnly 8987.0 sumSquares 8987.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1389 691;
+			setLocation 0 29;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3442725975804674379 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1289 619;
+					setLocation 0 29;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

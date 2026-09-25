@@ -1,0 +1,110 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=25 NCHAR=43;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Murinella_speciosa       0000001000013011111010220000000000000000000
+	Oepikina_alata           000001300001111110102110111010100???0111011
+	Oepikina_bellula         0001002010213011100011101100000000000111110
+	Oepikina_dosatiformis    1210001000011110112120011?1??????1100000000
+	Oepikina_dubia           00000111000130?010000110????????????????0??
+	Oepikina_exima           12210110000121102111120011111????????221010
+	Oepikina_expatiata       1110012000011111211211101211000001101221010
+	Oepikina_extensa         111010311221100121120210???????????????????
+	Oepikina_formosa         110011210001110111020110121111102???0210001
+	Oepikina_glabella        000011101221300110200000????????????0??????
+	Oepikina_gregaria        01100121000111111000100?121000000???0221010
+	Oepikina_inquassa        1211012111113011202212001?01100000010110100
+	Oepikina_lirata          121001210001311121221200111110000????221010
+	Oepikina_maja            1221011012213011210?0200???????????????????
+	Oepikina_minnesotensis   0000002011113111102200000000000000000001010
+	Oepikina_nasuta          0101113100011111000201111211012211001111011
+	Oepikina_parvula         000001100001100101200012????000000020?????0
+	Oepikina_planulata       1221013100013111100101101112100001000110000
+	Oepikina_pulchella       000011210001301110211000???????0???0???????
+	Oepikina_quadrata        0110002100011110110011001111?00001100110000
+	Oepikina_septata         1100103100011001111001001111011110001111011
+	Oepikina_speciosa        121101211220?001022?01?21201100001000211010
+	Oepikina_subplandorsata  111000210000000111010100???????????????????
+	Oepikina_transversa      1110002012213110112111001212022121101111011
+	Oepikina_varia           1100002000000111100?01001211101110001120101
+
+;
+END;
+begin mrbayes;
+	charset all = 1 - 43;
+	[exclude 7 11 12 15 18 19 26 29 36 39 40;]
+
+[TOPOLOGY CONSTRAINT ON INGROUP]
+
+constraint ingroup = alata bellula dosatiformis dubia exima expatiata extensa formosa glabella gregaria inquassa lirata maja minnesotensis nasuta parvula planulata pulchella quadrata septata speciosa subplandorsata transversa varia;
+prset topologypr = constraints(ingroup);
+
+
+[CHARACTER EVOLUTION AND RATE HETEROGENEITY AMONG CHARACTERS]
+
+[morphology model settings]
+	[set coding and rates]
+		lset nbetacat=5 rates=lnorm Coding=informative; [lognormal rate variation among characters]
+		prset symdirihyperpr=fixed(infinity);
+		[prset symdirihyperpr=uniform(1,10);]
+
+[TIP AGE CALIBRATIONS]
+
+calibrate Murinella_speciosa = uniform(456.6, 458.4);
+calibrate Oepikina_alata = uniform(453, 456.6);
+calibrate Oepikina_bellula = uniform(453, 456.6);
+calibrate Oepikina_dosatiformis = uniform(453, 456.6);
+calibrate Oepikina_dubia = uniform(453, 458.4);
+calibrate Oepikina_exima = uniform(450.3, 456.6);
+calibrate Oepikina_expatiata = uniform(453, 458.4);
+calibrate Oepikina_extensa = uniform(456.6, 458.4);
+calibrate Oepikina_formosa = uniform(456.6, 458.4);
+calibrate Oepikina_glabella = uniform(456.6, 462.5);
+calibrate Oepikina_gregaria = uniform(453, 458.4);
+calibrate Oepikina_inquassa = uniform(450.3, 456.6);
+calibrate Oepikina_lirata = uniform(450.3, 456.6);
+calibrate Oepikina_maja = uniform(450.3, 458.4);
+calibrate Oepikina_minnesotensis = uniform(453, 456.6);
+calibrate Oepikina_nasuta = uniform(453, 456.6);
+calibrate Oepikina_parvula = uniform(453, 456.6);
+calibrate Oepikina_planulata = uniform(453, 456.6);
+calibrate Oepikina_pulchella = uniform(453, 456.6);
+calibrate Oepikina_quadrata = uniform(450.3, 458.4);
+calibrate Oepikina_septata = uniform(450.3, 456.6);
+calibrate Oepikina_speciosa = uniform(456.6, 458.4);
+calibrate Oepikina_subplandorsata = uniform(453, 456.6);
+calibrate Oepikina_transversa = uniform(453, 458.4);
+calibrate Oepikina_varia = fixed (450.30);
+[These taxa had fixed tip ages: varia ]
+
+
+[SKYLINE FOSSILIZED BIRTH DEATH MODEL & TREE PRIOR]
+	prset treeagepr = uniform(462.5, 477.7);	[late Early to Middle Ordovician divergence]
+    prset brlenspr=clock:fossilization;			[FBD prior with sampled ancestors]
+   	prset speciationpr = uniform(0.01,10); 		[uninformative, vague prior spanning orders of magnitude]
+	prset extinctionpr = beta(1,1);				[flat (i.e, uniform) prior]
+	prset fossilizationpr = beta(2,2);		    ['hump-shaped' distribution centered on 0.5, vague but optimistic preservation rate prior, these are brachiopods after all]
+
+	[4 time bins = pre-Darriwilian (i.e., Dapingian), Darriwilian, Sandbian, Katian (1 fixed taxon crosses K/H)]
+	prset samplestrat = random 3: 467.3 0, 458.4 0, 453.0 0;
+	prset sampleprob = 1;
+
+[RELAXED CLOCK MODEL PRIORS]
+	prset clockratepr = normal(0.001,0.1);
+   	prset clockvarpr=igr; [uncorrelated branch rates]
+    prset igrvarpr = uniform(0.001, 10); [broad prior spanning several orders of magnitude]
+	prset nodeagepr = calibrated;
+
+
+[MCMC SETTINGS]
+	mcmcp ngen=20000000 relburnin=yes burninfrac=0.25 printfreq=1000 samplefreq=20000 nchains=2 nruns=2 temp=0.05 savebrlens=yes;
+
+[RUN ANALYSIS]
+	mcmc;
+	sumt burnin=250;
+	sump burnin=250;
+
+
+END;

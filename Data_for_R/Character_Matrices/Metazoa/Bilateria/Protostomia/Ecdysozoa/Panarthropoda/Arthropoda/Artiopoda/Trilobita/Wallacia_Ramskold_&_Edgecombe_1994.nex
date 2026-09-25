@@ -1,0 +1,19 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=17;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	MATRIX
+	Wallacia_hagshawensis  00000100?00101100
+	Wallacia_pagei         00000100?001?1100
+	Wallacia_jaanussoni    00000000010011000
+	Wallacia_triangula     10010000010011100
+	Wallacia_expansa       10010000010001110
+	Wallacia_masterleei    100100000000?2010
+	Wallacia_laevis        10010001010012110
+	Wallacia_hypolepra     111110011111?2210
+	Wallacia_elegantula    01011011111112211
+	Wallacia_chattertoni   0111100?1111?2211
+
+;
+END;

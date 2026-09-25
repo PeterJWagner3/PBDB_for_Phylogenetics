@@ -1,0 +1,401 @@
+#NEXUS
+[written Fri May 22 12:49:07 CDT 2026 by Mesquite  version 3.81 (build 955) at EAS-F094C0/10.73.95.75]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=56;
+	TAXLABELS
+		Gastrotricha Kinorhyncha Loricifera Nematomorpha Nematoda Aysheaia Peripatus Kerygmachela Microdictyon Tardigrada Acanthopriapulus_horridus Ancalagon_minor Anningvermis_multispinosus Chalazoscolex_pharkus Corynetis_brevis Cricocosmia_jinningensis Fieldia_lanceolata Guanduscolex_minor Halicryptus_higginsi Halicryptus_spinulosus Laojieella_thecata Louisella_pedunculata Maccabeus_cirratus Maccabeus_tentaculatus Maotianshania_cylindrica Markuelia Meiopriapulus_fijiensis Ottoia_prolifica Palaeopriapulites_parvus Palaeoscolex_piscatorum Paraselkirkia_jinningensis Paratubiluchus_bicaudatus Priapulites_konecniorum Priapulopsis_australis Priapulopsis_bicaudatus Priapulopsis_cnidephorus Priapulus_abyssorum Priapulus_caudatus Priapulus_tuberculatospinosus Scolecofurca_rara Selkirkia_columbia Sicyophorus_rarus Tabelliscolex_hexagonus Tabelliscolex_maanshanensis Tubiluchus_arcticus Tubiluchus_australensis Tubiluchus_corallicola Tubiluchus_philippinensis Tubiluchus_remanei Tubiluchus_troglodytes Tubiluchus_vanuatensis Tylotites_petiolaris Xiaoheiqingella_peculiaris Xystoscolex_boreogyrus Yunnanpriapulus_halteroformis Eopriapulites_sphinx 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=88;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Gastrotricha                   ?000????0??0?????0?????0000010000000000000000???0000000000?00?0?001010000000?0000100011?
+	Kinorhyncha                    202212091010?18112000201000010000001000000000???0000?01110100?0?101010000111000011200(0 1)10
+	Loricifera                     202212091011018012010101000000000001000000000???0000001110111000102110000211000011200110
+	Nematomorpha                   00101011100????????????020(0 1)411000000001000100???1000111110010?00110000001210?1(1 2 3)10120000?
+	Nematoda                       00101011100????????????020(0 1)4100000000000(0 1)0000???0000111110000?0?0100000012(0 1)1(0 1)(0 1)2001200(0 1)0?
+	Aysheaia                       ?100????0??0?????0?????01122110000000000000?0???000?????????????0???????????????010?????
+	Peripatus                      ?000????0??0?????0?????0111?11000000000000100???00000?0000000?0?00001000021100000000011?
+	Kerygmachela                   ?100????0??0?????0?????0112411000000000000?00???000?????????????0???????????????010???1?
+	Microdictyon                   ?100????0??0?????0?????0111300210000000000000???000?????????????0???????????????010?????
+	Tardigrada                     ?100????0??0?????0?????0011100(0 1)10000000000100???00000?1000?00?0?0(0 1)00100002(0 1)1(0 1)00?0(0 1)00010?
+	Acanthopriapulus_horridus      20211103200?????????02?00012010000000001001011110001001111111111102110000?????0011311011
+	Ancalagon_minor                00(1 2)?12021000?13002000200101410000000000000000???000?????????????????????????????112?????
+	Anningvermis_multispinosus     ??(1 2)?02??1??2131111?100001012110000000000?0??1000000?????????????????????????????112?????
+	Chalazoscolex_pharkus          ?0(1 2)?1??1??0?????????1??0101400220000000010000???00??????????????????????????????112???1?
+	Corynetis_brevis               ??(1 2)?02??1??2131111?100001012110000000001?00?1000000?????????????????????????????112?????
+	Cricocosmia_jinningensis       ?0(1 2)?12?21000030111011000201300210100000000000???100?????????????????????????????112?????
+	Fieldia_lanceolata             ?0(1 2)?12?21000?10003000?00100010000000000000000???000?????????????????????????????112?????
+	Guanduscolex_minor             ?0(1 2)?120?1000030113000000101300110000000000000???000?????????????????????????????112?????
+	Halicryptus_higginsi           202111052002031211210210101410000000000100110???0101001111111110102110000211(0 1)00011111011
+	Halicryptus_spinulosus         202111052002031211210210001310000000000100110???0101001111111110102110000211(0 1)00011211011
+	Laojieella_thecata             ?0(1 2)?11?11000030112000000100000000000000000001020?00?????????????????????????????112?????
+	Louisella_pedunculata          10(1 2)?12001002130113011000101?12??0000000010000???000?????????????????????????????112?????
+	Maccabeus_cirratus             2021110(2 7)2001025211(2 3)00200001300000011011001110???0001001111111110102110000?????0011211010
+	Maccabeus_tentaculatus         2021110(2 7)2001025211(2 3)00200001300000011011001110???0001001111111110102110000?????0011211010
+	Maotianshania_cylindrica       20(1 2)?120??00??3???3?00010201300000000000000000???100?????????????????????????????112?????
+	Markuelia                      202?10?12000?0???0?????01013(0 1)0000000000000000???100????????00??01??????????????0112?????
+	Meiopriapulus_fijiensis        202111083001026333000100000010001102001000000???0011001101100????02110000????10011211010
+	Ottoia_prolifica               20(1 2)?12023002034(1 2)23011010001300000000001010000???00010???????????????????????????1121????
+	Palaeopriapulites_parvus       ?02?1102100????????????0000000000000000000000???000?????????10??????????????????1131????
+	Palaeoscolex_piscatorum        ?0(1 2)?10????0???011???0000201400220000000000000???100?????????????????????1????121112?????
+	Paraselkirkia_jinningensis     10(1 2)?1001(2 3)00202???300000010000?000000020000000????00?????????????????????????????112?????
+	Paratubiluchus_bicaudatus      ?0(1 2)1110?20000(1 2 3)011??00??0000010001?0??0???0??1020001?????????????????????????????113?????
+	Priapulites_konecniorum        20(1 2)?1103110?????????02?0001200000000000000101010000?????????????????????????????1131????
+	Priapulopsis_australis         2021110421010302121102100012010010000001001010010001001111111111102110000??????011311011
+	Priapulopsis_bicaudatus        2021110421010322121102100012010010000001001010210001001111111111102110000??????011311011
+	Priapulopsis_cnidephorus       20(1 2)111????0?03?????????0001201001000000?00101???00?100??????????1??????????????011211?1?
+	Priapulus_abyssorum            2021110321010312113102100012010000000001001011110001001111111111102110000111(0 1)00011311011
+	Priapulus_caudatus             2021110321010312113102100012010000000001001011110201001111111111102110000111(0 1)00011311011
+	Priapulus_tuberculatospinosus  2021110321010312113102100012010000000001001011120201001111111111102110000111(0 1)00011311011
+	Scolecofurca_rara              ?0??1??0?000?3011?011?00?01?000000000000?0000????00?????????????????????????????112?????
+	Selkirkia_columbia             10(1 2)?10013002021223000010100001000000020000000???000??????????0??????????????????112?????
+	Sicyophorus_rarus              ?02?1102100?0?0112??1?00000000000000000000000???000?????????10??????????????????1131????
+	Tabelliscolex_hexagonus        ?0(1 2)?12?2100003011101???0201300210100000000000???100?????????????????????????????112?????
+	Tabelliscolex_maanshanensis    ?0(1 2)?12?2100003011101???0201300210100000000000???100?????????????????????????????112?????
+	Tubiluchus_arcticus            2021110620010273330001010000100011011000001020000011001101111010102110000?????0011211010
+	Tubiluchus_australensis        2021110620010273330001000000100011011000001010000011001101111010102111000?????0011211010
+	Tubiluchus_corallicola         2021110620010273330001000000100011011000001010000011001101111010102110010?????0011211010
+	Tubiluchus_philippinensis      2021110620010273330001000000100011011000001010000011001101111010102111110?????0011211010
+	Tubiluchus_remanei             2021110620010273330001000000100011011000001020000011001101111010102110100?????0011211010
+	Tubiluchus_troglodytes         2021110620010273330001000000100011021000001020000011001101111010102110000?????0011211010
+	Tubiluchus_vanuatensis         2021110620010273330000010000100011011000001010000011001101111010102110000?????0011211010
+	Tylotites_petiolaris           ?0(1 2)?12?21000020112001000101210220?00000000000???100?????????????????????????????112?????
+	Xiaoheiqingella_peculiaris     ?02?110120010(1 2 3)011??????010130?0000000001?00?1020000?????????????????????????????112?????
+	Xystoscolex_boreogyrus         ?0(1 2)110?1??0???011????0001014001?0000000000?00???00??????????????????????????????112???1?
+	Yunnanpriapulus_halteroformis  ?02?110?200??(1 2 3)?????????0101?010000000001?00?1000000?????????????????????????????112?????
+	Eopriapulites_sphinx           ?02?121310021101?3-10200?01200000000?0?????????????????????00??????????????????011?1?01?
+
+;
+???????????????011?1 / ??01 / ??;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 88;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 88;
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 56 TEXT = 'From Liu et al. 2014. The oldest known priapulid-like scalidophoran animal and its implications for the early of evolution of cycloneuralians and ecdysozoans. Evolution and Development 16(3):155-165';
+
+	TEXT   TAXON = 56 CHARACTER = 14 TEXT = '1 or ?	';
+
+	TEXT   TAXON = 56 CHARACTER = 21 TEXT = 0_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 22 TEXT = 2_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 23 TEXT = 0_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 28 TEXT = 2_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 60 TEXT = 0_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 61 TEXT = 0_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 62 TEXT = '- or ?';
+
+	TEXT   TAXON = 56 CHARACTER = 63 TEXT = '- or ?';
+
+	TEXT   TAXON = 56 CHARACTER = 64 TEXT = '- or ?';
+
+	TEXT   TAXON = 56 CHARACTER = 65 TEXT = '- or ?';
+
+	TEXT   TAXON = 56 CHARACTER = 84 TEXT = 1_or_?;
+
+	TEXT   TAXON = 56 CHARACTER = 87 TEXT = 1_or_?;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1779472148091;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6556717697876600553;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 462221559550753488;
+			mqVersion 381;
+			checksumv 0 3 2304492261 null  getNumChars 88 numChars 88 getNumTaxa 56 numTaxa 56   short true   bits 1023   states 1023   sumSquaresStatesOnly 928032.0 sumSquares 928032.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1429 814;
+			setLocation -3514 -247;
+			setFont Futura;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #6556717697876600553  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.DefaultTrees.DefaultTrees;
+				setAssignedID 3526.1779467151168.950504991992452309;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1329 742;
+					setLocation -3514 -247;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.SearchTreeToolAssistant.SearchTreeToolExtra.randomlyRotate;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(1,((7,(6,8)),((9,10),((5,(4,30)),(26,(54,((14,52),(((2,3),(12,17)),(21,((31,41),((42,(29,(32,(27,(50,((45,51),(49,(47,(46,48))))))))),(((28,(56,(22,(13,15)))),(18,(25,(40,(43,(16,44)))))),((53,55),((23,24),((19,20),(33,((36,(34,35)),(11,(37,(38,39))))))))))))))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #462221559550753488;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #462221559550753488 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 235;
+						columnWidth 57 22;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1329 742;
+					setLocation -3514 -247;
+					setFont Futura;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
